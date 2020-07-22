@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Лазарев](https://up.htmlacademy.ru/adaptive/20/user/1251803).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Новиков](https://htmlacademy.ru/profile/id42641).
 
 ---
 
