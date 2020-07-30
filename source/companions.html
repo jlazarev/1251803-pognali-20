@@ -29,7 +29,7 @@
           </a>
         </li>
         <li class="nav-list__item">
-          <a href="companions.html">
+          <a href="users.html">
             попутчики
           </a>
         </li>
@@ -72,237 +72,416 @@
   <main class="page-main">
     <h1 class="page-title">Попутчики</h1>
 
-    <ul class="companions__list">
-      <li class="companions__item companion-card">
-        <div class="companion-card__title">
-          <h3 class="companion-card__name">
-            Таня Фирсова
-          </h3>
+    <section class="country-filter">
+      <h2 class="country-filter__title">
+        фильтрация по странам
+      </h2>
 
-          <div class="status status--off"></div>
-        </div>
+      <button class="country-filter__toggle" type="button">
+        <span class="visually-hidden">Открыть фильтр по странам</span>
+      </button>
 
-
-        <img class="companion-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
-          alt="Таня Фирсова">
-
-        <div class="companion-card__like">
-          <button class="like-btn"></button>
-          <span class="like-numder">1,5 M</span>
-        </div>
-
-        <div class="companion-card__level">
-          <h4 class="inner-title">левел:</h4>
-          <span class="level-number">99</span>
-        </div>
-
-        <h4 class="inner-title">хочет посетить:</h4>
-        <ul class="companion-card__want-visit-list want-visit-list">
-          <li class="want-visit-list__item">
-            Шри-Ланка
-          </li>
-          <li class="want-visit-list__item">
-            Тайланд
-          </li>
-          <li class="want-visit-list__item">
-            Сейшелы
-          </li>
-        </ul>
-
-        <ul class="companion-card__hashtag-list">
-          <li class="hashtag-item">#ЗОЖ</li>
-          <li class="hashtag-item">#ПП</li>
-          <li class="hashtag-item">#Фитнес</li>
-          <li class="hashtag-item">#пляж</li>
-          <li class="hashtag-item">#авокадо</li>
-          <li class="hashtag-item">#смузи</li>
-        </ul>
-
-        <h4 class="inner-title">транспорт:</h4>
-        <ul class="companions-card__transport-list">
-          <li class="transport transport--on transport--plane">самолёт</li>
-          <li class="transport transport--off transport--bus">автобус</li>
-          <li class="transport transport--off transport--bicycle">велосипед</li>
-          <li class="transport transport--off transport--run">пешком</li>
-        </ul>
-
-        <button class="call-btn">позвать!</button>
-      </li>
-
-      <li class="companions__item companion-card">
-        <div class="companion-card__title">
-          <h3 class="companion-card__name">
-            Петя Демин
-          </h3>
-
-          <div class="status status--off"></div>
-        </div>
-
-
-        <img class="companion-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
-          alt="Петя Демин">
-
-        <div class="companion-card__like">
-          <button class="like-btn"></button>
-          <span class="like-numder">1500</span>
-        </div>
-
-        <div class="companion-card__level">
-          <h4 class="inner-title">левел:</h4>
-          <span class="level-number">80</span>
-        </div>
-
-        <h4 class="inner-title">хочет посетить:</h4>
-        <ul class="companion-card__want-visit-list want-visit-list">
-          <li class="want-visit-list__item">
-            Бельгия
-          </li>
-          <li class="want-visit-list__item">
-            Чехия
-          </li>
-        </ul>
-
-        <ul class="companion-card__hashtag-list">
-          <li class="hashtag-item">#бургер</li>
-          <li class="hashtag-item">#бар</li>
-          <li class="hashtag-item">#футбол</li>
-          <li class="hashtag-item">#концерт</li>
-          <li class="hashtag-item">#крафт</li>
-        </ul>
-
-        <h4 class="inner-title">транспорт:</h4>
-        <ul class="companions-card__transport-list">
-          <li class="transport transport--on transport--plane">самолёт</li>
-          <li class="transport transport--on transport--bus">автобус</li>
-          <li class="transport transport--off transport--bicycle">велосипед</li>
-          <li class="transport transport--on transport--run">пешком</li>
-        </ul>
-
-        <button class="call-btn">позвать!</button>
-      </li>
-
-      <li class="companions__item companion-card">
-        <div class="companion-card__title">
-          <h3 class="companion-card__name">
-            Марк Смолов
-          </h3>
-
-          <div class="status status--off"></div>
-        </div>
-
-
-        <img class="companion-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
-          alt="Марк Смолов">
-
-        <div class="companion-card__like">
-          <button class="like-btn"></button>
-          <span class="like-numder">170</span>
-        </div>
-
-        <div class="companion-card__level">
-          <h4 class="inner-title">левел:</h4>
-          <span class="level-number">25</span>
-        </div>
-
-        <h4 class="inner-title">хочет посетить:</h4>
-        <ul class="companion-card__want-visit-list want-visit-list">
-          <li class="want-visit-list__item">
-            США
-          </li>
-          <li class="want-visit-list__item">
-            Австралия
-          </li>
-          <li class="want-visit-list__item">
-            Доминика
-          </li>
-        </ul>
-
-        <ul class="companion-card__hashtag-list">
-          <li class="hashtag-item">#реп</li>
-          <li class="hashtag-item">#тату</li>
-          <li class="hashtag-item">#хайпбист</li>
-          <li class="hashtag-item">#кроссовки</li>
-          <li class="hashtag-item">#суприм</li>
-        </ul>
-
-        <h4 class="inner-title">транспорт:</h4>
-        <ul class="companions-card__transport-list">
-          <li class="transport transport--on transport--plane">самолёт</li>
-          <li class="transport transport--off transport--bus">автобус</li>
-          <li class="transport transport--on transport--bicycle">велосипед</li>
-          <li class="transport transport--off transport--run">пешком</li>
-        </ul>
-
-        <button class="call-btn">позвать!</button>
-      </li>
-
-      <li class="companions__item companion-card">
-        <div class="companion-card__title">
-          <h3 class="companion-card__name">
-            Лариса Роговая
-          </h3>
-
-          <div class="status status--on"></div>
-        </div>
-
-
-        <img class="companion-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
-          alt="Лариса Роговая">
-
-        <div class="companion-card__like">
-          <button class="like-btn"></button>
-          <span class="like-numder">23</span>
-        </div>
-
-        <div class="companion-card__level">
-          <h4 class="inner-title">левел:</h4>
-          <span class="level-number">50</span>
-        </div>
-
-        <h4 class="inner-title">хочет посетить:</h4>
-        <ul class="companion-card__want-visit-list want-visit-list">
-          <li class="want-visit-list__item">
-            Великобритания
-          </li>
-          <li class="want-visit-list__item">
-            Германия
-          </li>
-        </ul>
-
-        <ul class="companion-card__hashtag-list">
-          <li class="hashtag-item">#образование</li>
-          <li class="hashtag-item">#карьера</li>
-          <li class="hashtag-item">#учеба</li>
-          <li class="hashtag-item">#линкедин</li>
-        </ul>
-
-        <h4 class="inner-title">транспорт:</h4>
-        <ul class="companions-card__transport-list">
-          <li class="transport transport--on transport--plane">самолёт</li>
-          <li class="transport transport--on transport--bus">автобус</li>
-          <li class="transport transport--off transport--bicycle">велосипед</li>
-          <li class="transport transport--off transport--run">пешком</li>
-        </ul>
-
-        <button class="call-btn">позвать!</button>
-      </li>
-    </ul>
-
-    <button class="show-more">показать ещё</button>
-
-    <div class="companions__nav">
-      <ul class="pagination">
-        <li class="active"><a href="#">1</a></li>
-        <li ><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
+      <ul class="country-filter__continents-list">
+        <li class="country-filter__continent-item">Европа</li>
+        <li class="country-filter__continent-item">Азия</li>
+        <li class="country-filter__continent-item">Америка</li>
+        <li class="country-filter__continent-item">острова</li>
       </ul>
 
-      <ul class="pager">
-        <li class="previous"><a href="#">назад</a></li>
-        <li class="next"><a href="#">вперед</a></li>
+      <table class="country-filter__alphabet">
+        <tr class="country-filter__table-row">
+          <td class="country-filter__letter country-filter__letter--focus">а</td>
+          <td class="country-filter__letter">б</td>
+          <td class="country-filter__letter">в</td>
+          <td class="country-filter__letter">г</td>
+          <td class="country-filter__letter">д</td>
+        </tr>
+        <tr class="country-filter__table-row">
+          <td class="country-filter__letter">е</td>
+          <td class="country-filter__letter">з</td>
+          <td class="country-filter__letter">и</td>
+          <td class="country-filter__letter">к</td>
+          <td class="country-filter__letter">л</td>
+        </tr>
+        <tr class="country-filter__table-row">
+          <td class="country-filter__letter">м</td>
+          <td class="country-filter__letter">н</td>
+          <td class="country-filter__letter">о</td>
+          <td class="country-filter__letter">п</td>
+          <td class="country-filter__letter">р</td>
+        </tr>
+        <tr class="country-filter__table-row">
+          <td class="country-filter__letter">с</td>
+          <td class="country-filter__letter">т</td>
+          <td class="country-filter__letter">у</td>
+          <td class="country-filter__letter">ф</td>
+          <td class="country-filter__letter">х</td>
+        </tr>
+        <tr class="country-filter__table-row">
+          <td class="country-filter__letter">ч</td>
+          <td class="country-filter__letter">ш</td>
+          <td class="country-filter__letter">э</td>
+          <td class="country-filter__letter">ю</td>
+          <td class="country-filter__letter">я</td>
+        </tr>
+      </table>
+
+      <ul class="country-filter__country-list">
+        <li class="country-filter__country-item">Австралия</li>
+        <li class="country-filter__country-item">Австрия</li>
+        <li class="country-filter__country-item">Азербайджан</li>
+        <li class="country-filter__country-item">Албпния</li>
+        <li class="country-filter__country-item">Алжир</li>
+        <li class="country-filter__country-item">Ангола</li>
+        <li class="country-filter__country-item">Андора</li>
+        <li class="country-filter__country-item">Антигуа и Барбуда</li>
+        <li class="country-filter__country-item">Аргентина</li>
+        <li class="country-filter__country-item">Армения</li>
+        <li class="country-filter__country-item">Афганистан</li>
       </ul>
-    </div>
+
+      <button class="country-filter__close" type="button">
+        свернуть
+      </button>
+    </section>
+
+    <section class="user-filter">
+      <h2 class="user-filter__title">
+        Подберите идеального попутчика
+      </h2>
+
+      <form class="user-filter__form" action="https://echo.htmlacademy.ru">
+        <fieldset class="user-filter__fieldset">
+          <legend class="user-filter__legend">хобби</legend>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Спортзал
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Кальян
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Диван
+          </label>
+        </fieldset>
+
+        <fieldset class="user-filter__fieldset">
+          <legend class="user-filter__legend">музыка</legend>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Тяжелый рок
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Русский реп
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Евроденс
+          </label>
+        </fieldset>
+
+        <fieldset class="user-filter__fieldset">
+          <legend class="user-filter__legend">еда</legend>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Мясоед
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Сидит на ПП
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> Веган-сыроед
+          </label>
+        </fieldset>
+
+        <fieldset class="user-filter__fieldset">
+          <legend class="user-filter__legend">транспорт</legend>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> самолет
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> автобус
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> велосипед
+          </label>
+
+          <label class="user-filter__label">
+            <input class="visually-hidden" type="checkbox"> пешком
+          </label>
+        </fieldset>
+
+        <fieldset  class="user-filter__fieldset">
+          <legend>левел</legend>
+
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+
+              <div class="toggle toggle-min" tabindex="0" aria-label="минимальный левел"></div>
+              <div class="toggle toggle-max" tabindex="0" aria-label="максимальный левел"></div>
+            </div>
+
+            <div class="level-controls">
+
+              <input type="text" id="min-level" name="min-level" value="30">
+              <label class="visually-hidden" for="min-level">минимальный левел</label>
+
+              <span>–</span>
+
+              <input type="text" id="max-level" name="max-level" value="100">
+              <label class="visually-hidden" for="max-level">максимальный левел</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button class="user-filter__submit-btn" type="submit">показать</button>
+      </form>
+    </section>
+
+    <section class="users">
+      <ul class="users__list">
+        <li class="users__item user-card">
+          <div class="user-card__title">
+            <h3 class="user-card__name">
+              Таня Фирсова
+            </h3>
+
+            <div class="status status--off"></div>
+          </div>
+
+
+          <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+            alt="Таня Фирсова">
+
+          <div class="user-card__like">
+            <button class="like-btn"></button>
+            <span class="like-numder">1,5 M</span>
+          </div>
+
+          <div class="user-card__level">
+            <h4 class="inner-title">левел:</h4>
+            <span class="level-number">99</span>
+          </div>
+
+          <h4 class="inner-title">хочет посетить:</h4>
+          <ul class="user-card__want-visit-list want-visit-list">
+            <li class="want-visit-list__item">
+              Шри-Ланка
+            </li>
+            <li class="want-visit-list__item">
+              Тайланд
+            </li>
+            <li class="want-visit-list__item">
+              Сейшелы
+            </li>
+          </ul>
+
+          <ul class="user-card__hashtag-list">
+            <li class="hashtag-item">#ЗОЖ</li>
+            <li class="hashtag-item">#ПП</li>
+            <li class="hashtag-item">#Фитнес</li>
+            <li class="hashtag-item">#пляж</li>
+            <li class="hashtag-item">#авокадо</li>
+            <li class="hashtag-item">#смузи</li>
+          </ul>
+
+          <h4 class="inner-title">транспорт:</h4>
+          <ul class="user-card__transport-list">
+            <li class="transport transport--on transport--plane">самолёт</li>
+            <li class="transport transport--off transport--bus">автобус</li>
+            <li class="transport transport--off transport--bicycle">велосипед</li>
+            <li class="transport transport--off transport--run">пешком</li>
+          </ul>
+
+          <button class="call-btn">позвать!</button>
+        </li>
+
+        <li class="users__item user-card">
+          <div class="user-card__title">
+            <h3 class="user-card__name">
+              Петя Демин
+            </h3>
+
+            <div class="status status--off"></div>
+          </div>
+
+
+          <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+            alt="Петя Демин">
+
+          <div class="user-card__like">
+            <button class="like-btn"></button>
+            <span class="like-numder">1500</span>
+          </div>
+
+          <div class="user-card__level">
+            <h4 class="inner-title">левел:</h4>
+            <span class="level-number">80</span>
+          </div>
+
+          <h4 class="inner-title">хочет посетить:</h4>
+          <ul class="user-card__want-visit-list want-visit-list">
+            <li class="want-visit-list__item">
+              Бельгия
+            </li>
+            <li class="want-visit-list__item">
+              Чехия
+            </li>
+          </ul>
+
+          <ul class="user-card__hashtag-list">
+            <li class="hashtag-item">#бургер</li>
+            <li class="hashtag-item">#бар</li>
+            <li class="hashtag-item">#футбол</li>
+            <li class="hashtag-item">#концерт</li>
+            <li class="hashtag-item">#крафт</li>
+          </ul>
+
+          <h4 class="inner-title">транспорт:</h4>
+          <ul class="user-card__transport-list">
+            <li class="transport transport--on transport--plane">самолёт</li>
+            <li class="transport transport--on transport--bus">автобус</li>
+            <li class="transport transport--off transport--bicycle">велосипед</li>
+            <li class="transport transport--on transport--run">пешком</li>
+          </ul>
+
+          <button class="call-btn">позвать!</button>
+        </li>
+
+        <li class="users__item user-card">
+          <div class="user-card__title">
+            <h3 class="user-card__name">
+              Марк Смолов
+            </h3>
+
+            <div class="status status--off"></div>
+          </div>
+
+
+          <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+            alt="Марк Смолов">
+
+          <div class="user-card__like">
+            <button class="like-btn"></button>
+            <span class="like-numder">170</span>
+          </div>
+
+          <div class="user-card__level">
+            <h4 class="inner-title">левел:</h4>
+            <span class="level-number">25</span>
+          </div>
+
+          <h4 class="inner-title">хочет посетить:</h4>
+          <ul class="user-card__want-visit-list want-visit-list">
+            <li class="want-visit-list__item">
+              США
+            </li>
+            <li class="want-visit-list__item">
+              Австралия
+            </li>
+            <li class="want-visit-list__item">
+              Доминика
+            </li>
+          </ul>
+
+          <ul class="user-card__hashtag-list">
+            <li class="hashtag-item">#реп</li>
+            <li class="hashtag-item">#тату</li>
+            <li class="hashtag-item">#хайпбист</li>
+            <li class="hashtag-item">#кроссовки</li>
+            <li class="hashtag-item">#суприм</li>
+          </ul>
+
+          <h4 class="inner-title">транспорт:</h4>
+          <ul class="user-card__transport-list">
+            <li class="transport transport--on transport--plane">самолёт</li>
+            <li class="transport transport--off transport--bus">автобус</li>
+            <li class="transport transport--on transport--bicycle">велосипед</li>
+            <li class="transport transport--off transport--run">пешком</li>
+          </ul>
+
+          <button class="call-btn">позвать!</button>
+        </li>
+
+        <li class="users__item user-card">
+          <div class="user-card__title">
+            <h3 class="user-card__name">
+              Лариса Роговая
+            </h3>
+
+            <div class="status status--on"></div>
+          </div>
+
+
+          <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+            alt="Лариса Роговая">
+
+          <div class="user-card__like">
+            <button class="like-btn"></button>
+            <span class="like-numder">23</span>
+          </div>
+
+          <div class="user-card__level">
+            <h4 class="inner-title">левел:</h4>
+            <span class="level-number">50</span>
+          </div>
+
+          <h4 class="inner-title">хочет посетить:</h4>
+          <ul class="user-card__want-visit-list want-visit-list">
+            <li class="want-visit-list__item">
+              Великобритания
+            </li>
+            <li class="want-visit-list__item">
+              Германия
+            </li>
+          </ul>
+
+          <ul class="user-card__hashtag-list">
+            <li class="hashtag-item">#образование</li>
+            <li class="hashtag-item">#карьера</li>
+            <li class="hashtag-item">#учеба</li>
+            <li class="hashtag-item">#линкедин</li>
+          </ul>
+
+          <h4 class="inner-title">транспорт:</h4>
+          <ul class="user-card__transport-list">
+            <li class="transport transport--on transport--plane">самолёт</li>
+            <li class="transport transport--on transport--bus">автобус</li>
+            <li class="transport transport--off transport--bicycle">велосипед</li>
+            <li class="transport transport--off transport--run">пешком</li>
+          </ul>
+
+          <button class="call-btn">позвать!</button>
+        </li>
+      </ul>
+
+      <button class="show-more">показать ещё</button>
+
+      <div class="users__nav">
+        <ul class="pagination">
+          <li class="active"><a href="#">1</a></li>
+          <li ><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
+
+        <ul class="pager">
+          <li class="previous"><a href="#">назад</a></li>
+          <li class="next"><a href="#">вперед</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
