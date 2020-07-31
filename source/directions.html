@@ -74,40 +74,229 @@
 
     <section class="user-profile">
 
-          <h3 class="user-card__name">
-            Петя Демин
-          </h3>
+      <h2 class="visually-hidden">
+        Петя Демин
+      </h2>
 
-          <div class="status status--off"></div>
-        </div>
-
-
-      <img class="user-card__photo" src="https://via.placeholder.com/100x100" width="100" height="100"
-          alt="Петя Демин">
-
-      <div class="user-card__level">
-        <h4 class="inner-title">левел:</h4>
-        <span class="level-number">80</span>
+      <div class="user-profile__level">
+        <span class="user-profile__level-number">80</span>
+        <span class="user-profile__level-title">level</span>
       </div>
 
-      <h3 class="">
-      <ul class="user-card__hashtag-list">
-        <li class="hashtag-item">#бургер</li>
-        <li class="hashtag-item">#бар</li>
-        <li class="hashtag-item">#футбол</li>
-        <li class="hashtag-item">#концерт</li>
-        <li class="hashtag-item">#крафт</li>
+      <img class="user-profile__photo" src="https://via.placeholder.com/100x100" width="100" height="100"
+          alt="Петя Демин">
+
+      <button class="user-profile__change-photo-btn">сменить фото</button>
+
+      <h3 class="user-profile__inner-title">теги</h3>
+      <ul class="user-profile__hashtag-list">
+        <li class="user-profile__hashtag-item">#бургер</li>
+        <li class="user-profile__hashtag-item">#бар</li>
+        <li class="user-profile__hashtag-item">#футбол</li>
+        <li class="user-profile__hashtag-item">#концерт</li>
+        <li class="user-profile__hashtag-item">#крафт</li>
       </ul>
 
-      <h3 class="inner-title">транспорт:</h4>
-      <ul class="user-card__transport-list">
+      <h3 class="user-profile__inner-title">транспорт</h3>
+      <ul class="user-profile__transport-list">
         <li class="transport transport--on transport--plane">самолёт</li>
         <li class="transport transport--on transport--bus">автобус</li>
         <li class="transport transport--off transport--bicycle">велосипед</li>
         <li class="transport transport--on transport--run">пешком</li>
       </ul>
+    </section>
 
-      <button class="call-btn">позвать!</button>
+    <section class="my-plans">
+      <h2 class="my-plans__title section-title">Мои планы:</h2>
+
+      <ol class="my-plans__directions-list">  <!-- https://iskraa.ru/blog/development/styling-ol -->
+        <li class="my-plans__direction-item">
+          <h3 class="my-plans__countries">Франция, Италия</h3>
+
+          <span class="my-plans__compamions">3 попутчика</span>
+          <span class="my-plans__dates">26 мар - 29 мар</span>
+
+          <button class="my-plans__change-btn">изменить</button>
+        </li>
+
+        <li class="my-plans__direction-item">
+          <h3 class="my-plans__countries">Тайланд, Индонезия</h3>
+
+          <span class="my-plans__compamions">1 попутчика</span>
+          <span class="my-plans__dates">1 июл - 15 июл</span>
+
+          <button class="my-plans__change-btn">изменить</button>
+        </li>
+      </ol>
+    </section>
+
+    <section class="add-plan">
+      <h2 class="add-plan__title section-title">Добавить план:</h2>
+
+      <ol class="add-plan__steps-list">
+        <li class="add-plan__step step">
+          <h3 class="step__title">Шаг 1. Даты пребывания</h3>
+
+          <p class="step__description">
+            Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+          </p>
+
+          <form class="step__form form-dates" action="https://echo.htmlacademy.ru">
+            <label class="form-dates__label" for="number-companions">ищу попутчиков: <span class="form-dates__units">чел.</span></label>
+            <input class="fotm-dates__numder" id="number-companions" type="text" value="2">
+
+            <label class="form-dates__label" for="number-days">длительность: <span class="form-dates__units">дн.</span></label>
+            <input class="fotm-dates__numder" id="number-days" type="text" value="2">
+
+            <input class="form-dates__checkbox visually-hidden" id="children" type="checkbox" checked>
+            <label class="form-dates__children" for="children">Можно с детьми</label>
+          </form>
+
+          <div class="step__calendar calendar">
+            <div class="calendar__title">
+              <button class="calendar__btn-back">назад</button>
+
+              <h3 class="calendar__month">Март 2019</h3>
+
+              <button class="calendar__btn-forward">вперёд</button>
+            </div>
+
+            <table class="calendar__table">
+              <tr class="calendar__t-row">
+                <th class="calendar__day-of-week">п</th>
+                <th class="calendar__day-of-week">в</th>
+                <th class="calendar__day-of-week">с</th>
+                <th class="calendar__day-of-week">ч</th>
+                <th class="calendar__day-of-week">п</th>
+                <th class="calendar__day-of-week">с</th>
+                <th class="calendar__day-of-week">в</th>
+              </tr>
+              <tr class="calendar__t-row">
+                <th class="calendar__number">23</th>
+                <th class="calendar__number">24</th>
+                <th class="calendar__number">25</th>
+                <th class="calendar__number">26</th>
+                <th class="calendar__number">27</th>
+                <th class="calendar__number">28</th>
+                <th class="calendar__number">1</th>
+              </tr>
+              <tr class="calendar__t-row">
+                <th class="calendar__number">2</th>
+                <th class="calendar__number">3</th>
+                <th class="calendar__number">4</th>
+                <th class="calendar__number">5</th>
+                <th class="calendar__number">6</th>
+                <th class="calendar__number">7</th>
+                <th class="calendar__number">8</th>
+              </tr>
+              <tr class="calendar__t-row">
+                <th class="calendar__number">9</th>
+                <th class="calendar__number">10</th>
+                <th class="calendar__number">11</th>
+                <th class="calendar__number">12</th>
+                <th class="calendar__number">13</th>
+                <th class="calendar__number">14</th>
+                <th class="calendar__number">15</th>
+              </tr>
+              <tr class="calendar__t-row">
+                <th class="calendar__number">16</th>
+                <th class="calendar__number">17</th>
+                <th class="calendar__number">18</th>
+                <th class="calendar__number">19</th>
+                <th class="calendar__number">20</th>
+                <th class="calendar__number">21</th>
+                <th class="calendar__number">22</th>
+              </tr>
+              <tr class="calendar__t-row">
+                <th class="calendar__number">23</th>
+                <th class="calendar__number">24</th>
+                <th class="calendar__number">25</th>
+                <th class="calendar__number">26</th>
+                <th class="calendar__number">27</th>
+                <th class="calendar__number">28</th>
+                <th class="calendar__number">29</th>
+              </tr>
+              <tr class="calendar__t-row">
+                <th class="calendar__number">30</th>
+                <th class="calendar__number">31</th>
+                <th class="calendar__number">1</th>
+                <th class="calendar__number">2</th>
+                <th class="calendar__number">3</th>
+                <th class="calendar__number">4</th>
+                <th class="calendar__number">5</th>
+              </tr>
+            </table>
+          </div>
+
+          <button class="step__next-ster-btn">следующий шаг</button>
+        </li>
+
+        <li class="add-plan__step step">
+          <h3 class="step__title">Шаг 2. Маршруты</h3>
+
+          <p class="step__description">
+            Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+          </p>
+
+          <ul class="step__add-countries-list">
+            <li class="step__contry-item">
+              <div class="step__country-name">Босния и Герцеговина</div>
+              <div class="step__country-flag"></div>
+
+              <button class="step__country-delete" type="button">удалить страну</button>
+            </li>
+
+            <li class="step__contry-item">
+              <div class="step__country-name">Чехия</div>
+              <div class="step__country-flag"></div>
+
+              <button class="step__country-delete" type="button">удалить страну</button>
+            </li>
+
+            <li class="step__contry-item">
+              <div class="step__country-choose">выберите страну</div>
+
+              <button class="step__country-delete" type="button">удалить страну</button>
+            </li>
+
+            <li class="step__contry-item">
+              <div class="step__country-add">добавить страну</div>
+            </li>
+          </ul>
+
+          <button class="step__next-step-btn" type="button">следующий шаг</button>
+
+          <button class="step__prev-step-btn" type="button">на шаг назад</button>
+        </li>
+
+        <li class="add-plan__step step">
+          <h3 class="step__title">Шаг 3. Развлечения</h3>
+
+          <p class="step__description">
+            Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+          </p>
+
+          <form class="step__form form-actions" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="form-actions__list">
+              <li class="form-actions__item">
+                <h4 class="form-action__contry">Босния и Герцнговина</h4>
+                <textarea class="form-action__plan" name="action-plan" placeholder="План действий"></textarea>
+              </li>
+
+              <li class="form-actions__item">
+                <h4 class="form-action__contry">Чехия</h4>
+                <textarea class="form-action__plan" name="action-plan" placeholder="План действий">
+                  Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                </textarea>
+              </li>
+            </ul>
+
+            <button class="step__next-ster-btn" type="submit">отправить</button>
+          </form>
+
+          <button class="step__prev-step-btn" type="button">на шаг назад</button>
+        </li>
+      </ol>
     </section>
   </main>
 
