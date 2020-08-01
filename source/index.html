@@ -12,24 +12,24 @@
       <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
     </a>
 
-    <nav class="menu">
+    <nav class="page-header__menu menu">
       <button class="menu__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
       <ul class="menu__main-nav-list nav-list">
         <li class="nav-list__item">
-          <a>
+          <a class="nav-list__link">
             о сервисе
           </a>
         </li>
         <li class="nav-list__item">
-          <a href="directions.html">
+          <a class="nav-list__link" href="directions.html">
             направления
           </a>
         </li>
         <li class="nav-list__item">
-          <a href="companions.html">
+          <a class="nav-list__link" href="companions.html">
             попутчики
           </a>
         </li>
@@ -141,7 +141,7 @@
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
 
-      <a class="about-servuce__button button" href="#">Подробнее</a>
+      <a class="about-service__button button" href="#">Подробнее</a>
     </section>
 
     <section class="directions">
@@ -169,7 +169,7 @@
             Джунгли зовут!
           </p>
 
-          <span class="number-of-users">18321</span>
+          <span class="country-item__number-of-users">18321</span>
         </li>
 
         <li class="direction__item country-item">
@@ -183,7 +183,7 @@
             Трэ бьен, манифик!
           </p>
 
-          <span class="number-of-users">12518</span>
+          <span class="country-item__number-of-users">12518</span>
         </li>
 
         <li class="direction__item country-item">
@@ -197,7 +197,7 @@
             Закоулки старой Европы
           </p>
 
-          <span class="number-of-users">5326</span>
+          <span class="country-item__number-of-users">5326</span>
         </li>
       </ul>
 
@@ -219,7 +219,7 @@
 
       <ul class="companions__list">
         <li class="companions__item companion-card">
-          <h3 class="companions-card__title">
+          <h3 class="companion-card__title">
             Таня Фирсова
           </h3>
 
@@ -331,6 +331,44 @@
       </dl>
 
       <a class="rates__button js-business-rates" href="#">Показать тарифы для бизнеса</a>
+    </section>
+
+    <secton class="authorization">
+      <h2 class="authorization__title">Заинтересовались?</h2>
+
+      <p class="authorization__paragraph">
+        Зарегистрируйтесь, это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее <a class="authorization__link" href="#">авторизуйтесь</a>.
+      </p>
+
+      <form class="authorization__form" action="https://echo.htmlacademy.ru">
+        <input class="authorization__email" type="email">
+
+        <button class="authorization__submit-btn" type="submit"></button>
+      </form>
+
+      <p class="authorization__paragraph">
+        Остались вопросы?
+        Мы с радостью на них ответим!
+      </p>
+
+      <div class="autorization__contacts contacts">
+        <a class="contacts__tel" href="tel:88005558628">
+          8 800 555-86-28
+        </a>
+
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+    </secton>
+
+    <section class="location">
+      <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+
+      <button class="location__btn">Проложить маршрут</button>
+
+      <div class="locaion__map"></div>
     </section>
   </main>
 
