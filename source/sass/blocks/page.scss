@@ -1,8 +1,14 @@
-// .page {}
-
-.page__body {
-  margin: 0;
-  background-color: $basic_grey_light;
+.page {
+  height: 100%;
+  // font-size: 18px;
+  font-family: "Blogger-sans";
+  // line-height: 27px;
 }
 
-
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic_grey_light;
+  color: #000000;
+}

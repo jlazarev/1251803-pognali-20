@@ -18,55 +18,57 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <ul class="menu__main-nav-list nav-list">
-        <li class="nav-list__item">
-          <a class="nav-list__link">
-            о сервисе
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="directions.html">
-            направления
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="companions.html">
-            попутчики
-          </a>
-        </li>
-      </ul>
+      <div class="menu__content">
+        <ul class="menu__main-nav-list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link">
+              о сервисе
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="directions.html">
+              направления
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="companions.html">
+              попутчики
+            </a>
+          </li>
+        </ul>
 
-      <a class="menu__login js-login" href="login.html">
-        авторизация
-      </a>
-
-      <div class="menu__contacts contacts">
-        <a class="contacts__tel" href="tel:88005558628">
-          8 800 555-86-28
+        <a class="menu__login js-login" href="login.html">
+          авторизация
         </a>
 
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
+        <div class="menu__contacts contacts">
+          <a class="contacts__tel" href="tel:88005558628">
+            8 800 555-86-28
+          </a>
+
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </div>
+
+        <ul class="menu__social-list socail-list">
+          <li class="social-list__item">
+            <a href="#">
+              фейсбук
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">
+              вконтакте
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">
+              инстаграмм
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <ul class="menu__social-list socail-list">
-        <li class="social-list__item">
-          <a href="#">
-            фейсбук
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#">
-            вконтакте
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#">
-            инстаграмм
-          </a>
-        </li>
-      </ul>
     </nav>
   </header>
 
@@ -74,59 +76,61 @@
     <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий: «Погнали»</h1>
 
     <section class="promo">
-      <h2 class="promo__title">
-        В путешествие<br>
-        с крутыми<br>
-        попутчиками!<br>
-      </h2>
+      <div class="promo__wrapper wrapper">
+        <h2 class="promo__title">
+          В путешествие<br>
+          с крутыми<br>
+          попутчиками!<br>
+        </h2>
 
-      <div class="promo__contacts contacts">
-        <a class="contacts__tel" href="tel:88005558628">
-          8 800 555-86-28
-        </a>
+        <div class="promo__contacts">
+          <a class="promo__tel" href="tel:88005558628">
+            <span class="visually-hidden">8 800 555-86-28</span>
+          </a>
 
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
+          <a class="promo__email" href="mailto:mail@htmlacademy.ru">
+            <span class="visually-hidden">mail@htmlacademy.ru</span>
+          </a>
+
+          <a class="promo__login js-login" href="login.html">
+            авторизация
+          </a>
+        </div>
+
+        <blockquote class="promo__quote">
+          <p class="promo__quote-text">
+            «Лучшее приложение,<br>
+            что я видел в жизни!»
+          </p>
+          <cite class="promo__quote-author">
+            Мурат Эльтазин<br>
+            главный редактор газеты
+            «гаджетлайф»
+          </cite>
+        </blockquote>
+
+        <ul class="promo__steps-list steps-list">
+          <li class="steps-list__item">
+            Выбурите<br>
+            направление
+          </li>
+
+          <li class="steps-list__item">
+            Изучите идеи<br>
+            путешественников
+          </li>
+
+          <li class="steps-list__item">
+            Находите тех,<br>
+            кто похож на вас
+          </li>
+
+          <li class="steps-list__item">
+            Путешествуйте<br>
+            вместе!
+          </li>
+        </ul>
       </div>
-
-      <a class="promo__login js-login" href="login.html">
-        авторизация
-      </a>
-
-      <blockquote class="promo__quote">
-        <p>
-          «Лучшее приложение,<br>
-          что я видел в жизни!»
-        </p>
-        <cite>
-          Мурат Эльтазин<br>
-          главный редактор газеты
-          «гаджетлайф»
-        </cite>
-      </blockquote>
-
-      <ul class="promo__steps-list steps-list">
-        <li class="steps-list__item">
-          Выбурите<br>
-          направление
-        </li>
-
-        <li class="steps-list__item">
-          Изучите идеи<br>
-          путешественников
-        </li>
-
-        <li class="steps-list__item">
-          Находите тех,<br>
-          кто похож на вас
-        </li>
-
-        <li class="steps-list__item">
-          Путешествуйте<br>
-          вместе!
-        </li>
-      </ul>
     </section>
 
     <section class="about-service">
