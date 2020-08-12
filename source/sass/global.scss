@@ -32,8 +32,33 @@ html {
   }
 
   @media (min-width: $desktop-width) {
-    width: 1320px;
+    width: 1440px;
     padding: 0 60px;
     margin: 0 auto;
   }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special_orange;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.button {
+  color: $basic_blue_light;
+  background-color: $basic_yellow;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 29px;
+  padding-left: 33px;
+  height: 80px;
+  text-decoration: none;
+  border-radius: 20px;
 }

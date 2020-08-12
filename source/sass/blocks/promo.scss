@@ -3,6 +3,16 @@
   color: $basic_white;
 }
 
+.promo__top {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .promo__title {
   font-weight: bold;
   font-size: 36px;
@@ -23,6 +33,12 @@
 .promo__contacts {
   display: flex;
   justify-content: center;
+  margin-top: 245px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
 }
 
 .promo__tel {
@@ -40,7 +56,6 @@
     width: 18px;
     height: 18px;
     background-image: url("../../img/export/icon_call.svg");
-
   }
 }
 
@@ -59,7 +74,6 @@
     width: 18px;
     height: 16px;
     background-image: url("../../img/export/icon_mail.svg");
-
   }
 }
 
@@ -67,5 +81,28 @@
   width: 190px;
   height: 40px;
   background-color: $basic_yellow;
-  border-radius: 50%;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_blue;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+.promo__quote {
+  width: 264px;
+}
+
+.promo__quote-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic_white;
+}
+
+.promo__quote-author {
+  font-style: normal;
 }
