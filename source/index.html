@@ -243,35 +243,37 @@
 
         <ul class="companions__list">
           <li class="companions__item companion-card">
-            <h3 class="companion-card__title">
-              Таня Фирсова
-            </h3>
+            <div class="companions-card__top">
+              <h3 class="companion-card__title">
+                Таня Фирсова
+              </h3>
 
-            <div class="status status-off"></div>
+              <div class="status status-off"></div>
+            </div>
 
             <img class="companion-card__photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
 
             <div class="companion-card__level">99 level</div>
 
-            <ul class="companion-card__want-visit-list want-visit-list">
-              <li class="want-visit-list__item">
+            <ul class="companion-card__visit-list">
+              <li class="companion-card__visit">
                 Шри-Ланка
               </li>
-              <li class="want-visit-list__item">
+              <li class="companion-card__visit">
                 Тайланд
               </li>
-              <li class="want-visit-list__item">
+              <li class="companion-card__visit">
                 Сейшелы
               </li>
             </ul>
 
             <ul class="companion-card__hashtag-list">
-              <li class="hashtag-item">#ЗОЖ</li>
-              <li class="hashtag-item">#ПП</li>
-              <li class="hashtag-item">#Фитнес</li>
-              <li class="hashtag-item">#пляж</li>
-              <li class="hashtag-item">#авокадо</li>
-              <li class="hashtag-item">#смузи</li>
+              <li class="companion-card__hashtag">#ЗОЖ</li>
+              <li class="companion-card__hashtag">#ПП</li>
+              <li class="companion-card__hashtag">#Фитнес</li>
+              <li class="companion-card__hashtag">#пляж</li>
+              <li class="companion-card__hashtag">#авокадо</li>
+              <li class="companion-card__hashtag">#смузи</li>
             </ul>
 
             <ul class="companions-card__transport-list">
@@ -283,21 +285,23 @@
           </li>
 
           <li class="companions__item companion-card">
-            <h3 class="companions-card__title">
-              Петя Демин
-            </h3>
+            <div class="companion-card__top">
+              <h3 class="companion-card__title">
+                Петя Демин
+              </h3>
 
-            <div class="status status-on"></div>
+              <div class="status status-on"></div>
+            </div>
 
             <img class="companion-card__photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
 
             <div class="companion-card__level">80 level</div>
 
-            <ul class="companion-card__want-visit-list want-visit-list">
-              <li class="want-visit-list__item">
+            <ul class="companion-card__visit-list">
+              <li class="companion-card__visit">
                 Бельгия
               </li>
-              <li class="want-visit-list__item">
+              <li class="companion-card__visit">
                 Чехия
               </li>
             </ul>
@@ -324,105 +328,115 @@
     </section>
 
     <section class="rates">
-      <h2 class="rates__title title">
-        Добавьте свой профиль
-      </h2>
+      <div class="rates__wrapper wrapper">
+        <h2 class="rates__title title">
+          Добавьте свой профиль
+        </h2>
 
-      <dl class="rates__rate-list">
-        <div class="rates__item">
-          <dt class="rates__description">
-            Базовое размещений
-          </dt>
-          <dd class="stats__price">
-            Бесплатно
-          </dd>
-        </div>
-        <div class="rates__item">
-          <dt class="rates__description">
-            Вывод на первых позициях
-          </dt>
-          <dd class="stats__price">
-            99 руб./мес
-          </dd>
-        </div>
-        <div class="rates__item">
-          <dt class="rates__description">
-            Кастомные цвета карточки
-          </dt>
-          <dd class="stats__price">
-            59 руб./мес
-          </dd>
-        </div>
-      </dl>
+        <dl class="rates__list">
+          <div class="rates__item">
+            <dt class="rates__description">
+              Базовое размещений
+            </dt>
+            <dd class="rates__price">
+              Бесплатно
+            </dd>
+          </div>
+          <div class="rates__item">
+            <dt class="rates__description">
+              Вывод на первых позициях
+            </dt>
+            <dd class="rates__price">
+              99 руб./мес
+            </dd>
+          </div>
+          <div class="rates__item">
+            <dt class="rates__description">
+              Кастомные цвета карточки
+            </dt>
+            <dd class="rates__price">
+              59 руб./мес
+            </dd>
+          </div>
+        </dl>
 
-      <a class="rates__button js-business-rates" href="#">Показать тарифы для бизнеса</a>
+        <a class="rates__button js-business-rates" href="#">Показать тарифы для бизнеса</a>
+      </div>
     </section>
 
-    <secton class="authorization">
-      <h2 class="authorization__title">Заинтересовались?</h2>
+    <section class="authorization">
+      <div class="authorization__wrapper wrapper">
+        <h2 class="authorization__title title">Заинтересовались?</h2>
 
-      <p class="authorization__paragraph">
-        Зарегистрируйтесь, это быстро и бесплатно!
-        Уже зарегистрированы? Тогда скорее <a class="authorization__link" href="#">авторизуйтесь</a>.
-      </p>
+        <p class="authorization__paragraph">
+          Зарегистрируйтесь, это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a class="authorization__link" href="#">авторизуйтесь</a>.
+        </p>
 
-      <form class="authorization__form" action="https://echo.htmlacademy.ru">
-        <input class="authorization__email" type="email">
+        <form class="authorization__form" action="https://echo.htmlacademy.ru">
+          <input class="authorization__email" type="email">
 
-        <button class="authorization__submit-btn" type="submit"></button>
-      </form>
+          <button class="authorization__submit-btn button" type="submit"></button>
+        </form>
 
-      <p class="authorization__paragraph">
-        Остались вопросы?
-        Мы с радостью на них ответим!
-      </p>
+        <p class="authorization__paragraph">
+          Остались вопросы?
+          Мы с радостью на них ответим!
+        </p>
 
-      <div class="autorization__contacts contacts">
-        <a class="contacts__tel" href="tel:88005558628">
-          8 800 555-86-28
-        </a>
+        <div class="autorization__contacts contacts">
+          <a class="contacts__tel" href="tel:88005558628">
+            8 800 555-86-28
+          </a>
 
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </div>
       </div>
-    </secton>
+    </section>
 
     <section class="location">
-      <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+      <div class="location__box">
+        <div class="location__wrapper wrapper">
+          <address class="location__address">ул. Большая Конюшенная, 19/8</address>
 
-      <button class="location__btn">Проложить маршрут</button>
+          <button class="location__btn button">Проложить маршрут</button>
+        </div>
+      </div>
 
-      <div class="locaion__map"></div>
+      <div class="location__map"></div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
-    </a>
+    <div class="page-footer__wrapper wrapper">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
+      </a>
 
-    <ul class="page-footer__social-list socail-list">
-      <li class="social-list__item">
-        <a href="#">
-          фейсбук
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#">
-          вконтакте
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#">
-          инстаграмм
-        </a>
-      </li>
-    </ul>
+      <ul class="page-footer__social-list socail-list">
+        <li class="social-list__item">
+          <a href="#">
+            фейсбук
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#">
+            вконтакте
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#">
+            инстаграмм
+          </a>
+        </li>
+      </ul>
 
-    <div class="developed">
-      <span class="developed__span">Разраотано</span>
-      <a href="" class="developed__link">HTML Academy</a>
+      <div class="developed">
+        <span class="developed__span">Разраотано</span>
+        <a href="" class="developed__link">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

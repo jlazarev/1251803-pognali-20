@@ -1,0 +1,27 @@
+.rates__list {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_grey;
+}
+
+.rates__item {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.rates__price {
+  margin: 0;
+}
+
+.rates__button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: $rates_link;
+  text-decoration: none;
+}

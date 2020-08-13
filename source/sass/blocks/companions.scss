@@ -1,3 +1,75 @@
 .companions {
   background-color: $bg_blue;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 134px;
+  }
+}
+
+.companions__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+  }
+}
+
+.companions__paragraph {
+  font-weight: 300;
+  color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.companions__paragraph:last-of-type {
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.companions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+  }
+}
+
+.companions__item {
+  width: 270px;
+  min-height: 428px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    min-height: 483px;
+  }
+}
+
+.companions__item:first-of-type {
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
+}
+
+.companions__button {
+  display: block;
 }

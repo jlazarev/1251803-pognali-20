@@ -1,0 +1,59 @@
+.companion-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $basic_white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.companion-card__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: $basic_blue_light;
+}
+
+.companion-card__photo {
+  order: -1;
+}
+
+.companion-card__level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.companion-card__visit-list {
+  order: -1;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.companion-card__hashtag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.companion-card__hashtag {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_grey;
+}
+
+.companions-card__transport-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}

@@ -134,228 +134,231 @@
     <section class="add-plan">
       <h2 class="add-plan__title section-title">Добавить план:</h2>
 
-      <ol class="add-plan__steps-list">
-        <li class="add-plan__step step">
-          <h3 class="step__title">Шаг 1. Даты пребывания</h3>
+      <form class="add-plan__form" action="https://echo.htmlacademy.ru">
+        <ol class="add-plan__steps-list">
+          <li class="add-plan__step step">
+            <h3 class="step__title">Шаг 1. Даты пребывания</h3>
 
-          <p class="step__description">
-            Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
-          </p>
+            <p class="step__description">
+              Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
 
-          <form class="step__form form-dates" action="https://echo.htmlacademy.ru">
-            <label class="form-dates__label" for="number-companions">ищу попутчиков: <span class="form-dates__units">чел.</span></label>
-            <input class="fotm-dates__numder" id="number-companions" type="text" value="2">
 
-            <label class="form-dates__label" for="number-days">длительность: <span class="form-dates__units">дн.</span></label>
-            <input class="fotm-dates__numder" id="number-days" type="text" value="2">
+              <label class="form-dates__label" for="number-companions">ищу попутчиков: <span class="form-dates__units">чел.</span></label>
+              <input class="fotm-dates__numder" id="number-companions" type="text" value="2">
 
-            <input class="form-dates__checkbox visually-hidden" id="children" type="checkbox" checked>
-            <label class="form-dates__children" for="children">Можно с детьми</label>
-          </form>
+              <label class="form-dates__label" for="number-days">длительность: <span class="form-dates__units">дн.</span></label>
+              <input class="fotm-dates__numder" id="number-days" type="text" value="2">
 
-          <div class="step__calendar calendar">
-            <div class="calendar__title">
-              <button class="calendar__btn-back">назад</button>
+              <input class="form-dates__checkbox visually-hidden" id="children" type="checkbox" checked>
+              <label class="form-dates__children" for="children">Можно с детьми</label>
 
-              <h3 class="calendar__month">Март 2019</h3>
 
-              <button class="calendar__btn-forward">вперёд</button>
-            </div>
+            <div class="step__calendar calendar">
+              <div class="calendar__title">
+                <button class="calendar__btn-back">назад</button>
 
-            <table class="calendar__table">
-              <tr class="calendar__t-row">
-                <th class="calendar__day-of-week">п</th>
-                <th class="calendar__day-of-week">в</th>
-                <th class="calendar__day-of-week">с</th>
-                <th class="calendar__day-of-week">ч</th>
-                <th class="calendar__day-of-week">п</th>
-                <th class="calendar__day-of-week">с</th>
-                <th class="calendar__day-of-week">в</th>
-              </tr>
-              <tr class="calendar__t-row">
-                <th class="calendar__number">23</th>
-                <th class="calendar__number">24</th>
-                <th class="calendar__number">25</th>
-                <th class="calendar__number">26</th>
-                <th class="calendar__number">27</th>
-                <th class="calendar__number">28</th>
-                <th class="calendar__number">1</th>
-              </tr>
-              <tr class="calendar__t-row">
-                <th class="calendar__number">2</th>
-                <th class="calendar__number">3</th>
-                <th class="calendar__number">4</th>
-                <th class="calendar__number">5</th>
-                <th class="calendar__number">6</th>
-                <th class="calendar__number">7</th>
-                <th class="calendar__number">8</th>
-              </tr>
-              <tr class="calendar__t-row">
-                <th class="calendar__number">9</th>
-                <th class="calendar__number">10</th>
-                <th class="calendar__number">11</th>
-                <th class="calendar__number">12</th>
-                <th class="calendar__number">13</th>
-                <th class="calendar__number">14</th>
-                <th class="calendar__number">15</th>
-              </tr>
-              <tr class="calendar__t-row">
-                <th class="calendar__number">16</th>
-                <th class="calendar__number">17</th>
-                <th class="calendar__number">18</th>
-                <th class="calendar__number">19</th>
-                <th class="calendar__number">20</th>
-                <th class="calendar__number">21</th>
-                <th class="calendar__number">22</th>
-              </tr>
-              <tr class="calendar__t-row">
-                <th class="calendar__number">23</th>
-                <th class="calendar__number">24</th>
-                <th class="calendar__number">25</th>
-                <th class="calendar__number">26</th>
-                <th class="calendar__number">27</th>
-                <th class="calendar__number">28</th>
-                <th class="calendar__number">29</th>
-              </tr>
-              <tr class="calendar__t-row">
-                <th class="calendar__number">30</th>
-                <th class="calendar__number">31</th>
-                <th class="calendar__number">1</th>
-                <th class="calendar__number">2</th>
-                <th class="calendar__number">3</th>
-                <th class="calendar__number">4</th>
-                <th class="calendar__number">5</th>
-              </tr>
-            </table>
-          </div>
+                <h3 class="calendar__month">Март 2019</h3>
 
-          <button class="step__next-ster-btn">следующий шаг</button>
-        </li>
-
-        <li class="add-plan__step step">
-          <h3 class="step__title">Шаг 2. Маршруты</h3>
-
-          <p class="step__description">
-            Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
-          </p>
-
-          <ul class="step__add-countries-list">
-            <li class="step__contry-item">
-              <div class="step__country-name">Босния и Герцеговина</div>
-              <div class="step__country-flag"></div>
-
-              <button class="step__country-delete" type="button">удалить страну</button>
-            </li>
-
-            <li class="step__contry-item">
-              <div class="step__country-name">Чехия</div>
-              <div class="step__country-flag"></div>
-
-              <button class="step__country-delete" type="button">удалить страну</button>
-            </li>
-
-            <li class="step__contry-item">
-              <div class="step__country-choose">выберите страну</div>
-
-              <div class="step__choose-block">
-                <table class="country-filter__alphabet">
-                  <tr class="country-filter__table-row">
-                    <td class="country-filter__letter country-filter__letter--focus">а</td>
-                    <td class="country-filter__letter">б</td>
-                    <td class="country-filter__letter">в</td>
-                    <td class="country-filter__letter">г</td>
-                    <td class="country-filter__letter">д</td>
-                  </tr>
-                  <tr class="country-filter__table-row">
-                    <td class="country-filter__letter">е</td>
-                    <td class="country-filter__letter">з</td>
-                    <td class="country-filter__letter">и</td>
-                    <td class="country-filter__letter">к</td>
-                    <td class="country-filter__letter">л</td>
-                  </tr>
-                  <tr class="country-filter__table-row">
-                    <td class="country-filter__letter">м</td>
-                    <td class="country-filter__letter">н</td>
-                    <td class="country-filter__letter">о</td>
-                    <td class="country-filter__letter">п</td>
-                    <td class="country-filter__letter">р</td>
-                  </tr>
-                  <tr class="country-filter__table-row">
-                    <td class="country-filter__letter">с</td>
-                    <td class="country-filter__letter">т</td>
-                    <td class="country-filter__letter">у</td>
-                    <td class="country-filter__letter">ф</td>
-                    <td class="country-filter__letter">х</td>
-                  </tr>
-                  <tr class="country-filter__table-row">
-                    <td class="country-filter__letter">ч</td>
-                    <td class="country-filter__letter">ш</td>
-                    <td class="country-filter__letter">э</td>
-                    <td class="country-filter__letter">ю</td>
-                    <td class="country-filter__letter">я</td>
-                  </tr>
-                </table>
-
-                <ul class="country-filter__country-list">
-                  <li class="country-filter__country-item">Австралия</li>
-                  <li class="country-filter__country-item">Австрия</li>
-                  <li class="country-filter__country-item">Азербайджан</li>
-                  <li class="country-filter__country-item">Албпния</li>
-                  <li class="country-filter__country-item">Алжир</li>
-                  <li class="country-filter__country-item">Ангола</li>
-                  <li class="country-filter__country-item">Андора</li>
-                  <li class="country-filter__country-item">Антигуа и Барбуда</li>
-                  <li class="country-filter__country-item">Аргентина</li>
-                  <li class="country-filter__country-item">Армения</li>
-                  <li class="country-filter__country-item">Афганистан</li>
-                </ul>
-
-                <button class="country-filter__close" type="button">
-                  свернуть
-                </button>
+                <button class="calendar__btn-forward">вперёд</button>
               </div>
 
-              <button class="step__country-delete" type="button">удалить страну</button>
-            </li>
+              <table class="calendar__table">
+                <tr class="calendar__t-row">
+                  <th class="calendar__day-of-week">п</th>
+                  <th class="calendar__day-of-week">в</th>
+                  <th class="calendar__day-of-week">с</th>
+                  <th class="calendar__day-of-week">ч</th>
+                  <th class="calendar__day-of-week">п</th>
+                  <th class="calendar__day-of-week">с</th>
+                  <th class="calendar__day-of-week">в</th>
+                </tr>
+                <tr class="calendar__t-row">
+                  <th class="calendar__number">23</th>
+                  <th class="calendar__number">24</th>
+                  <th class="calendar__number">25</th>
+                  <th class="calendar__number">26</th>
+                  <th class="calendar__number">27</th>
+                  <th class="calendar__number">28</th>
+                  <th class="calendar__number">1</th>
+                </tr>
+                <tr class="calendar__t-row">
+                  <th class="calendar__number">2</th>
+                  <th class="calendar__number">3</th>
+                  <th class="calendar__number">4</th>
+                  <th class="calendar__number">5</th>
+                  <th class="calendar__number">6</th>
+                  <th class="calendar__number">7</th>
+                  <th class="calendar__number">8</th>
+                </tr>
+                <tr class="calendar__t-row">
+                  <th class="calendar__number">9</th>
+                  <th class="calendar__number">10</th>
+                  <th class="calendar__number">11</th>
+                  <th class="calendar__number">12</th>
+                  <th class="calendar__number">13</th>
+                  <th class="calendar__number">14</th>
+                  <th class="calendar__number">15</th>
+                </tr>
+                <tr class="calendar__t-row">
+                  <th class="calendar__number">16</th>
+                  <th class="calendar__number">17</th>
+                  <th class="calendar__number">18</th>
+                  <th class="calendar__number">19</th>
+                  <th class="calendar__number">20</th>
+                  <th class="calendar__number">21</th>
+                  <th class="calendar__number">22</th>
+                </tr>
+                <tr class="calendar__t-row">
+                  <th class="calendar__number">23</th>
+                  <th class="calendar__number">24</th>
+                  <th class="calendar__number">25</th>
+                  <th class="calendar__number">26</th>
+                  <th class="calendar__number">27</th>
+                  <th class="calendar__number">28</th>
+                  <th class="calendar__number">29</th>
+                </tr>
+                <tr class="calendar__t-row">
+                  <th class="calendar__number">30</th>
+                  <th class="calendar__number">31</th>
+                  <th class="calendar__number">1</th>
+                  <th class="calendar__number">2</th>
+                  <th class="calendar__number">3</th>
+                  <th class="calendar__number">4</th>
+                  <th class="calendar__number">5</th>
+                </tr>
+              </table>
+            </div>
 
-            <li class="step__contry-item">
-              <div class="step__country-add">добавить страну</div>
-            </li>
-          </ul>
+            <button class="step__next-ster-btn">следующий шаг</button>
+          </li>
 
-          <button class="step__next-step-btn" type="button">следующий шаг</button>
+          <li class="add-plan__step step">
+            <h3 class="step__title">Шаг 2. Маршруты</h3>
 
-          <button class="step__prev-step-btn" type="button">на шаг назад</button>
-        </li>
+            <p class="step__description">
+              Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+            </p>
 
-        <li class="add-plan__step step">
-          <h3 class="step__title">Шаг 3. Развлечения</h3>
+            <ul class="step__add-countries-list">
+              <li class="step__contry-item">
+                <div class="step__country-name">Босния и Герцеговина</div>
+                <div class="step__country-flag"></div>
 
-          <p class="step__description">
-            Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-          </p>
-
-          <form class="step__form form-actions" action="https://echo.htmlacademy.ru" method="get">
-            <ul class="form-actions__list">
-              <li class="form-actions__item">
-                <h4 class="form-action__contry">Босния и Герцнговина</h4>
-                <textarea class="form-action__plan" name="action-plan" placeholder="План действий"></textarea>
+                <button class="step__country-delete" type="button">удалить страну</button>
               </li>
 
-              <li class="form-actions__item">
-                <h4 class="form-action__contry">Чехия</h4>
-                <textarea class="form-action__plan" name="action-plan" placeholder="План действий">
-                  Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                </textarea>
+              <li class="step__contry-item">
+                <div class="step__country-name">Чехия</div>
+                <div class="step__country-flag"></div>
+
+                <button class="step__country-delete" type="button">удалить страну</button>
+              </li>
+
+              <li class="step__contry-item">
+                <div class="step__country-choose">выберите страну</div>
+
+                <div class="step__choose-block">
+                  <table class="country-filter__alphabet">
+                    <tr class="country-filter__table-row">
+                      <td class="country-filter__letter country-filter__letter--focus">а</td>
+                      <td class="country-filter__letter">б</td>
+                      <td class="country-filter__letter">в</td>
+                      <td class="country-filter__letter">г</td>
+                      <td class="country-filter__letter">д</td>
+                    </tr>
+                    <tr class="country-filter__table-row">
+                      <td class="country-filter__letter">е</td>
+                      <td class="country-filter__letter">з</td>
+                      <td class="country-filter__letter">и</td>
+                      <td class="country-filter__letter">к</td>
+                      <td class="country-filter__letter">л</td>
+                    </tr>
+                    <tr class="country-filter__table-row">
+                      <td class="country-filter__letter">м</td>
+                      <td class="country-filter__letter">н</td>
+                      <td class="country-filter__letter">о</td>
+                      <td class="country-filter__letter">п</td>
+                      <td class="country-filter__letter">р</td>
+                    </tr>
+                    <tr class="country-filter__table-row">
+                      <td class="country-filter__letter">с</td>
+                      <td class="country-filter__letter">т</td>
+                      <td class="country-filter__letter">у</td>
+                      <td class="country-filter__letter">ф</td>
+                      <td class="country-filter__letter">х</td>
+                    </tr>
+                    <tr class="country-filter__table-row">
+                      <td class="country-filter__letter">ч</td>
+                      <td class="country-filter__letter">ш</td>
+                      <td class="country-filter__letter">э</td>
+                      <td class="country-filter__letter">ю</td>
+                      <td class="country-filter__letter">я</td>
+                    </tr>
+                  </table>
+
+                  <ul class="country-filter__country-list">
+                    <li class="country-filter__country-item">Австралия</li>
+                    <li class="country-filter__country-item">Австрия</li>
+                    <li class="country-filter__country-item">Азербайджан</li>
+                    <li class="country-filter__country-item">Албпния</li>
+                    <li class="country-filter__country-item">Алжир</li>
+                    <li class="country-filter__country-item">Ангола</li>
+                    <li class="country-filter__country-item">Андора</li>
+                    <li class="country-filter__country-item">Антигуа и Барбуда</li>
+                    <li class="country-filter__country-item">Аргентина</li>
+                    <li class="country-filter__country-item">Армения</li>
+                    <li class="country-filter__country-item">Афганистан</li>
+                  </ul>
+
+                  <button class="country-filter__close" type="button">
+                    свернуть
+                  </button>
+                </div>
+
+                <button class="step__country-delete" type="button">удалить страну</button>
+              </li>
+
+              <li class="step__contry-item">
+                <div class="step__country-add">добавить страну</div>
               </li>
             </ul>
 
-            <button class="step__next-ster-btn" type="submit">отправить</button>
-          </form>
+            <button class="step__next-step-btn" type="button">следующий шаг</button>
 
-          <button class="step__prev-step-btn" type="button">на шаг назад</button>
-        </li>
-      </ol>
+            <button class="step__prev-step-btn" type="button">на шаг назад</button>
+          </li>
+
+          <li class="add-plan__step step">
+            <h3 class="step__title">Шаг 3. Развлечения</h3>
+
+            <p class="step__description">
+              Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+            </p>
+
+            <form class="step__form form-actions" action="https://echo.htmlacademy.ru" method="get">
+              <ul class="form-actions__list">
+                <li class="form-actions__item">
+                  <h4 class="form-action__contry">Босния и Герцнговина</h4>
+                  <textarea class="form-action__plan" name="action-plan" placeholder="План действий"></textarea>
+                </li>
+
+                <li class="form-actions__item">
+                  <h4 class="form-action__contry">Чехия</h4>
+                  <textarea class="form-action__plan" name="action-plan" placeholder="План действий">
+                    Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                  </textarea>
+                </li>
+              </ul>
+
+              <button class="step__next-ster-btn" type="submit">отправить</button>
+            </form>
+
+            <button class="step__prev-step-btn" type="button">на шаг назад</button>
+          </li>
+        </ol>
+      </form>
+
     </section>
   </main>
 

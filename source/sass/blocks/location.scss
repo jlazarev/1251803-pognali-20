@@ -1,0 +1,43 @@
+.location__box {
+  background-color: $basic_yellow;
+}
+
+.location__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.location__address {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $basic_blue_light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.location__btn {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 3px solid $bg_blue;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.location__map {
+  height: 40px;
+  background-color: tomato;
+}
+

@@ -28,7 +28,7 @@ html {
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,11 +54,21 @@ html {
   color: $basic_blue_light;
   background-color: $basic_yellow;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 24px;
-  padding-top: 29px;
-  padding-left: 33px;
-  height: 80px;
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 22px;
+  padding-left: 23px;
+  height: 62px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 10px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 29px;
+    padding-left: 33px;
+    height: 80px;
+  }
 }
