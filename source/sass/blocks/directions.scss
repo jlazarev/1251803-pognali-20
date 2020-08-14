@@ -1,0 +1,39 @@
+.direction__wrapper {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 800px min-content;
+    grid-template-rows: min-content min-content min-content;
+    min-height: 575px;
+  }
+}
+
+.directions__paragraph {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.directions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    height: 100%;
+    margin-top: 88px;
+    grid-row: 1 / -1;
+  }
+}
+
+.directions__button {
+  display: block;
+}

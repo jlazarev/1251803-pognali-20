@@ -1,0 +1,51 @@
+.about-service {
+  background-color: $bg-blue;
+  padding-top: 96px;
+  padding-bottom: 20px;
+  color: $basic_white;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0 0 20px 20px;
+}
+
+.about-service__wrapper {
+  padding-left: 50px;
+  padding-right: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 385px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 690px;
+  }
+}
+
+.about-service__paragraph {
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.about-service__paragraph:last-of-type {
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.about-service__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 280px;
+  }
+}
