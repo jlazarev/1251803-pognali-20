@@ -19,6 +19,7 @@
   line-height: 40px;
   text-align: center;
   margin: 0;
+  margin-top: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -33,7 +34,7 @@
 .promo__contacts {
   display: flex;
   justify-content: center;
-  margin-top: 245px;
+  margin-top: 246px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -82,17 +83,21 @@
   background-color: $basic_yellow;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $basic_blue;
   text-decoration: none;
-  padding-top: 12px;
+  padding-top: 11px;
 }
 
 .promo__quote {
   width: 264px;
+  margin: 0;
+  margin-top: 11px;
+  margin-left: 25px;
+  margin-bottom: 30px;
 }
 
 .promo__quote-text {
@@ -100,8 +105,12 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic_white;
+  margin-bottom: 18px;
 }
 
 .promo__quote-author {
   font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
 }

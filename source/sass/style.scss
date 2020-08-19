@@ -1,7 +1,6 @@
 // Начните писать стили здесь
 
 @import "variables.scss";
-@import "mixins.scss";
 @import "fonts.scss";
 @import "global.scss";
 @import "blocks/page.scss";
@@ -19,3 +18,6 @@
 @import "blocks/contacts.scss";
 @import "blocks/location.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/page-title.scss";
+@import "blocks/user-profile.scss";
+@import "blocks/social-list.scss";

@@ -54,6 +54,7 @@ html {
 }
 
 .button {
+  display: block;
   color: $basic_blue_light;
   background-color: $basic_yellow;
   font-weight: bold;
@@ -64,7 +65,6 @@ html {
   height: 62px;
   text-decoration: none;
   border-radius: 10px;
-  display: block;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;

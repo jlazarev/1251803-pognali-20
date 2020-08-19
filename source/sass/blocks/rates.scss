@@ -1,3 +1,20 @@
+.rates {
+  padding-bottom: 39px;
+  background-color: $basic_grey_light;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.rates__wrapper {
+  padding-left: 50px;
+  padding-top: 31px;
+}
+
+.rates__title {
+  margin-bottom: 44px;
+}
+
 .rates__list {
   font-weight: 300;
   font-size: 16px;
@@ -6,7 +23,14 @@
 }
 
 .rates__item {
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid $border_grey_light;
+  padding-top: 12px;
+
+  &:last-child {
+    border-bottom: 1px solid $border_grey_light;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,12 +40,17 @@
 
 .rates__price {
   margin: 0;
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 15px;
 }
 
 .rates__button {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
   color: $rates_link;
   text-decoration: none;
+  margin-top: 29px;
 }

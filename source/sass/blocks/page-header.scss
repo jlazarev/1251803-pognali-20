@@ -1,3 +1,16 @@
 .page-header {
   background-color: $basic_blue;
 }
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  display: block;
+  width: 96px;
+  height: 15px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}

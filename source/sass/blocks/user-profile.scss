@@ -1,0 +1,42 @@
+.user-profile__level {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-profile__photo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-profile__change-photo-btn {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_blue;
+  background-color: $special_blue_light;
+  border: none;
+  padding: 12.5px 0;
+  border-radius: 20px;
+}
+
+.user-profile__inner-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_blue_light;
+}
+
+.user-profile__hashtag-list,
+.user-profile__transport-list {
+  border: 1px solid $border_grey;
+  border-radius: 10px;
+}

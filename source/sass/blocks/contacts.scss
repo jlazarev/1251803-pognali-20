@@ -7,13 +7,34 @@
   }
 }
 
+.contacts--in-menu {
+  display: none;
+}
+
 .contacts__tel,
 .contacts__email {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: $basic_yellow;
   text-transform: uppercase;
+  padding-left: 61px;
+  padding-top: 14px;
+  text-decoration: none;
+  min-height: 45px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $blue_dark;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 28px;

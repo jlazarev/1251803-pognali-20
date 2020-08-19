@@ -1,15 +1,15 @@
 .about-service {
   background-color: $bg-blue;
-  padding-top: 96px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 67px;
   color: $basic_white;
   font-size: 16px;
   line-height: 22px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
 }
 
 .about-service__wrapper {
-  padding-left: 50px;
+  padding-left: 49px;
   padding-right: 60px;
 
   @media (min-width: $tablet-width) {

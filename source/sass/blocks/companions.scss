@@ -1,6 +1,9 @@
 .companions {
   background-color: $bg_blue;
-  padding-bottom: 31px;
+  margin-top: -50px;
+  padding-top: 96px;
+  padding-bottom: 30px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 87px;
@@ -19,9 +22,18 @@
   }
 }
 
+.companions__title {
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
 .companions__paragraph {
   font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   color: $basic_white;
+  margin-left: 24px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
@@ -42,6 +54,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 55px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
