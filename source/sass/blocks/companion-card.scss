@@ -6,6 +6,10 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+  }
 }
 
 .companion-card__title {
@@ -16,10 +20,22 @@
   color: $basic_blue_light;
   margin-top: 1px;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+    margin-top: 5px;
+    margin-bottom: 24px;
+  }
 }
 
 .companion-card__photo {
   order: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .companion-card__level {
@@ -35,6 +51,11 @@
   color: $basic_white;
   text-align: center;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 21px;
+  }
 }
 
 .companion-card__level-number {
@@ -77,6 +98,10 @@
   justify-content: center;
   margin: 0 37px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 27px;
+  }
 }
 
 .companion-card__hashtag {
@@ -84,6 +109,12 @@
   line-height: 18px;
   color: $special_grey;
   margin-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 6px;
+  }
 }
 
 .companions-card__transport-list {
@@ -93,6 +124,10 @@
   margin: 0;
   padding: 0 10px;
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
 }
 
 .transport {

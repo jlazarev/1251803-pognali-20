@@ -10,12 +10,34 @@
   &--open-menu {
     background-color: $basic_white;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 132px;
+  }
 }
 
 .page-header__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
+.page-header__box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 4;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    right: 40px;
+    justify-content: center;
+  }
 }
 
 .page-header__logo {
@@ -24,6 +46,15 @@
   height: 15px;
   padding-top: 28px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 164px;
+    height: 42px;
+    background-color: #cccccc;
+  }
 }
 
 .page-header__menu-toggle {
@@ -52,6 +83,10 @@
   &::after {
     top: 39px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .page-header--open-menu .page-header__menu-toggle {
@@ -59,7 +94,7 @@
   &::after {
     width: 24px;
     height: 2px;
-    background-color:  $grey;
+    background-color: $grey;
     border-radius: 1.5px;
   }
 
@@ -74,16 +109,12 @@
   }
 }
 
-.page-header__menu {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 110px;
-  }
-}
-
 .page-main {
   margin-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 132px;
+  }
 }
 
 // close-menu
@@ -94,6 +125,12 @@
 
 .page-header--close-menu .menu__login {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
 }
 
 .page-header--close-menu .menu__contacts {

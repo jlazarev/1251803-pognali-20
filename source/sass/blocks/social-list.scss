@@ -5,9 +5,20 @@
   justify-content: center;
 }
 
+.social-list--in-menu {
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+}
+
 .social-list__item {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: $basic_yellow;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
 }

@@ -7,6 +7,8 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 87px;
+    padding-top: 149px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +27,11 @@
 .companions__title {
   margin-left: 24px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 58px;
+  }
 }
 
 .companions__paragraph {
@@ -38,6 +45,9 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
+    margin-left: 0;
+    padding-right: 140px;
+    margin-bottom: 41px;
   }
 }
 
@@ -59,6 +69,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,4 +96,8 @@
 
 .companions__button {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+  }
 }

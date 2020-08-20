@@ -4,15 +4,34 @@
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 87px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .rates__wrapper {
   padding-left: 50px;
   padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+  }
 }
 
 .rates__title {
   margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-left: 28px;
+    margin-bottom: 77px;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .rates__list {
@@ -20,6 +39,12 @@
   font-size: 16px;
   line-height: 16px;
   color: $special_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 80px;
+  }
 }
 
 .rates__item {
@@ -35,6 +60,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 19px;
   }
 }
 
@@ -43,6 +70,10 @@
   padding: 0;
   margin-top: 6px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .rates__button {
@@ -53,4 +84,11 @@
   color: $rates_link;
   text-decoration: none;
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 57px;
+    padding-left: 79px;
+  }
 }

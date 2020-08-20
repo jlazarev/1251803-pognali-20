@@ -6,6 +6,13 @@
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 95px;
+    padding-bottom: 62px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .authorization__title {
@@ -22,6 +29,16 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 32px;
+    margin-top: 60px;
+
+    & .break-mobile {
+      display: none;
+    }
+
+    &:last-of-type {
+      letter-spacing: 0.2px;
+      padding-left: 5px;
+    }
   }
 }
 
@@ -39,6 +56,8 @@
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
+    margin-top: 68px;
+    margin-bottom: -3px;
   }
 }
 
@@ -74,4 +93,8 @@
 
 .autorization__contacts {
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+  }
 }

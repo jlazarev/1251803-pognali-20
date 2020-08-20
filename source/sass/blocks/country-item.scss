@@ -30,6 +30,8 @@
     flex-grow: 1;
     margin-top: 0;
     border-radius: 0;
+    padding-top: 29px;
+    padding-left: 31px;
   }
 }
 
@@ -48,6 +50,19 @@
     width: 35px;
     height: 24px;
     background-color: tomato;
+
+    @media (min-width: $tablet-width) {
+      width: 70px;
+      height: 47px;
+      top: -12px;
+      right: -35px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
   }
 }
 
@@ -60,6 +75,11 @@
   color: $special_grey;
   opacity: 0.3;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .country-item__number-of-users {
@@ -82,6 +102,11 @@
     left: 25px;
     width: 11px;
     height: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

@@ -3,11 +3,17 @@
   position: relative;
   z-index: 3;
   background-color: $basic_grey_light;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+    padding-bottom: 81px;
+  }
 }
 
 .direction__wrapper {
   display: block;
-  padding-bottom: 34px;
+  // padding-bottom: 34px;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -20,6 +26,11 @@
 .directions__title {
   margin-top: 69px;
   margin-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 58px;
+  }
 }
 
 .directions__paragraph {
@@ -33,6 +44,8 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
+    margin-left: 1px;
+    margin-bottom: 107px;
   }
 }
 
@@ -52,4 +65,8 @@
 .directions__button {
   display: block;
   margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+  }
 }

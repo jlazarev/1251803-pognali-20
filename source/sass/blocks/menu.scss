@@ -1,7 +1,18 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.1px;
+}
 
 .menu__main-nav-list {
   list-style: none;
   margin-top: 59px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 42px;
+    padding-left: 57px;
+  }
 }
 
 .nav-list__link {
@@ -14,6 +25,12 @@
   text-decoration: none;
   color: $bg_blue;
   padding-right: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+  }
 }
 
 .menu__login {
@@ -32,8 +49,32 @@
   color: $basic_blue;
   padding-top: 10px;
   padding-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-top: 40px;
+    align-self: flex-end;
+    min-width: 188px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-right: 0;
+  }
+}
+
+.menu__contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 114px;
+    padding-left: 57px;
+  }
 }
 
 .menu__social-list {
   margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 115px;
+    margin-left: 56px;
+    margin-bottom: 59px;
+  }
 }
