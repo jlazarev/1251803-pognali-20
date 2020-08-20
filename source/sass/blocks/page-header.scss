@@ -1,10 +1,21 @@
 .page-header {
   background-color: $basic_blue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 73px;
+  z-index: 4;
+  padding-bottom: 13px;
+
+  &--open-menu {
+    background-color: $basic_white;
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .page-header__logo {
@@ -13,4 +24,113 @@
   height: 15px;
   padding-top: 28px;
   padding-bottom: 28px;
+}
+
+.page-header__menu-toggle {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  width: 25px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: $basic_white;
+  }
+
+  &::before {
+    top: 31px;
+  }
+
+  &::after {
+    top: 39px;
+  }
+}
+
+.page-header--open-menu .page-header__menu-toggle {
+  &::before,
+  &::after {
+    width: 24px;
+    height: 2px;
+    background-color:  $grey;
+    border-radius: 1.5px;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+    top: 35px;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+    top: 35px;
+  }
+}
+
+.page-header__menu {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 110px;
+  }
+}
+
+.page-main {
+  margin-top: 73px;
+}
+
+// close-menu
+
+.page-header--close-menu .menu__main-nav-list {
+  display: none;
+}
+
+.page-header--close-menu .menu__login {
+  display: none;
+}
+
+.page-header--close-menu .menu__contacts {
+  display: none;
+}
+
+.page-header--close-menu .menu__social-list {
+  display: none;
+}
+
+// nojs
+
+.page-header--nojs .page-header__menu-toggle {
+  display: none;
+}
+
+.page-header--nojs {
+  position: static;
+  background-color: $basic_white;
+}
+
+.page-header--nojs ~ .page-main {
+  margin-top: 0;
+}
+
+.page-header--nojs .menu__main-nav-list {
+  display: block;
+}
+
+.page-header--nojs .menu__login {
+  display: block;
+}
+
+.page-header--nojs .menu__contacts {
+  display: block;
+}
+
+.page-header--nojs .menu__social-list {
+  display: flex;
 }

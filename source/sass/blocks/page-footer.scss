@@ -20,12 +20,16 @@
   margin-bottom: 36px;
 }
 
+.page-footer__social-list {
+  margin: 0;
+}
+
 .page-footer__developed {
   display: flex;
   justify-content: space-between;
   margin-top: 37px;
   align-self: stretch;
-  border-top: 1px solid $grey;
+  border-top: 1px solid $footer_grey_light;
 }
 
 .page-footer__developed-span {

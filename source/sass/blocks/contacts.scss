@@ -7,10 +7,6 @@
   }
 }
 
-.contacts--in-menu {
-  display: none;
-}
-
 .contacts__tel,
 .contacts__email {
   display: block;
@@ -24,6 +20,10 @@
   text-decoration: none;
   min-height: 45px;
   position: relative;
+
+  &--in-menu {
+    color: $bg_blue;
+  }
 
   &::before {
     content: "";

@@ -1,47 +1,39 @@
-.menu__toggle {
-  padding-top: 28px;
-  padding-bottom: 28px;
-  width: 25px;
-  background-color: transparent;
-  border: none;
-  position: relative;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 25px;
-    height: 3px;
-    border-radius: 1.5px;
-    background-color: $basic_white;
-  }
-
-  &::after {
-    top: 31px;
-  }
-
-  &::before {
-    top: 39px;
-  }
-}
 
 .menu__main-nav-list {
-  display: none;
-}
-
-.menu__login {
-  display: none;
-}
-
-.menu__contacts {
-  display: none;
+  list-style: none;
+  margin-top: 59px;
 }
 
 .nav-list__link {
-  color: $basic_white;
+  display: block;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg_blue;
+  padding-right: 38px;
+}
+
+.menu__login {
+  display: block;
+  min-height: 50px;
+  background: $basic_yellow;
+  border-radius: 25px;
+  margin-top: 54px;
+  margin-bottom: 49px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic_blue;
+  padding-top: 10px;
+  padding-right: 2px;
 }
 
 .menu__social-list {
-  display: none;
+  margin-top: 31px;
 }

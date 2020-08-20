@@ -8,17 +8,19 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--close-menu page-header--nojs">
     <div class="page-header__wrapper wrapper">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
-      </a>
 
-      <nav class="page-header__menu menu">
-        <button class="menu__toggle" type="button">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
+        </a>
+
+        <button class="page-header__menu-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
+
+      <nav class="page-header__menu menu">
           <ul class="menu__main-nav-list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link">
@@ -41,30 +43,30 @@
             авторизация
           </a>
 
-          <div class="menu__contacts contacts contacts--in-menu">
-            <a class="contacts__tel" href="tel:88005558628">
+          <div class="menu__contacts contacts">
+            <a class="contacts__tel contacts__tel--in-menu" href="tel:88005558628">
               8 800 555-86-28
             </a>
 
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+            <a class="contacts__email contacts__email--in-menu" href="mailto:mail@htmlacademy.ru">
               mail@htmlacademy.ru
             </a>
           </div>
 
-          <ul class="menu__social-list socail-list">
+          <ul class="menu__social-list social-list">
             <li class="social-list__item">
               <a href="#">
-                фейсбук
+                <span class="visually-hidden">фейсбук</span>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#">
-                вконтакте
+                <span class="visually-hidden">вконтакте</span>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#">
-                инстаграмм
+                <span class="visually-hidden">инстаграмм</span>
               </a>
             </li>
           </ul>
@@ -470,6 +472,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var header = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__menu-toggle');
+
+    header.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (header.classList.contains('page-header--close-menu')) {
+        header.classList.remove('page-header--close-menu');
+        header.classList.add('page-header--open-menu');
+      } else {
+        header.classList.add('page-header--close-menu');
+        header.classList.remove('page-header--open-menu');
+      }
+    });
+  </script>
 </body>
 
 </html>
