@@ -29,14 +29,10 @@
     min-height: 68px;
   }
 
-  &--in-menu {
-    color: $bg_blue;
-  }
-
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 0;
     height: 45px;
     width: 45px;
@@ -47,5 +43,44 @@
       height: 68px;
       width: 68px;
     }
+  }
+}
+
+
+.contacts__tel--in-menu,
+.contacts__email--in-menu {
+  color: $bg_blue;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  & span {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+}
+
+.contacts__tel--in-menu::before {
+  @media (min-width: $desktop-width) {
+    background-color: $special_orange;
+  }
+}
+
+.contacts__email--in-menu::before {
+  @media (min-width: $desktop-width) {
+    background-color: $special_yellow_dark;
   }
 }

@@ -2,16 +2,41 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 0.1px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-grow: 1;
+  }
 }
 
 .menu__main-nav-list {
   list-style: none;
   margin-top: 59px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     padding-top: 42px;
     padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    padding-top: 19px;
+    padding-left: 145px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      width: 60px;
+      height: 2px;
+      background-color: $basic_white;
+    }
   }
 }
 
@@ -30,6 +55,14 @@
     font-size: 60px;
     line-height: 71px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_white;
+    padding-right: 0;
+    margin-right: 34px;
   }
 }
 
@@ -60,12 +93,23 @@
     padding-top: 14px;
     padding-right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin: 0;
+    margin-top: 3px;
+    align-self: flex-start;
+  }
 }
 
 .menu__contacts {
   @media (min-width: $tablet-width) {
     padding-top: 114px;
     padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
