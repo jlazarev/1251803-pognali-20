@@ -13,6 +13,11 @@
     padding-bottom: 89px;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 231px;
+    padding-bottom: 163px;
+  }
 }
 
 .about-service__wrapper {
@@ -46,15 +51,35 @@
       display: inline;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+
+    & .break-tablet {
+      display: none;
+    }
+  }
 }
 
 .about-service__paragraph:last-of-type {
   font-weight: bold;
 
+  & .break-desktop {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 25px;
     margin-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+
+    & .break-desktop {
+      display: inline;
+    }
   }
 }
 
@@ -65,5 +90,9 @@
     display: block;
     width: 276px;
     margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 86px;
   }
 }

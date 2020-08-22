@@ -9,6 +9,10 @@
     padding-bottom: 87px;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 189px;
+  }
 }
 
 .rates__wrapper {
@@ -17,6 +21,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
   }
 }
 
@@ -32,6 +40,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+    margin-bottom: 136px;
+  }
 }
 
 .rates__list {
@@ -44,6 +57,11 @@
     font-size: 28px;
     line-height: 28px;
     margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 171px;
+    margin-right: 345px;
   }
 }
 
@@ -90,5 +108,10 @@
     line-height: 20px;
     margin-top: 57px;
     padding-left: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+    padding-left: 170px;
   }
 }

@@ -9,6 +9,11 @@
     border-radius: 0 0 60px 60px;
     padding-bottom: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 93px;
+    padding-bottom: 82px;
+  }
 }
 
 .direction__wrapper {
@@ -30,6 +35,11 @@
     margin-left: 0;
     margin-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
+    margin-bottom: 32px;
+  }
 }
 
 .directions__paragraph {
@@ -46,6 +56,11 @@
     margin-left: 1px;
     margin-bottom: 107px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    margin-left: 2px;
+  }
 }
 
 .directions__list {
@@ -56,9 +71,12 @@
   @media (min-width: $desktop-width) {
     order: -1;
     height: 100%;
-    margin-top: 88px;
+    margin-top: 68px;
+    margin-left: 70px;
+    margin-right: 170px;
     grid-row: 1 / -1;
   }
+
 }
 
 .directions__button {
@@ -67,5 +85,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -7px;
+    margin-left: 3px;
+    width: 275px;
   }
 }

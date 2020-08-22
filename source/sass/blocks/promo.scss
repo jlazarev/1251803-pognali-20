@@ -1,11 +1,23 @@
 .promo {
   background-color: $basic_blue;
   color: $basic_white;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 60px 60px;
+    padding-bottom: 123px;
+  }
 }
 
 .promo__wrapper {
   @media (min-width: $tablet-width) {
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px;
+    border-radius: 0 0 60px 60px;
   }
 }
 
@@ -16,6 +28,10 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -36,6 +52,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-top: 103px;
+    margin-left: 68px;
   }
 }
 
@@ -101,7 +119,7 @@
 }
 
 .promo__quote {
-  width: 345px;
+  max-width: 345px;
   margin: 0;
   margin-top: 11px;
   margin-left: 25px;
@@ -110,6 +128,12 @@
   @media (min-width: $tablet-width) {
     margin-left: 33px;
     margin-bottom: 213px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    padding-left: 60px;
+    margin-bottom: 0;
   }
 }
 
