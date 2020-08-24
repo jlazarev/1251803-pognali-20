@@ -4,6 +4,11 @@
   border-top: 1px solid $calendar_grey;
   border-bottom: 1px solid $calendar_grey;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 16px;
+    margin-bottom: 0;
+  }
 }
 
 .calendar__btn {
@@ -13,6 +18,12 @@
   border: none;
   opacity: 0.3;
   margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 34px;
+    margin-top: 26px;
+  }
 }
 
 .calendar__month {
@@ -22,16 +33,27 @@
   margin: 0;
   margin-top: 10px;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+  }
 }
 
 .calendar__box {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+  }
 }
 
 .calendar__proportion {
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 91%;
 }
 
 .calendar__table {
@@ -45,6 +67,11 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .calendar__day-of-week {
@@ -53,7 +80,11 @@
   padding-top: 25%;
 
   &--weekend {
-    color: $basic_red
+    color: $basic_red;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54%;
   }
 }
 
@@ -68,5 +99,9 @@
 
   &:nth-child(7n+1) {
     border-left: 1px solid $calendar_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30%;
   }
 }

@@ -176,21 +176,28 @@
                 длительность.
               </p>
 
+              <div class="form__box">
+                <div class="form__block">
+                  <label class="form__label" for="number-companions">
+                    <span>ищу попутчиков:</span>
+                    <span class="form__units">чел.</span>
+                  </label>
+                  <input class="form__numder" id="number-companions" type="text" value="2">
+                </div>
 
-                <label class="form__label" for="number-companions">
-                  <span>ищу попутчиков:</span>
-                  <span class="form__units">чел.</span>
-                </label>
-                <input class="form__numder" id="number-companions" type="text" value="2">
+                <div class="form__block">
+                  <label class="form__label" for="number-days">
+                    <span>длительность:</span>
+                    <span class="form__units">дн.</span>
+                  </label>
+                  <input class="form__numder" id="number-days" type="text" value="2">
+                </div>
 
-                <label class="form__label" for="number-days">
-                  <span>длительность:</span>
-                  <span class="form__units">дн.</span>
-                </label>
-                <input class="form__numder" id="number-days" type="text" value="2">
-
-                <input class="form__checkbox visually-hidden" id="children" type="checkbox" checked>
-                <label class="form__children" for="children">Можно с детьми</label>
+                <div class="form__block">
+                  <input class="form__checkbox visually-hidden" id="children" type="checkbox" checked>
+                  <label class="form__children" for="children">Можно с детьми</label>
+                </div>
+              </div>
 
               <div class="step__calendar calendar">
                 <div class="calendar__title">
@@ -268,7 +275,7 @@
                 </div>
               </div>
 
-              <button class="step__next-step-btn">следующий шаг</button>
+              <button class="step__next-step-btn">Следующий шаг</button>
             </li>
 
             <li class="add-plan__step step">
@@ -303,7 +310,7 @@
                 </li>
 
                 <li class="step__contry-item step__contry-item--choose step__contry-item--close">
-                  <div class="step__country-choose">выберите страну</div>
+                  <div class="step__country-name step__country-name--choose">выберите страну</div>
 
                   <div class="step__choose-block">
                     <table class="country-filter__alphabet">
@@ -365,13 +372,15 @@
                 </li>
 
                 <li class="step__contry-item step__contry-item--add">
-                  <div class="step__country-add">добавить страну</div>
+                  <div class="step__country-name step__country-name--add">добавить страну</div>
                 </li>
               </ul>
 
-              <button class="step__next-step-btn" type="button">следующий шаг</button>
+              <div class="step__btn-box">
+                <button class="step__next-step-btn" type="button">Следующий шаг</button>
 
-              <button class="step__prev-step-btn" type="button">на шаг назад</button>
+                <button class="step__prev-step-btn" type="button">На шаг назад</button>
+              </div>
             </li>
 
             <li class="add-plan__step step">
@@ -397,9 +406,11 @@
                 </li>
               </ul>
 
-              <button class="step__next-step-btn" type="submit">отправить</button>
+              <div class="step__btn-box">
+                <button class="step__next-step-btn" type="submit">отправить</button>
 
-              <button class="step__prev-step-btn" type="button">на шаг назад</button>
+                <button class="step__prev-step-btn" type="button">на шаг назад</button>
+              </div>
             </li>
           </ol>
         </form>
