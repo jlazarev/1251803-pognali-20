@@ -1,7 +1,67 @@
+.user-profile {
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: -83px;
+  }
+}
+
+.user-profile__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px;
+  padding-top: 24px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .user-profile__level {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  border: 3px solid $special_orange;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+  }
+}
+
+.user-profile__level-number {
+  display: block;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: $basic_blue;
+  padding-top: 14px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 53px;
+    width: 51px;
+    height: 1px;
+    background: $special_grey;
+    opacity: 0.3;
+  }
+}
+
+.user-profile__level-title {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: $special_grey;
+  padding-top: 8px;
 }
 
 .user-profile__photo {
@@ -9,6 +69,21 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+  }
+}
+
+.user-profile__bottom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -112px;
+  }
 }
 
 .user-profile__change-photo-btn {
@@ -22,8 +97,38 @@
   color: $basic_blue;
   background-color: $special_blue_light;
   border: none;
-  padding: 12.5px 0;
+  padding-top: 10px;
+  padding-bottom: 12px;
   border-radius: 20px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 22px;
+    letter-spacing: 0.09em;
+    margin-top: 23px;
+    margin-bottom: 52px;
+    border-radius: 10px;
+  }
+}
+
+.user-profile__hashtag-box,
+.user-profile__transport-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.user-profile__transport-box {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 50%;
+    align-self: center;
+  }
 }
 
 .user-profile__inner-title {
@@ -33,10 +138,75 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic_blue_light;
+  background-color: $basic_grey_light;
+  padding: 0 19px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .user-profile__hashtag-list,
 .user-profile__transport-list {
   border: 1px solid $border_grey;
   border-radius: 10px;
+  margin: 0;
+  margin-top: -25px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: -31px;
+  }
+}
+
+.user-profile__hashtag-list {
+  resize: none;
+  background-color: $basic_grey_light;
+  font-family: "Blogger-sans", "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_grey;
+  opacity: 0.6;
+  padding: 0 25px;
+  padding-top: 24px;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0 40px;
+    padding-top: 32px;
+    padding-bottom: 17px;
+  }
+}
+
+.user-profile__transport-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.user-profile__transport {
+  width: 32px;
+  height: 32px;
+  background-color: tomato;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
 }

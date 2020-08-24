@@ -53,6 +53,18 @@ html {
   }
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic_blue_light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .button {
   display: block;
   color: $basic_blue_light;
@@ -73,5 +85,31 @@ html {
     padding-top: 28px;
     padding-left: 33px;
     height: 80px;
+  }
+}
+
+.break-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.break-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.break-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
