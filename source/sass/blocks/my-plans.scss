@@ -9,6 +9,25 @@
     padding-top: 24px;
     padding-bottom: 91px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+    border-radius: 60px 60px 0 0;
+    padding-bottom: 80px;
+  }
+}
+
+.my-plans__wrapper {
+  @media (min-width: $desktop-width) {
+    padding-left: 124px;
+    padding-right: 58px;
+  }
+}
+
+.my-plans__title {
+  @media (min-width: $desktop-width) {
+    margin-left: 7px;
+  }
 }
 
 .my-plans__directions-list {
@@ -18,6 +37,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
   }
 }
 
@@ -61,6 +84,17 @@
       background-color: rgba($border_grey, 0.3);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 97px;
+    padding: 35px 42px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .my-plans__countries {
@@ -80,6 +114,12 @@
     margin-left: 0;
     margin-bottom: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 532px;
+    margin-bottom: 0;
+    margin-left: 53.4px;
+  }
 }
 
 .my-plans__compamions {
@@ -89,6 +129,13 @@
     width: 27%;
     margin-right: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 177px;
+    margin-right: 0;
+    padding-top: 3px;
+    margin-bottom: 0;
+  }
 }
 
 .my-plans__dates {
@@ -96,6 +143,13 @@
     width: 50%;
     text-align: right;
     padding-right: 14.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-right: 0;
+    padding-top: 3px;
+    margin-right: auto;
   }
 }
 
@@ -120,5 +174,12 @@
     letter-spacing: 0.1em;
     text-align: right;
     width: 20%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-top: -1px;
+    letter-spacing: 0.08em;
+    margin-left: 116px;
   }
 }

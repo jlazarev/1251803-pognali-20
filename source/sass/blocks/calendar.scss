@@ -9,6 +9,11 @@
     padding: 0 16px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: -16px;
+  }
 }
 
 .calendar__btn {
@@ -53,7 +58,15 @@
 .calendar__proportion {
   position: relative;
   width: 100%;
-  padding-bottom: 91%;
+  padding-bottom: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 91%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 49.95%;
+  }
 }
 
 .calendar__table {
@@ -85,6 +98,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 54%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23%;
+    text-align: left;
+    padding-left: 16px;
   }
 }
 

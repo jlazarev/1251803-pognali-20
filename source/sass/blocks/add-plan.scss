@@ -6,6 +6,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px 60px 0 0;
     padding-bottom: 18px;
   }
 }
@@ -16,6 +21,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-left: 70px;
+    margin-bottom: 57px;
   }
 }
 
@@ -31,5 +42,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }

@@ -112,12 +112,14 @@
   width: 60px;
   border: none;
   padding-top: 0;
+  height: 62px;
   padding-left: 40px;
   text-align: left;
 
   & span {
     font-family: "Blogger-sans", "Verdana", sans-serif;
     position: absolute;
+    left: 0;
     opacity: 0;
 
     @media (min-width: $desktop-width) {
@@ -129,10 +131,12 @@
   @media (min-width: $tablet-width) {
     border-radius: 0;
     width: 80px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
     width: 330px;
+    height: 81px;
   }
 }
 

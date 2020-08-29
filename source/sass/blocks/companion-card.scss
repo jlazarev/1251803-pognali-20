@@ -5,10 +5,16 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

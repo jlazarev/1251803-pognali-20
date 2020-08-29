@@ -21,7 +21,7 @@
   padding-top: 26px;
   padding-left: 24px;
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 60% 30%;
   grid-template-rows: min-content 1fr;
 
   @media (min-width: $tablet-width) {
@@ -79,7 +79,6 @@
 }
 
 .country-item__slogan {
-  width: 300px;
   min-height: 40px;
   font-weight: 500;
   font-size: 16px;
@@ -103,7 +102,7 @@
   grid-column: 2 / -1;
   grid-row: 1 / -1;
   padding-top: 2px;
-  padding-left: 43px;
+  padding-left: 32px;
   position: relative;
 
   &::before {
@@ -111,7 +110,7 @@
     position: absolute;
     background-color: tomato;
     top: 6px;
-    left: 25px;
+    left: 15px;
     width: 11px;
     height: 12px;
 

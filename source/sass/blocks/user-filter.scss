@@ -1,0 +1,207 @@
+.user-filter {
+  padding-top: 76px;
+}
+
+.user-filter__box {
+  background-color: $basic_yellow;
+  border-radius: 20px;
+  padding: 0 25px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+.user-filter__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $basic_blue_light;
+}
+
+.user-filter__form {
+  margin-top: 24px;
+}
+
+.user-filter__fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-filter__legend {
+  border-top: 1px solid $border_yellow;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic_blue_light;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    background-color: tomato;
+  }
+}
+
+.user-filter__label {
+  font-size: 15px;
+  line-height: 20px;
+  color: $basic_black;
+  padding-left: 26px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: $basic_white;
+  }
+
+  &:last-child {
+    margin-bottom: 12px;
+  }
+}
+
+.user-filter__transport-box {
+  display: flex;
+  padding-top: 6px;
+  padding-left: 1px;
+  padding-bottom: 19px;
+}
+
+.user-filter__transport {
+  width: 31px;
+  height: 31px;
+  background-color: $basic_white;
+  border-radius: 50%;
+  margin-right: 1px;
+}
+
+.user-filter__range-filter {
+  width: 100%;
+}
+
+.user-filter__level-controls {
+  border: 1px solid $border_grey;
+  border-radius: 4px;
+  display: flex;
+  margin-top: 3px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 35px;
+    background-color: $border_grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 11px;
+    left: 50%;
+    width: 16px;
+    height: 11px;
+    margin-left: -8px;
+    background-color: $border_grey;
+    border-top: 5px solid $basic_white;
+    border-bottom: 5px solid $basic_white;
+  }
+}
+
+.user-filter__level-input {
+  width: 50%;
+  border: none;
+  height: 35px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: $basic_blue_light;
+}
+
+.user-filter__range-controls {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.user-filter__scale {
+  height: 2px;
+  background-color: rgba($basic_blue_light, 0.2);
+  position: relative;
+}
+
+.user-filter__bar {
+  position: absolute;
+  width: 70%;
+  left: 30%;
+  height: 2px;
+  background-color: $basic_blue_light;
+}
+
+.user-filter__toggle {
+  position: absolute;
+  top: -4px;
+  // left: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $basic_blue_light;
+
+  &--min {
+    left: 30%;
+  }
+
+  &--max {
+    left: calc(100% - 10px);
+  }
+}
+
+.user-filter__submit-btn {
+  width: 100%;
+  height: 41px;
+  border-radius: 25px;
+  border: none;
+  font-family: inherit;
+  margin-top: 7px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $basic_blue;
+}
+
+//close-fieldset
+
+.user-filter__fieldset--close .user-filter__label {
+  display: none;
+}
