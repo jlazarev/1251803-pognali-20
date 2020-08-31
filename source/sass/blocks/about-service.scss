@@ -1,15 +1,27 @@
 .about-service {
   background-color: $bg-blue;
-  padding-top: 96px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 67px;
   color: $basic_white;
   font-size: 16px;
   line-height: 22px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -140px;
+    padding-top: 236px;
+    padding-bottom: 89px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 231px;
+    padding-bottom: 163px;
+  }
 }
 
 .about-service__wrapper {
-  padding-left: 50px;
+  padding-left: 49px;
   padding-right: 60px;
 
   @media (min-width: $tablet-width) {
@@ -26,18 +38,49 @@
 .about-service__paragraph {
   font-weight: 300;
 
+  & .break-tablet {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
+    margin-top: 42px;
+
+    & .break-tablet {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+
+    & .break-tablet {
+      display: none;
+    }
   }
 }
 
 .about-service__paragraph:last-of-type {
   font-weight: bold;
+  margin-top: 19px;
+
+  & .break-desktop {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 25px;
+    margin-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+
+    & .break-desktop {
+      display: inline;
+    }
   }
 }
 
@@ -46,6 +89,11 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 280px;
+    width: 276px;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 86px;
   }
 }

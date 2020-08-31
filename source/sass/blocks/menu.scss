@@ -1,7 +1,124 @@
-.menu__content {
-  display: none;
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.1px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+}
+
+.menu__main-nav-list {
+  list-style: none;
+  margin-top: 59px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 42px;
+    padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    padding-top: 19px;
+    padding-left: 145px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      width: 60px;
+      height: 2px;
+      background-color: $basic_white;
+    }
+  }
 }
 
 .nav-list__link {
-  color: $basic_white;
+  display: block;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg_blue;
+  padding-right: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_white;
+    padding-right: 0;
+    margin-right: 34px;
+  }
+}
+
+.menu__login {
+  display: block;
+  min-height: 50px;
+  background: $basic_yellow;
+  border-radius: 25px;
+  margin-top: 54px;
+  margin-bottom: 49px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic_blue;
+  padding-top: 10px;
+  padding-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-top: 40px;
+    align-self: flex-end;
+    min-width: 188px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin: 0;
+    margin-top: 3px;
+    align-self: flex-start;
+  }
+}
+
+.menu__contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 114px;
+    padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.menu__social-list {
+  margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 115px;
+    margin-left: 56px;
+    margin-bottom: 59px;
+  }
 }

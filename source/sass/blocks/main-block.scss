@@ -1,0 +1,10 @@
+.main-block {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 60px;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}

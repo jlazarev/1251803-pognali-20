@@ -8,68 +8,70 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
-    </a>
-
-    <nav class="page-header__menu menu">
-      <button class="menu__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
-      <div class="menu__content">
-        <ul class="menu__main-nav-list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link">
-              о сервисе
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="directions.html">
-              направления
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="companions.html">
-              попутчики
-            </a>
-          </li>
-        </ul>
-
-        <a class="menu__login js-login" href="login.html">
-          авторизация
+  <header class="page-header page-header--close-menu page-header--nojs">
+    <div class="page-header__wrapper wrapper">
+      <div class="page-header__box">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
         </a>
 
-        <div class="menu__contacts contacts">
-          <a class="contacts__tel" href="tel:88005558628">
-            8 800 555-86-28
-          </a>
-
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-        </div>
-
-        <ul class="menu__social-list socail-list">
-          <li class="social-list__item">
-            <a href="#">
-              фейсбук
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#">
-              вконтакте
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#">
-              инстаграмм
-            </a>
-          </li>
-        </ul>
+        <button class="page-header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
-    </nav>
+
+      <nav class="page-header__menu menu">
+          <ul class="menu__main-nav-list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link">
+                о сервисе
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="directions.html">
+                направления
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="companions.html">
+                попутчики
+              </a>
+            </li>
+          </ul>
+
+          <a class="menu__login js-login" href="login.html">
+            авторизация
+          </a>
+
+          <div class="menu__contacts contacts">
+            <a class="contacts__tel contacts__tel--in-menu" href="tel:88005558628">
+              <span>8 800 555-86-28</span>
+            </a>
+
+            <a class="contacts__email contacts__email--in-menu" href="mailto:mail@htmlacademy.ru">
+              <span>mail@htmlacademy.ru</span>
+            </a>
+          </div>
+
+          <ul class="menu__social-list social-list social-list--in-menu">
+            <li class="social-list__item">
+              <a href="#">
+                <span class="visually-hidden">фейсбук</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <span class="visually-hidden">вконтакте</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <span class="visually-hidden">инстаграмм</span>
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -105,15 +107,15 @@
             </p>
             <cite class="promo__quote-author">
               Мурат Эльтазин<br>
-              главный редактор газеты
-              «гаджетлайф»
+              главный редактор<br class="break">
+              газеты «гаджетлайф»
             </cite>
           </blockquote>
         </div>
 
         <ol class="promo__steps-list steps-list">
           <li class="steps-list__item">
-            Выбурите<br>
+            Выберите<br>
             направление
           </li>
 
@@ -142,11 +144,21 @@
         </h2>
 
         <p class="about-service__paragraph">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          Любое путешествие веселее<br class="break-mobile">
+          с попутчиками, которые на<br class="break-mobile">
+          одной волне<br class="break-tablet">
+          с тобой! Делитесь<br class="break-mobile">
+          своими идеями путешествий<br class="break-tablet">
+          и<br class="break-mobile">
+          черпайте вдохновение<br class="break-tablet">
+          в чужих.
         </p>
 
         <p class="about-service__paragraph">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          А если найдете кого-то<br class="break-mobile">
+          близкого по духу —<br class="break-desktop">
+          скорее<br class="break-mobile">
+          зовите в совместный трип!
         </p>
 
         <a class="about-service__button button" href="#">Подробнее</a>
@@ -171,7 +183,7 @@
           <li class="directions__item country-item">
             <div class="country-item__box">
               <h3 class="country-item__title">
-                Тайланд
+                Таиланд
               </h3>
 
               <p class="country-item__slogan">
@@ -223,7 +235,7 @@
           </li>
         </ul>
 
-        <a class="directions__button button" href="#">Показать все</a>
+        <a class="directions__button button" href="directions.html">Показать все</a>
       </div>
     </section>
 
@@ -234,11 +246,18 @@
         </h2>
 
         <p class="companions__paragraph">
-          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          Все мы индивидуальны и у<br class="break-mobile">
+          каждого свой взгляд на<br class="break-mobile">
+          идеальный отдых. Одному<br class="break-mobile">
+          нужен пляж и коктейль,<br class="break-tablet"><br class="break-desktop">
+          а<br class="break-mobile">
+          другому маршрут для хайкинга.
         </p>
 
         <p class="companions__paragraph">
-          Теперь можно легко найти единомышленников!
+          Теперь можно легко<br class="break-tablet"><br class="break-desktop">
+          найти<br class="break-mobile">
+          единомышленников!
         </p>
 
         <ul class="companions__list">
@@ -253,17 +272,20 @@
 
             <img class="companion-card__photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
 
-            <div class="companion-card__level">99 level</div>
+            <div class="companion-card__level">
+              <span class="companion-card__level-number">99</span>
+              level
+            </div>
 
             <ul class="companion-card__visit-list">
               <li class="companion-card__visit">
-                Шри-Ланка
+                <span class="visually-hidden">Шри-Ланка</span>
               </li>
               <li class="companion-card__visit">
-                Тайланд
+                <span class="visually-hidden">Тайланд</span>
               </li>
               <li class="companion-card__visit">
-                Сейшелы
+                <span class="visually-hidden">Сейшелы</span>
               </li>
             </ul>
 
@@ -277,10 +299,18 @@
             </ul>
 
             <ul class="companions-card__transport-list">
-              <li class="transport transport--on transport--plane">самолёт</li>
-              <li class="transport transport--off transport--bus">автобус</li>
-              <li class="transport transport--off transport--bicycle">велосипед</li>
-              <li class="transport transport--off transport--run">пешком</li>
+              <li class="transport transport--on transport--plane">
+                <span class="visually-hidden">самолёт</span>
+              </li>
+              <li class="transport transport--off transport--bus">
+                <span class="visually-hidden">автобус</span>
+              </li>
+              <li class="transport transport--off transport--bicycle">
+                <span class="visually-hidden">велосипед</span>
+              </li>
+              <li class="transport transport--off transport--run">
+                <span class="visually-hidden">пешком</span>
+              </li>
             </ul>
           </li>
 
@@ -295,30 +325,41 @@
 
             <img class="companion-card__photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
 
-            <div class="companion-card__level">80 level</div>
+            <div class="companion-card__level">
+              <span class="companion-card__level-number">80</span>
+              level
+            </div>
 
             <ul class="companion-card__visit-list">
-              <li class="companion-card__visit">
-                Бельгия
+              <li class="companion-card__visit companion-card__visit--belgium">
+                <span class="visually-hidden">Бельгия</span>
               </li>
               <li class="companion-card__visit">
-                Чехия
+                <span class="visually-hidden">Чехия</span>
               </li>
             </ul>
 
             <ul class="companion-card__hashtag-list">
-              <li class="hashtag-item">#бургер</li>
-              <li class="hashtag-item">#бар</li>
-              <li class="hashtag-item">#футбол</li>
-              <li class="hashtag-item">#концерт</li>
-              <li class="hashtag-item">#крафт</li>
+              <li class="companion-card__hashtag">#бургер</li>
+              <li class="companion-card__hashtag">#бар</li>
+              <li class="companion-card__hashtag">#футбол</li>
+              <li class="companion-card__hashtag">#концерт</li>
+              <li class="companion-card__hashtag">#крафт</li>
             </ul>
 
             <ul class="companions-card__transport-list">
-              <li class="transport transport--on transport--plane">самолёт</li>
-              <li class="transport transport--on transport--bus">автобус</li>
-              <li class="transport transport--off transport--bicycle">велосипед</li>
-              <li class="transport transport--on transport--run">пешком</li>
+              <li class="transport transport--on transport--plane">
+                <span class="visually-hidden">самолёт</span>
+              </li>
+              <li class="transport transport--on transport--bus">
+                <span class="visually-hidden">автобус</span>
+              </li>
+              <li class="transport transport--off transport--bicycle">
+                <span class="visually-hidden">велосипед</span>
+              </li>
+              <li class="transport transport--on transport--run">
+                <span class="visually-hidden">пешком</span>
+              </li>
             </ul>
           </li>
         </ul>
@@ -330,13 +371,15 @@
     <section class="rates">
       <div class="rates__wrapper wrapper">
         <h2 class="rates__title title">
-          Добавьте свой профиль
+          Добавьте<br>
+          свой<br>
+          профиль
         </h2>
 
         <dl class="rates__list">
           <div class="rates__item">
             <dt class="rates__description">
-              Базовое размещений
+              Базовое размещение
             </dt>
             <dd class="rates__price">
               Бесплатно
@@ -352,7 +395,7 @@
           </div>
           <div class="rates__item">
             <dt class="rates__description">
-              Кастомные цвета карточки
+              Кастомный цвет карточки
             </dt>
             <dd class="rates__price">
               59 руб./мес
@@ -369,18 +412,22 @@
         <h2 class="authorization__title title">Заинтересовались?</h2>
 
         <p class="authorization__paragraph">
-          Зарегистрируйтесь, это быстро и бесплатно!
-          Уже зарегистрированы? Тогда скорее <a class="authorization__link" href="#">авторизуйтесь</a>.
+          Зарегистрируйтесь,<br class="break-mobile">
+          это быстро и бесплатно!<br>
+          <span>Уже зарегистрированы? Тогда<br class="break-mobile">
+          скорее <a class="authorization__link" href="#">авторизуйтесь</a>.</span>
         </p>
 
         <form class="authorization__form" action="https://echo.htmlacademy.ru">
           <input class="authorization__email" type="email">
 
-          <button class="authorization__submit-btn button" type="submit"></button>
+          <button class="authorization__submit-btn button" type="submit">
+            <span>Регистрация</span>
+          </button>
         </form>
 
         <p class="authorization__paragraph">
-          Остались вопросы?
+          Остались вопросы?<br  class="break-mobile">
           Мы с радостью на них ответим!
         </p>
 
@@ -399,9 +446,12 @@
     <section class="location">
       <div class="location__box">
         <div class="location__wrapper wrapper">
-          <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+          <address class="location__address">
+            ул. Большая<br class="break-mobile">
+            Конюшенная, 19/8
+          </address>
 
-          <button class="location__btn button">Проложить маршрут</button>
+          <a class="location__btn button" href="#">Проложить маршрут</a>
         </div>
       </div>
 
@@ -415,30 +465,50 @@
         <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали">
       </a>
 
-      <ul class="page-footer__social-list socail-list">
+      <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a href="#">
-            фейсбук
+            <span class="visually-hidden">фейсбук</span>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#">
-            вконтакте
+            <span class="visually-hidden">вконтакте</span>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#">
-            инстаграмм
+            <span class="visually-hidden">инстаграмм</span>
           </a>
         </li>
       </ul>
 
-      <div class="developed">
-        <span class="developed__span">Разраотано</span>
-        <a href="" class="developed__link">HTML Academy</a>
+      <div class="page-footer__developed">
+        <span class="page-footer__developed-span">Разработано</span>
+
+        <a href="#" class="page-footer__developed-link">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
+
+  <script>
+    var header = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__menu-toggle');
+
+    header.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (header.classList.contains('page-header--close-menu')) {
+        header.classList.remove('page-header--close-menu');
+        header.classList.add('page-header--open-menu');
+      } else {
+        header.classList.add('page-header--close-menu');
+        header.classList.remove('page-header--open-menu');
+      }
+    });
+  </script>
 </body>
 
 </html>

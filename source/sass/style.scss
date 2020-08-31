@@ -1,7 +1,6 @@
 // Начните писать стили здесь
 
 @import "variables.scss";
-@import "mixins.scss";
 @import "fonts.scss";
 @import "global.scss";
 @import "blocks/page.scss";
@@ -19,3 +18,16 @@
 @import "blocks/contacts.scss";
 @import "blocks/location.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/page-title.scss";
+@import "blocks/user-profile.scss";
+@import "blocks/social-list.scss";
+@import "blocks/my-plans.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/step.scss";
+@import "blocks/calendar.scss";
+@import "blocks/form.scss";
+@import "blocks/country-filter.scss";
+@import "blocks/user-filter.scss";
+@import "blocks/users.scss";
+@import "blocks/user-card.scss";
+@import "blocks/main-block.scss"

@@ -1,0 +1,50 @@
+.add-plan {
+  background-color: $blue_dir;
+  border-radius: 27px 27px 0 0;
+  margin-top: -31px;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px 60px 0 0;
+    padding-bottom: 18px;
+  }
+}
+
+.add-plan__title {
+  margin: 0;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-left: 70px;
+    margin-bottom: 57px;
+  }
+}
+
+.add-plan__steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 63px;
+}
+
+.add-plan__step {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}

@@ -1,0 +1,114 @@
+.page-title {
+  padding-top: 19px;
+  padding-bottom: 15px;
+  background-color: $basic_blue;
+  color: $basic_white;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+    padding-top: 88px;
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 118px;
+    padding-bottom: 70px;
+  }
+}
+
+.page-title__wrapper {
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 51px;
+    margin: 0 auto;
+  }
+}
+
+.page-title__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 0 75px;
+    margin: 0;
+  }
+}
+
+.page-title__text {
+  display: block;
+  position: relative;
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -17px;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background-color: $special_orange;
+
+    @media (min-width: $tablet-width) {
+      bottom: -75px;
+      height: 8px;
+    }
+  }
+}
+
+.page-title__on-main {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic_white;
+    text-decoration: none;
+    margin-right: 68px;
+    padding-right: 66px;
+    padding-top: 23px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 6px;
+      width: 32px;
+      height: 18px;
+      background-color: tomato;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 66px;
+  }
+}

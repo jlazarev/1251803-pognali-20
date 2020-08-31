@@ -1,31 +1,66 @@
 .companions {
   background-color: $bg_blue;
-  padding-bottom: 31px;
+  margin-top: -50px;
+  padding-top: 96px;
+  padding-bottom: 30px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 87px;
+    padding-top: 149px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 134px;
+    padding-top: 138px;
+    padding-bottom: 75px;
   }
 }
 
 .companions__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: repeat(3, min-content) 1fr;
+    padding-left: 130px;
+  }
+}
+
+.companions__title {
+  margin-left: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 38px;
+    margin-bottom: 0;
   }
 }
 
 .companions__paragraph {
   font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   color: $basic_white;
+  margin-left: 24px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
+    margin-left: 0;
+    padding-right: 140px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 57px;
   }
 }
 
@@ -36,21 +71,31 @@
     font-size: 21px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 41px;
+  }
 }
 
 .companions__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 55px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / -1;
     grid-column: 2 / -1;
+    margin-top: 46px;
+    margin-bottom: 50px;
   }
 }
 
@@ -68,8 +113,23 @@
   @media (min-width: $tablet-width) {
     margin-right: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
 }
 
 .companions__button {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 86px;
+    margin-left: 1px;
+    width: 280px;
+  }
 }

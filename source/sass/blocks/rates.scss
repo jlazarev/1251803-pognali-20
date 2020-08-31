@@ -1,27 +1,117 @@
+.rates {
+  padding-bottom: 39px;
+  background-color: $basic_grey_light;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 87px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 189px;
+  }
+}
+
+.rates__wrapper {
+  padding-left: 50px;
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+  }
+}
+
+.rates__title {
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-left: 28px;
+    margin-bottom: 77px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+    margin-bottom: 136px;
+  }
+}
+
 .rates__list {
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
   color: $special_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 171px;
+    margin-right: 345px;
+  }
 }
 
 .rates__item {
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid $border_grey_light;
+  padding-top: 12px;
+
+  &:last-child {
+    border-bottom: 1px solid $border_grey_light;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 19px;
   }
 }
 
 .rates__price {
   margin: 0;
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .rates__button {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
   color: $rates_link;
   text-decoration: none;
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 57px;
+    padding-left: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+    padding-left: 170px;
+  }
 }

@@ -1,5 +1,28 @@
+.location {
+  margin-top: -30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+  }
+}
+
 .location__box {
   background-color: $basic_yellow;
+  padding-top: 62px;
+  padding-bottom: 35px;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 109px;
+    padding-bottom: 84px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 61px;
+  }
 }
 
 .location__wrapper {
@@ -8,6 +31,13 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 283px;
+    padding-right: 135px;
   }
 }
 
@@ -18,6 +48,47 @@
   line-height: 22px;
   text-transform: uppercase;
   color: $basic_blue_light;
+  padding-left: 61px;
+  min-height: 45px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 94px;
+    padding-top: 19px;
+
+    & .break-mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 121px;
+    padding-top: 35px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $blue_dark;
+
+    @media (min-width: $tablet-width) {
+      height: 68px;
+      width: 68px;
+      left: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 90px;
+      width: 90px;
+      top: 6px;
+      left: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
@@ -26,17 +97,36 @@
 }
 
 .location__btn {
-  padding: 0;
   margin: 0;
+  margin-top: 32px;
+  padding-top: 18px;
+  padding-left: 19px;
   width: 100%;
   border: 3px solid $bg_blue;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+    padding-top: 24px;
+    padding-left: 35px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 324px;
+    margin-top: 11px;
   }
 }
 
 .location__map {
-  height: 40px;
+  height: 322px;
+  margin-top: -30px;
   background-color: tomato;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    height: 578px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 516px;
+  }
 }

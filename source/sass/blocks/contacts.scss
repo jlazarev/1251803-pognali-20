@@ -9,14 +9,92 @@
 
 .contacts__tel,
 .contacts__email {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: $basic_yellow;
   text-transform: uppercase;
+  padding-left: 61px;
+  padding-top: 14px;
+  text-decoration: none;
+  min-height: 45px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 28px;
+    padding-left: 91px;
+    padding-top: 23px;
+    min-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 118px;
+    padding-top: 36px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $blue_dark;
+
+    @media (min-width: $tablet-width) {
+      height: 68px;
+      width: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 90px;
+      width: 90px;
+      top: 5px;
+      left: -3px;
+    }
+  }
+}
+
+
+.contacts__tel--in-menu,
+.contacts__email--in-menu {
+  color: $bg_blue;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      width: 50px;
+      height: 50px;
+      top: 3px;
+      left: 0;
+    }
+  }
+
+  & span {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+}
+
+.contacts__tel--in-menu::before {
+  @media (min-width: $desktop-width) {
+    background-color: $special_orange;
+  }
+}
+
+.contacts__email--in-menu::before {
+  @media (min-width: $desktop-width) {
+    background-color: $special_yellow_dark;
   }
 }
