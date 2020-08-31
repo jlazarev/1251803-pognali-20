@@ -74,10 +74,14 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--grid">
     <section class="page-title">
-      <div class="page-title__wrapper wrapper">
-        <h1 class="page-title__text">Попутчики</h1>
+      <div class="page-title__wrapper">
+        <div class="page-title__box">
+          <h1 class="page-title__text">Попутчики</h1>
+        </div>
+
+        <a class="page-title__on-main" href="index.html">на главную</a>
       </div>
     </section>
 
@@ -89,14 +93,14 @@
           </h2>
 
           <ul class="country-filter__continents-list">
-            <li class="country-filter__continent-item">Европа</li>
+            <li class="country-filter__continent-item country-filter__continent-item--active">Европа</li>
             <li class="country-filter__continent-item">Азия</li>
             <li class="country-filter__continent-item">Америка</li>
             <li class="country-filter__continent-item">острова</li>
           </ul>
 
           <button class="country-filter__toggle" type="button">
-            <span class="visually-hidden">Открыть фильтр по странам</span>
+            <span class="country-filter__toggle-text">Показать все</span>
           </button>
         </div>
 
@@ -160,6 +164,7 @@
       </div>
     </section>
 
+    <div class="main-block">
     <section class="user-filter">
       <div class="user-filter__wrapper wrapper">
         <div class="user-filter__box">
@@ -192,7 +197,7 @@
               </label>
 
               <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Русский реп
+                <input class="visually-hidden" type="checkbox"> Русский рэп
               </label>
 
               <label class="user-filter__label">
@@ -217,7 +222,7 @@
             </div>
 
             <div class="user-filter__fieldset">
-              <h3 class="user-filter__legend">транспорт</h3>
+              <h3 class="user-filter__legend user-filter__legend--bottom">транспорт</h3>
 
               <div class="user-filter__transport-box">
                 <label class="user-filter__transport">
@@ -243,7 +248,7 @@
             </div>
 
             <div  class="user-filter__fieldset">
-              <h3  class="user-filter__legend">левел</h3>
+              <h3  class="user-filter__legend user-filter__legend--bottom">левел</h3>
 
               <div class="user-filter__range-filter">
                 <div class="user-filter__level-controls">
@@ -272,7 +277,7 @@
     </section>
 
     <section class="users">
-      <div class="wrapper">
+      <div class="users__wrapper">
         <ul class="users__list">
           <li class="users__item user-card">
             <div class="user-card__wrapper">
@@ -335,7 +340,10 @@
 
               <div class="user-card__level">
                 <h4 class="user-card__inner-title">левел:</h4>
-                <span class="user-card__level-number">99</span>
+                <span class="user-card__level-number">
+                  99
+                  <span class="user-card__level-text">level</span>
+                </span>
               </div>
 
               <button class="user-card__call-btn">позвать!</button>
@@ -424,7 +432,7 @@
               </div>
 
               <ul class="user-card__hashtag-list">
-                <li class="user-card__hashtag-item">#реп</li>
+                <li class="user-card__hashtag-item">#рэп</li>
                 <li class="user-card__hashtag-item">#тату</li>
                 <li class="user-card__hashtag-item">#хайпбист</li>
                 <li class="user-card__hashtag-item">#кроссовки</li>
@@ -540,12 +548,12 @@
         <button class="users__show-more">показать еще</button>
 
         <div class="users__nav">
-          <ul class="users__pagination-list">
+          <ol class="users__pagination-list">
             <li class="users__pagination users__pagination--active"><a href="#">1</a></li>
             <li class="users__pagination"><a href="#">2</a></li>
             <li class="users__pagination"><a href="#">3</a></li>
             <li class="users__pagination"><a href="#">4</a></li>
-          </ul>
+          </ol>
 
           <ul class="users__pager">
             <li>
@@ -562,6 +570,7 @@
         </div>
       </div>
     </section>
+    </div>
   </main>
 
   <footer class="page-footer">

@@ -1,6 +1,29 @@
 .users {
   margin-top: 27px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    margin-top: 0;
+  }
+}
+
+.users__wrapper {
+  width: auto;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .users__list {
@@ -12,6 +35,10 @@
 
 .users__item {
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .users__show-more {
@@ -28,6 +55,14 @@
   background-color: transparent;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 50px;
+    padding-top: 9px;
+    margin-bottom: 53px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -37,6 +72,12 @@
     height: 18px;
     border-radius: 2px;
     background-color: $basic_blue_light;
+
+    @media (min-width: $tablet-width) {
+      height: 26px;
+      top: 6px;
+      left: 11px;
+    }
   }
 
   &::after {
@@ -48,6 +89,12 @@
     height: 2px;
     border-radius: 2px;
     background-color: $basic_blue_light;
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      top: 18px;
+      left: -1px;
+    }
   }
 }
 
@@ -59,10 +106,54 @@
   background-color: $basic_white;
   margin-top: 19px;
   margin-bottom: 76px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    min-height: 100px;
+    margin-bottom: 116px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .users__pagination-list {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 29px;
+    margin-top: 25px;
+  }
+}
+
+.users__pagination {
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic_blue_light;
+
+    &--active {
+      background-color: $basic_yellow;
+    }
+  }
+}
+
+.users__pagination a {
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 14px;
+  }
 }
 
 .users__pager {
@@ -70,6 +161,10 @@
   padding: 0;
   display: flex;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
 }
 
 .users__pager li {
@@ -95,4 +190,8 @@
 
 .users__previous {
   border-right: 1px solid $basic_grey_light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

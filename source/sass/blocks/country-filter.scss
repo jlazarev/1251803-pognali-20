@@ -6,11 +6,38 @@
   border-radius: 0 0 20px 20px;
   position: absolute;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 81px;
+    border-radius: 0 0 60px 60px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+    position: static;
+  }
+}
+
+.country-filter__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px;
+  }
 }
 
 .country-filter__top {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+    padding-left: 39px;
+  }
 }
 
 .country-filter__title {
@@ -23,6 +50,21 @@
   color: $bg_blue;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 39px;
+    margin-right: 4px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -31,6 +73,44 @@
     width: 15px;
     height: 10px;
     background-color: tomato;
+
+    @media (min-width: $desktop-width) {
+      width: 23px;
+      height: 15px;
+      top: 2px;
+      left: -19px;
+    }
+  }
+}
+
+.country-filter__continents-list {
+  @media (min-width: $tablet-width) {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 23px;
+    margin-left: 31px;
+  }
+}
+
+.country-filter__continent-item {
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $bg_blue;
+    opacity: 0.3;
+    margin-right: 29px;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 33px;
   }
 }
 
@@ -41,6 +121,26 @@
   height: 17px;
   position: relative;
   margin-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin-right: 33px;
+    margin-top: 39px;
+    text-align: left;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $bg_blue;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+    margin-right: 60px;
+  }
 
   &::before {
     content: "";
@@ -54,6 +154,28 @@
     box-shadow:
       7px 0 0 $bg_blue,
       14px 0 0 $bg_blue;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      left: auto;
+      right: 24px;
+      width: 6px;
+      height: 6px;
+      box-shadow:
+        12px 0 0 $bg_blue,
+        24px 0 0 $bg_blue;
+    }
+  }
+}
+
+.country-filter__toggle-text {
+  position: absolute;
+  left: -100px;
+  opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    opacity: 1;
   }
 }
 
@@ -61,6 +183,10 @@
 
 .country-filter--close .country-filter__continents-list {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .country-filter--close .country-filter__box {
