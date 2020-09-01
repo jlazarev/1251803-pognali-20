@@ -39,6 +39,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .users__show-more {
@@ -61,6 +65,12 @@
     padding-left: 50px;
     padding-top: 9px;
     margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-top: 56px;
+    padding-right: 72px;
   }
 
   &::before {
@@ -113,6 +123,10 @@
     margin-bottom: 116px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 121px;
   }
 }
 
