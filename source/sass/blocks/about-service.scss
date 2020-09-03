@@ -1,37 +1,98 @@
 .about-service {
   background-color: $bg-blue;
-  padding-top: 50px;
-  padding-bottom: 67px;
+  padding-top: 190px;
   color: $basic_white;
   font-size: 16px;
   line-height: 22px;
   border-radius: 0 0 30px 30px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: -140px;
-    padding-top: 236px;
-    padding-bottom: 89px;
+    padding-top: 276px;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 231px;
-    padding-bottom: 163px;
+    padding-top: 131px;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 113px;
+    height: 132px;
+    background-color: $bg_cube;
+    border-radius: 0 20px 20px 0;
+    z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px;
+      left: 40px;
+      right: 40px;
+      top: 376px;
+      height: 212px;
+      width: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 212px;
+      height: 212px;
+      right: auto;
+      left: calc(50% - 659px);
+      top: 210px;
+    }
   }
 }
 
 .about-service__wrapper {
+  padding-top: 100px;
   padding-left: 49px;
   padding-right: 60px;
+  padding-bottom: 67px;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) bottom;
+  background-size: auto;
+  position: relative;
+  z-index: 1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/about-mobile@2x.png");
+    background-size: 292px auto;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 75px;
     padding-right: 385px;
+    padding-bottom: 89px;
+    background-image: url("../../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) 148px;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about-tablet@2x.png");
+      background-size: 376px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 130px;
     padding-right: 690px;
+    padding-bottom: 163px;
+    background-image: url("../../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 60px) bottom;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about-desktop@2x.png");
+      background-size: 630px auto;
+    }
   }
 }
 

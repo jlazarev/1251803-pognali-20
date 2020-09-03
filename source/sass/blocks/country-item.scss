@@ -134,13 +134,16 @@
 }
 
 .country-item__picture-box {
-  background-color: $bg-blue;
+  background-color: $grey;
   padding: 0;
   margin: 0;
   border-radius: 10px 10px 0 0;
+  height: 114px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 185px;
+    height: 140px;
     border-radius: 0;
   }
 
@@ -153,6 +156,8 @@
   padding: 0;
   margin: 0;
   border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     border-radius: 0;

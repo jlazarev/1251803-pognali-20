@@ -21,15 +21,16 @@
 
 .page-title__wrapper {
   width: auto;
+  display: flex;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 51px;
+    padding-left: 124px;
     margin: 0 auto;
   }
 }
@@ -46,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    padding: 0 75px;
+    padding: 0 2px;
     margin: 0;
   }
 }

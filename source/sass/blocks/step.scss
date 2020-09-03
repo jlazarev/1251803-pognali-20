@@ -233,6 +233,9 @@
 }
 
 .step__country-name {
+  white-space: nowrap;
+  overflow: hidden;
+
   &::before {
     content: "";
     position: absolute;

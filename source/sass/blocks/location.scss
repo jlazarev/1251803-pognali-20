@@ -119,7 +119,7 @@
 .location__map {
   height: 322px;
   margin-top: -30px;
-  background-color: tomato;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-top: -60px;
@@ -127,6 +127,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 516px;
+    height: 510px;
+  }
+
+  & img {
+    width: 100%;
   }
 }

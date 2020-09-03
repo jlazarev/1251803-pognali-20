@@ -9,11 +9,16 @@
 
   @media (min-width: $tablet-width) {
     min-height: 132px;
+
+    &--tablet-in-index {
+      background-color: $special_blue;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 90px;
     padding-bottom: 0;
+    background-color: $basic_blue;
   }
 }
 
@@ -64,22 +69,24 @@
 
 .page-header__logo {
   display: block;
-  width: 96px;
-  height: 15px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  width: 100px;
+  height: 19px;
+  padding-top: 27px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 36px;
+    top: 18px;
     left: 0;
-    width: 164px;
+    width: 166px;
     height: 42px;
-    background-color: #cccccc;
+    // background-color: #cccccc;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
+    padding-top: 1px;
+    padding-bottom: 55px;
     width: 200px;
     height: 52px;
   }
@@ -149,7 +156,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 102px;
+    margin-top: 101px;
   }
 }
 
