@@ -6,25 +6,64 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 87px;
+    padding-bottom: 0;
     border-radius: 0 0 60px 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 151px;
+      right: 40px;
+      z-index: 0;
+      width: 198px;
+      height: 285px;
+      background-color: $bg_filter;
+      border-radius: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 189px;
+
+    &::before {
+      top: 235px;
+      right: 244px;
+      width: 446px;
+      height: 300px;
+    }
   }
 }
 
 .rates__wrapper {
   padding-left: 50px;
   padding-top: 31px;
+  background-image: url("../../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 25px) 37px;
+  background-size: 100px auto;
+  position: relative;
+  z-index: 1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/rates@2x.png");
+    background-size: 100px auto;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 33px;
+    padding-bottom: 87px;
+    background-position: calc(100% - 85px) calc(100% - 45px);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 65px;
+    background-position: calc(100% - 133px) 287px;
+    background-size: 198px auto;
+    padding-bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-size: 198px auto;
+    }
   }
 }
 
@@ -52,11 +91,15 @@
   font-size: 16px;
   line-height: 16px;
   color: $special_grey;
+  position: relative;
+  padding-right: 47px;
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 28px;
     margin-left: 80px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,16 +113,61 @@
   margin: 0;
   border-top: 1px solid $border_grey_light;
   padding-top: 12px;
-
-  &:last-child {
-    border-bottom: 1px solid $border_grey_light;
-  }
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-top: 18px;
     padding-bottom: 19px;
+  }
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    position: absolute;
+    top: 3px;
+    right: -47px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $special_yellow_dark;
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic_white;
+    text-align: center;
+    padding-top: 8px;
+
+    @media (min-width: $tablet-width) {
+      top: -1px;
+      right: auto;
+      left: -90px;
+      font-size: 28px;
+      line-height: 28px;
+      width: 68px;
+      height: 68px;
+      padding-top: 20px;
+    }
+  }
+
+  &:first-child::before {
+    background-color: $special_orange;
+
+    @media (min-width: $tablet-width) {
+      top: -3px;
+    }
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $border_grey_light;
+
+    &::before {
+      background-color: $basic_yellow;
+
+      @media (min-width: $tablet-width) {
+        top: 0;
+      }
+    }
   }
 }
 
@@ -102,12 +190,24 @@
   color: $rates_link;
   text-decoration: none;
   margin-top: 29px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin-top: 57px;
     padding-left: 79px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: -10px;
+      width: 68px;
+      height: 68px;
+      background-color: $bg_filter;
+      border-radius: 50%;
+    }
   }
 
   @media (min-width: $desktop-width) {

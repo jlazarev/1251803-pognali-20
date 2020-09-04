@@ -8,16 +8,49 @@
   @media (min-width: $tablet-width) {
     border-radius: 0 0 60px 60px;
     padding-bottom: 81px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 40px) 11px;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/flags-back@2x.png");
+      background-size: 289px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 93px;
     padding-bottom: 82px;
+    background-position: calc(50% + 517px) 88px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 337px;
+      left: 40px;
+      width: 141px;
+      height: 141px;
+      background: $bg_filter;
+      border-radius: 20px;
+      z-index: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 90px;
+      left: calc(50% - 660px);
+      width: 140px;
+      height: 140px;
+    }
   }
 }
 
 .direction__wrapper {
   display: block;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $desktop-width) {
     display: grid;

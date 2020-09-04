@@ -8,8 +8,12 @@
   overflow: hidden;
   padding: 0;
   margin: 0;
-  position: relative;
+  position: absolute;
+  right: 25px;
+  left: 25px;
   z-index: 3;
+
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
@@ -17,6 +21,14 @@
     line-height: 24px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    top: 140px;
+    right: auto;
+    left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: auto;
   }
 }
 
@@ -27,6 +39,7 @@
   min-height: 100px;
   margin-bottom: -20px;
   border-radius: 10px 10px 0 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border-radius: 0;
@@ -39,6 +52,36 @@
 
   @media (min-width: $desktop-width) {
     min-height: 107px;
+  }
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $basic_white;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+      top: auto;
+      right: auto;
+      bottom: 23px;
+      left: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+      bottom: auto;
+      left: auto;
+      top: 27px;
+      right: 62px;
+    }
   }
 }
 
@@ -92,14 +135,15 @@
   @media (min-width: $desktop-width) {
     width: 315px;
     margin-left: -30px;
+
+    &::before {
+      right: 33px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .steps-list__item:nth-child(n) {
-    // width: 30%;
-    // margin-left: 0;
-    // margin-right: -5%;
     border-radius: 20px 0 0 20px;
   }
 }

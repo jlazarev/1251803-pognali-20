@@ -106,7 +106,6 @@
     grid-column: 1 / 2;
     width: 190px;
     height: 190px;
-    background-color: #cfcfcf;
     border-radius: 20px;
     order: 0;
     margin-left: 35px;
@@ -123,6 +122,11 @@
     width: 285px;
     height: 285px;
   }
+}
+
+.user-card__photo {
+  width: 100%;
+  height: auto;
 }
 
 .user-card__like {

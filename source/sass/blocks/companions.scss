@@ -4,20 +4,88 @@
   padding-top: 96px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
+  position: relative;
+  background-image:
+    url("../../img/rogovaya-back-mobile@1x.png"),
+    url("../../img/smolov-back-desktop@1x.png");
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    -9px 357px,
+    calc(100% - 25px) 85px;
+  background-size:
+    auto,
+    auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../img/rogovaya-back-mobile@2x.png"),
+      url("../../img/smolov-back-desktop@2x.png");
+    background-size:
+      71px auto,
+      143px auto;
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 87px;
     padding-top: 149px;
     border-radius: 0 0 60px 60px;
+    background-image:
+      url("../../img/rogovaya-back-desktop@1x.png"),
+      url("../../img/smolov-back-desktop@1x.png");
+    background-position:
+      calc(100% - 74px) 130px,
+      40px 476px;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../img/rogovaya-back-desktop@2x.png"),
+        url("../../img/smolov-back-desktop@2x.png");
+      background-size:
+        285px auto,
+        143px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 138px;
     padding-bottom: 75px;
+    background-position:
+      calc(50% - 388px) 436px,
+      calc(50% - 102px) 184px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 84px;
+    left: 0;
+    z-index: 0;
+    width: 113px;
+    height: 132px;
+    border-radius: 0 20px 20px 0;
+    background-color: $bg_cube;
+
+    @media (min-width: $tablet-width) {
+      top: 121px;
+      left: 40px;
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+
+      @media (min-width: $desktop-width) {
+        top: 120px;
+        left: calc(50% - 660px);
+      }
+    }
   }
 }
 
 .companions__wrapper {
+  position: relative;
+  z-index: 1;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr min-content;

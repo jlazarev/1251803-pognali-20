@@ -39,8 +39,10 @@
   order: -1;
 
   @media (min-width: $tablet-width) {
-    width: 285px;
-    height: 285px;
+    & img {
+      width: 285px;
+      height: 285px;
+    }
   }
 }
 
