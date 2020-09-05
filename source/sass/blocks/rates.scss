@@ -27,7 +27,7 @@
 
     &::before {
       top: 235px;
-      right: 244px;
+      right: calc(50% - 476px);
       width: 446px;
       height: 300px;
     }
@@ -213,5 +213,9 @@
   @media (min-width: $desktop-width) {
     margin-top: 58px;
     padding-left: 170px;
+
+    &::before {
+      left: 81px;
+    }
   }
 }
