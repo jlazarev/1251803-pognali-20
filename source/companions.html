@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -103,58 +104,320 @@
             <li class="country-filter__continent-item">острова</li>
           </ul>
 
-          <button class="country-filter__toggle" type="button">
+          <button class="country-filter__toggle" type="button" aria-label="переключатель показать/скрыть">
             <span class="country-filter__toggle-text">Показать все</span>
+            <span class="country-filter__toggle-close">Свернуть</span>
           </button>
         </div>
 
         <div class="country-filter__box">
-          <table class="country-filter__alphabet">
-            <tr class="country-filter__table-row">
-              <td class="country-filter__letter country-filter__letter--focus">а</td>
-              <td class="country-filter__letter">б</td>
-              <td class="country-filter__letter">в</td>
-              <td class="country-filter__letter">г</td>
-              <td class="country-filter__letter">д</td>
-            </tr>
-            <tr class="country-filter__table-row">
-              <td class="country-filter__letter">е</td>
-              <td class="country-filter__letter">з</td>
-              <td class="country-filter__letter">и</td>
-              <td class="country-filter__letter">к</td>
-              <td class="country-filter__letter">л</td>
-            </tr>
-            <tr class="country-filter__table-row">
-              <td class="country-filter__letter">м</td>
-              <td class="country-filter__letter">н</td>
-              <td class="country-filter__letter">о</td>
-              <td class="country-filter__letter">п</td>
-              <td class="country-filter__letter">р</td>
-            </tr>
-            <tr class="country-filter__table-row">
-              <td class="country-filter__letter">с</td>
-              <td class="country-filter__letter">т</td>
-              <td class="country-filter__letter">у</td>
-              <td class="country-filter__letter">ф</td>
-              <td class="country-filter__letter">х</td>
-            </tr>
-            <tr class="country-filter__table-row">
-              <td class="country-filter__letter">ч</td>
-              <td class="country-filter__letter">ш</td>
-              <td class="country-filter__letter">э</td>
-              <td class="country-filter__letter">ю</td>
-              <td class="country-filter__letter">я</td>
-            </tr>
-          </table>
+          <div class="country-filter__block">
+            <div class="country-filter__proportion">
+              <ul class="country-filter__alphabet">
+                <li class="country-filter__letter country-filter__letter--focus">
+                  а
+                  <ul>
+                    <li>Австралия</li>
+                    <li>Австрия</li>
+                    <li>Азербайджан</li>
+                    <li>Албания</li>
+                    <li>Алжир</li>
+                    <li>Ангола</li>
+                    <li>Андорра</li>
+                    <li>Антигуа и Барбуда</li>
+                    <li>Аргентина</li>
+                    <li>Армения</li>
+                    <li>Афганистан</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  б
+                  <ul>
+                    <li>Багамские Острова</li>
+                    <li>Бангладеш</li>
+                    <li>Барбадос</li>
+                    <li>Бахрейн</li>
+                    <li>Белоруссия</li>
+                    <li>Белиз</li>
+                    <li>Бельгия</li>
+                    <li>Бенин</li>
+                    <li>Болгария</li>
+                    <li>Боливия</li>
+                    <li>Босния и Герцеговина</li>
+                    <li>Ботсвана</li>
+                    <li>Бразилия</li>
+                    <li>Бруней</li>
+                    <li>Буркина-Фасо</li>
+                    <li>Бурунди</li>
+                    <li>Бутан</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  в
+                  <ul>
+                    <li>Вануату</li>
+                    <li>Великобритания</li>
+                    <li>Венгрия</li>
+                    <li>Венесуэла</li>
+                    <li>Восточный Тимор</li>
+                    <li>Вьетнам</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  г
+                  <ul>
+                    <li>Габон</li>
+                    <li>Гаити</li>
+                    <li>Гайана</li>
+                    <li>Гамбия</li>
+                    <li>Гана</li>
+                    <li>Гватемала</li>
+                    <li>Гвинея</li>
+                    <li>Гвинея-Бисау</li>
+                    <li>Германия</li>
+                    <li>Гондурас</li>
+                    <li>Гренада</li>
+                    <li>Греция</li>
+                    <li>Грузия</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  д
+                  <ul>
+                    <li>Дания</li>
+                    <li>Джибути</li>
+                    <li>Доминика</li>
+                    <li>Доминикана</li>
+                  </ul>
+                </li>
+
+                <li class="country-filter__letter">
+                  е
+                  <ul>
+                    <li>Египет</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  з
+                  <ul>
+                    <li>Замбия</li>
+                    <li>Зимбабве</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  и
+                  <ul>
+                    <li>Израиль</li>
+                    <li>Индия</li>
+                    <li>Индонезия</li>
+                    <li>Иордания</li>
+                    <li>Ирак</li>
+                    <li>Иран</li>
+                    <li>Ирландия</li>
+                    <li>Исландия</li>
+                    <li>Испания</li>
+                    <li>Италия</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  к
+                  <ul>
+                    <li>Кабо-Верде</li>
+                    <li>Казахстан</li>
+                    <li>Камбоджа</li>
+                    <li>Камерун</li>
+                    <li>Канада</li>
+                    <li>Катар</li>
+                    <li>Кения</li>
+                    <li>Кипр</li>
+                    <li>Киргизия</li>
+                    <li>Кирибати</li>
+                    <li>Китай</li>
+                    <li>Колумбия</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  л
+                  <ul>
+                    <li>Лаос</li>
+                    <li>Латвия</li>
+                    <li>Лесото</li>
+                    <li>Либерия</li>
+                    <li>Ливан</li>
+                    <li>Ливия</li>
+                    <li>Литва</li>
+                    <li>Лихтенштейн</li>
+                    <li>Люксембург</li>
+                  </ul>
+                </li>
+
+                <li class="country-filter__letter">
+                  м
+                  <ul>
+                    <li>Маврикий</li>
+                    <li>Мавритания</li>
+                    <li>Мадагаскар</li>
+                    <li>Малави</li>
+                    <li>Малайзия</li>
+                    <li>Мали</li>
+                    <li>Мальдивы</li>
+                    <li>Мальта</li>
+                    <li>Марокко</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  н
+                  <ul>
+                    <li>Намибия</li>
+                    <li>Науру</li>
+                    <li>Непал</li>
+                    <li>Нигер</li>
+                    <li>Нигерия</li>
+                    <li>Нидерланды</li>
+                    <li>Никарагуа</li>
+                    <li>Новая Зеландия</li>
+                    <li>Норвегия</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  о
+                  <ul>
+                    <li>ОАЭ</li>
+                    <li>Оман</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  п
+                  <ul>
+                    <li>Пакистан</li>
+                    <li>Палау</li>
+                    <li>Панама</li>
+                    <li>Папуа - Новая Гвинея</li>
+                    <li>Парагвай</li>
+                    <li>Перу</li>
+                    <li>Польша</li>
+                    <li>Португалия</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  р
+                  <ul>
+                    <li>Руанда</li>
+                    <li>Румыния</li>
+                    <li>Россия</li>
+                  </ul>
+                </li>
+
+                <li class="country-filter__letter">
+                  с
+                  <ul>
+                    <li>Сальвадор</li>
+                    <li>Самоа</li>
+                    <li>Сан-Марино</li>
+                    <li>Саудовская Аравия</li>
+                    <li>Сейшелы</li>
+                    <li>Сенегал</li>
+                    <li>Сербия</li>
+                    <li>Сингапур</li>
+                    <li>Сирия</li>
+                    <li>Словакия</li>
+                    <li>Словения</li>
+                    <li>США</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  т
+                  <ul>
+                    <li>Таджикистан</li>
+                    <li>Таиланд</li>
+                    <li>Танзания</li>
+                    <li>Того</li>
+                    <li>Тонга</li>
+                    <li>Тринидад и Тобаго</li>
+                    <li>Тувалу</li>
+                    <li>Тунис</li>
+                    <li>Туркмения</li>
+                    <li>Турция</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  у
+                  <ul>
+                    <li>Уганда</li>
+                    <li>Узбекистан</li>
+                    <li>Украина</li>
+                    <li>Уругвай</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  ф
+                  <ul>
+                    <li>Фиджи</li>
+                    <li>Филиппины</li>
+                    <li>Финляндия</li>
+                    <li>Франция</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  х
+                  <ul>
+                    <li>Хорватия</li>
+                  </ul>
+                </li>
+
+                <li class="country-filter__letter">
+                  ч
+                  <ul>
+                    <li>Чад</li>
+                    <li>Черногория</li>
+                    <li>Чехия</li>
+                    <li>Чили</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  ш
+                  <ul>
+                    <li>Швейцария</li>
+                    <li>Швеция</li>
+                    <li>Шри-Ланка</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  э
+                  <ul>
+                    <li>Эквадор</li>
+                    <li>Эритрея</li>
+                    <li>Эсватини</li>
+                    <li>Эстония</li>
+                    <li>Эфиопия</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  ю
+                  <ul>
+                    <li>ЮАР</li>
+                    <li>Южный Судан</li>
+                  </ul>
+                </li>
+                <li class="country-filter__letter">
+                  я
+                  <ul>
+                    <li>Ямайка</li>
+                    <li>Япония</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <ul class="country-filter__country-list">
             <li class="country-filter__country-item">Австралия</li>
             <li class="country-filter__country-item">Австрия</li>
             <li class="country-filter__country-item">Азербайджан</li>
-            <li class="country-filter__country-item">Албпния</li>
+            <li class="country-filter__country-item">Албания</li>
             <li class="country-filter__country-item">Алжир</li>
             <li class="country-filter__country-item">Ангола</li>
-            <li class="country-filter__country-item">Андора</li>
+            <li class="country-filter__country-item">Андорра</li>
             <li class="country-filter__country-item">Антигуа и Барбуда</li>
             <li class="country-filter__country-item">Аргентина</li>
             <li class="country-filter__country-item">Армения</li>
@@ -627,22 +890,8 @@
     </div>
   </footer>
 
-  <script>
-    var header = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__menu-toggle');
-
-    header.classList.remove('page-header--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (header.classList.contains('page-header--close-menu')) {
-        header.classList.remove('page-header--close-menu');
-        header.classList.add('page-header--open-menu');
-      } else {
-        header.classList.add('page-header--close-menu');
-        header.classList.remove('page-header--open-menu');
-      }
-    });
-  </script>
+  <script src="js/main-menu.js"></script>
+  <script src="js/country-filter.js"></script>
 </body>
 
 </html>

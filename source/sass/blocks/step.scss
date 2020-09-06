@@ -417,7 +417,7 @@
   }
 }
 
-.country-filter__alphabet {
+.step-filter__alphabet {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -446,7 +446,7 @@
   }
 }
 
-.country-filter__letter {
+.step-filter__letter {
   border-right: 1px solid $border_grey;
   border-bottom: 1px solid $border_grey;
   text-align: center;
@@ -471,7 +471,7 @@
   }
 }
 
-.country-filter__country-list {
+.step-filter__country-list {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -496,7 +496,7 @@
   }
 }
 
-.country-filter__country-item {
+.step-filter__country-item {
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
   }
