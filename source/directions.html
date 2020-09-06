@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -319,43 +320,41 @@
                   <div class="step__country-name step__country-name--choose">выберите страну</div>
 
                   <div class="step__choose-block">
-                    <table class="country-filter__alphabet">
-                      <tr class="country-filter__table-row">
-                        <td class="country-filter__letter country-filter__letter--focus">а</td>
-                        <td class="country-filter__letter">б</td>
-                        <td class="country-filter__letter">в</td>
-                        <td class="country-filter__letter">г</td>
-                        <td class="country-filter__letter">д</td>
-                      </tr>
-                      <tr class="country-filter__table-row">
-                        <td class="country-filter__letter">е</td>
-                        <td class="country-filter__letter">з</td>
-                        <td class="country-filter__letter">и</td>
-                        <td class="country-filter__letter">к</td>
-                        <td class="country-filter__letter">л</td>
-                      </tr>
-                      <tr class="country-filter__table-row">
-                        <td class="country-filter__letter">м</td>
-                        <td class="country-filter__letter">н</td>
-                        <td class="country-filter__letter">о</td>
-                        <td class="country-filter__letter">п</td>
-                        <td class="country-filter__letter">р</td>
-                      </tr>
-                      <tr class="country-filter__table-row">
-                        <td class="country-filter__letter">с</td>
-                        <td class="country-filter__letter">т</td>
-                        <td class="country-filter__letter">у</td>
-                        <td class="country-filter__letter">ф</td>
-                        <td class="country-filter__letter">х</td>
-                      </tr>
-                      <tr class="country-filter__table-row">
-                        <td class="country-filter__letter">ч</td>
-                        <td class="country-filter__letter">ш</td>
-                        <td class="country-filter__letter">э</td>
-                        <td class="country-filter__letter">ю</td>
-                        <td class="country-filter__letter">я</td>
-                      </tr>
-                    </table>
+                    <div class="step__choose-box">
+                      <div class="step__choose-proportion">
+                        <ul class="country-filter__alphabet">
+                          <li class="country-filter__letter country-filter__letter--focus">а</li>
+                          <li class="country-filter__letter">б</li>
+                          <li class="country-filter__letter">в</li>
+                          <li class="country-filter__letter">г</li>
+                          <li class="country-filter__letter">д</li>
+
+                          <li class="country-filter__letter">е</li>
+                          <li class="country-filter__letter">з</li>
+                          <li class="country-filter__letter">и</li>
+                          <li class="country-filter__letter">к</li>
+                          <li class="country-filter__letter">л</li>
+
+                          <li class="country-filter__letter">м</li>
+                          <li class="country-filter__letter">н</li>
+                          <li class="country-filter__letter">о</li>
+                          <li class="country-filter__letter">п</li>
+                          <li class="country-filter__letter">р</li>
+
+                          <li class="country-filter__letter">с</li>
+                          <li class="country-filter__letter">т</li>
+                          <li class="country-filter__letter">у</li>
+                          <li class="country-filter__letter">ф</li>
+                          <li class="country-filter__letter">х</li>
+
+                          <li class="country-filter__letter">ч</li>
+                          <li class="country-filter__letter">ш</li>
+                          <li class="country-filter__letter">э</li>
+                          <li class="country-filter__letter">ю</li>
+                          <li class="country-filter__letter">я</li>
+                        </ul>
+                      </div>
+                    </div>
 
                     <ul class="country-filter__country-list">
                       <li class="country-filter__country-item">Австралия</li>
@@ -364,7 +363,7 @@
                       <li class="country-filter__country-item">Албпния</li>
                       <li class="country-filter__country-item">Алжир</li>
                       <li class="country-filter__country-item">Ангола</li>
-                      <li class="country-filter__country-item">Андора</li>
+                      <li class="country-filter__country-item">Андорра</li>
                       <li class="country-filter__country-item">Антигуа и Барбуда</li>
                       <li class="country-filter__country-item">Аргентина</li>
                       <li class="country-filter__country-item">Армения</li>
@@ -462,22 +461,8 @@
     </div>
   </footer>
 
-  <script>
-    var header = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__menu-toggle');
-
-    header.classList.remove('page-header--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (header.classList.contains('page-header--close-menu')) {
-        header.classList.remove('page-header--close-menu');
-        header.classList.add('page-header--open-menu');
-      } else {
-        header.classList.add('page-header--close-menu');
-        header.classList.remove('page-header--open-menu');
-      }
-    });
-  </script>
+  <script src="js/main-menu.js"></script>
+  <script src="js/choose-country.js"></script>
 </body>
 
 </html>
