@@ -29,6 +29,7 @@ html {
 .wrapper {
   width: auto;
   padding: 0 25px;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0 75px;

@@ -1,0 +1,113 @@
+.rates-business {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  left: 25px;
+  margin: auto 0;
+  width: auto;
+  height: 443px;
+  background: $basic_white;
+  box-shadow: 0 2px 8px rgba($shadow, 0.14);
+  border-radius: 20px;
+  z-index: 6;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 4px 22px rgba($shadow, 0.18);
+    right: 40px;
+    left: 40px;
+    padding-top: 50px;
+    height: 526px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 750px;
+    border-radius: 30px;
+  }
+}
+
+.rates-business__title {
+  text-align: center;
+  margin: 0;
+  padding-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.rates-business__list {
+  margin: 0 25px;
+  margin-top: 29px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special_grey;
+  border-top: 1px solid rgba($basic_black, 0.05);
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 60px 0 60px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.rates-business__item {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba($basic_black, 0.05);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+.rates-business__price {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+  }
+}
+
+.rates-business__button {
+  margin-top: auto;
+  height: 59px;
+  border: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $basic_blue_light;
+  background-color: $button;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    height: 108px;
+    text-transform: none;
+    padding-bottom: 6px;
+  }
+}
+
+.rates-business--close {
+  display: none;
+}
+
+.rates-business--open {
+  display: flex;
+}

@@ -421,7 +421,7 @@
           </div>
         </dl>
 
-        <a class="rates__button js-business-rates" href="#">Показать тарифы для бизнеса</a>
+        <a class="rates__button" href="#">Показать тарифы для бизнеса</a>
       </div>
     </section>
 
@@ -521,22 +521,49 @@
     </div>
   </footer>
 
-  <script>
-    var header = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__menu-toggle');
+  <div class="rates-business rates-business--close">
+    <h2 class="rates-business__title title">Бизнес-тарифы</h2>
 
-    header.classList.remove('page-header--nojs');
+    <dl class="rates-business__list">
+      <div class="rates-business__item">
+        <dt class="rates-business__description">
+          Реклама у блоггера
+        </dt>
+        <dd class="rates-business__price">
+          300 000 руб./пост
+        </dd>
+      </div>
+      <div class="rates-business__item">
+        <dt class="rates-business__description">
+          Накрутка подписчиков
+        </dt>
+        <dd class="rates-business__price">
+          от 1 руб./шт.
+        </dd>
+      </div>
+      <div class="rates-business__item">
+        <dt class="rates-business__description">
+          Лайки от ботов
+        </dt>
+        <dd class="rates-business__price">
+          от 20 коп./лайк
+        </dd>
+      </div>
+      <div class="rates-business__item">
+        <dt class="rates-business__description">
+          Ваш продакт-плейсмент
+        </dt>
+        <dd class="rates-business__price">
+          Индивидуально
+        </dd>
+      </div>
+    </dl>
 
-    navToggle.addEventListener('click', function() {
-      if (header.classList.contains('page-header--close-menu')) {
-        header.classList.remove('page-header--close-menu');
-        header.classList.add('page-header--open-menu');
-      } else {
-        header.classList.add('page-header--close-menu');
-        header.classList.remove('page-header--open-menu');
-      }
-    });
-  </script>
+    <button class="rates-business__button">Закрыть окно</button>
+  </div>
+
+  <script src="js/main-menu.js"></script>
+  <script src="js/rates-business.js"></script>
 </body>
 
 </html>
