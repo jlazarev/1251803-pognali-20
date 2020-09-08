@@ -113,9 +113,10 @@
     width: 12px;
     height: 12px;
     background-image: url("../../img/user.svg");
+    background-repeat: no-repeat;
     opacity: 0.3;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       width: 18px;
       height: 20px;
       top: 5px;

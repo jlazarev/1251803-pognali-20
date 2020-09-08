@@ -84,6 +84,7 @@
       height: 68px;
       width: 68px;
       left: 1px;
+      background-size: 24px 32px;
     }
 
     @media (min-width: $desktop-width) {
@@ -91,6 +92,7 @@
       width: 90px;
       top: 6px;
       left: 0;
+      background-size: 32px 42px;
     }
   }
 
@@ -117,6 +119,11 @@
     position: absolute;
     top: 22px;
     right: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 30px;
+    }
   }
 
   &:hover {

@@ -89,6 +89,11 @@ html {
     height: 13px;
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 33px;
+      right: 30px;
+    }
   }
 
   &:hover {

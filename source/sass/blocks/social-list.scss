@@ -3,11 +3,17 @@
   list-style: none;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+  }
 }
 
 .social-list--in-menu {
   @media (min-width: $tablet-width) {
     justify-content: start;
+    margin-top: 46px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +52,30 @@
 
     &:active {
       opacity: 0.3;
+    }
+  }
+
+  &--f svg {
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+      margin-top: 5px;
+    }
+  }
+
+  &--vk svg {
+    @media (min-width: $tablet-width) {
+      width: 31px;
+      height: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &--in svg {
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+      margin-top: 5px;
     }
   }
 }
