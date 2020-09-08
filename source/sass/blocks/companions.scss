@@ -6,8 +6,8 @@
   border-radius: 0 0 30px 30px;
   position: relative;
   background-image:
-    url("../../img/rogovaya-back-mobile@1x.png"),
-    url("../../img/smolov-back-desktop@1x.png");
+    url("../img/rogovaya-back-mobile@1x.png"),
+    url("../img/smolov-back-desktop@1x.png");
   background-repeat:
     no-repeat,
     no-repeat;
@@ -20,8 +20,8 @@
 
   @media (min-resolution: 2dppx) {
     background-image:
-      url("../../img/rogovaya-back-mobile@2x.png"),
-      url("../../img/smolov-back-desktop@2x.png");
+      url("../img/rogovaya-back-mobile@2x.png"),
+      url("../img/smolov-back-desktop@2x.png");
     background-size:
       71px auto,
       143px auto;
@@ -32,16 +32,16 @@
     padding-top: 149px;
     border-radius: 0 0 60px 60px;
     background-image:
-      url("../../img/rogovaya-back-desktop@1x.png"),
-      url("../../img/smolov-back-desktop@1x.png");
+      url("../img/rogovaya-back-desktop@1x.png"),
+      url("../img/smolov-back-desktop@1x.png");
     background-position:
       calc(100% - 74px) 130px,
       40px 476px;
 
     @media (min-resolution: 2dppx) {
       background-image:
-        url("../../img/rogovaya-back-desktop@2x.png"),
-        url("../../img/smolov-back-desktop@2x.png");
+        url("../img/rogovaya-back-desktop@2x.png"),
+        url("../img/smolov-back-desktop@2x.png");
       background-size:
         285px auto,
         143px auto;
