@@ -21,6 +21,14 @@
   min-height: 45px;
   position: relative;
 
+  &:hover {
+    color: $special_yellow_dark;
+  }
+
+  &:active {
+    color: rgba($basic_yellow, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 28px;
@@ -34,8 +42,7 @@
     padding-top: 36px;
   }
 
-  &::before {
-    content: "";
+  & .contacts__mark {
     position: absolute;
     top: 3px;
     left: 0;
@@ -43,6 +50,8 @@
     width: 45px;
     border-radius: 50%;
     background-color: $blue_dark;
+    text-align: center;
+    padding-top: 13px;
 
     @media (min-width: $tablet-width) {
       height: 68px;
@@ -55,6 +64,10 @@
       top: 5px;
       left: -3px;
     }
+  }
+
+  & svg {
+    fill: currentColor;
   }
 }
 
@@ -83,6 +96,9 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       opacity: 0;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
     }
   }
 }
@@ -93,8 +109,16 @@
   }
 }
 
+.contacts__tel--in-menu:hover::before {
+  background-color: $active;
+}
+
 .contacts__email--in-menu::before {
   @media (min-width: $desktop-width) {
     background-color: $special_yellow_dark;
   }
+}
+
+.contacts__email--in-menu:hover::before {
+  background-color: $special_orange;
 }

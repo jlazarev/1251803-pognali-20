@@ -100,6 +100,15 @@
   display: block;
   width: 27px;
   height: 33.3px;
-  background-color: tomato;
   margin-top: 12px;
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -78,6 +78,30 @@ html {
   height: 62px;
   text-decoration: none;
   border-radius: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 19px;
+    width: 14px;
+    height: 13px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $special_yellow_dark;
+  }
+
+  &:active {
+    color: rgba($basic_blue_light, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;

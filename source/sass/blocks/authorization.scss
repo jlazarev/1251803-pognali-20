@@ -69,6 +69,14 @@
 
 .authorization__link {
   color: $basic_yellow;
+
+  &:hover {
+    color: $special_orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .authorization__form {
@@ -101,6 +109,23 @@
   line-height: 18px;
   color: $special_grey;
   padding-left: 25px;
+
+  &:hover {
+    background-color: $basic_grey_light;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $bg_blue;
+    border-radius: 10px 0 0 10px;
+    border: 4px solid $basic_white;
+    color: $basic_white;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px 0 0 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     height: 80px;

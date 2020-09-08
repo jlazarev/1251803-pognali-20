@@ -168,6 +168,15 @@
   padding-bottom: 12px;
   border-radius: 20px;
   margin-bottom: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $active_photo;
+  }
+
+  &:active {
+    color: rgba($basic_blue, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
@@ -276,6 +285,17 @@
   padding: 0 25px;
   padding-top: 24px;
   padding-bottom: 27px;
+
+  &:hover {
+    border-color: $hover_border;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $basic_blue_light;
+    color: $special_grey;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

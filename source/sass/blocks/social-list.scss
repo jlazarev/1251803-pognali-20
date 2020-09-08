@@ -20,9 +20,32 @@
   height: 45px;
   border-radius: 50%;
   background-color: $basic_yellow;
+  text-align: center;
+  padding-top: 12px;
+
+  &:hover {
+    background-color: $special_yellow_dark;
+  }
 
   @media (min-width: $tablet-width) {
     width: 62px;
     height: 62px;
+  }
+
+  & svg {
+    fill: $bg_blue;
+  }
+
+  &--in-menu {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

@@ -49,32 +49,32 @@
   padding: 0;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -38px;
-    width: 35px;
-    height: 24px;
-    background-color: tomato;
-    border-radius: 6px;
-
-    @media (min-width: $tablet-width) {
-      width: 70px;
-      height: 47px;
-      top: -12px;
-      right: -35px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 1px;
-      right: -33px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 5px;
+  }
+}
+
+.country-item__flag {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  width: 35px;
+  height: 24px;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    top: -12px;
+    right: -35px;
+    left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
+    right: -33px;
   }
 }
 
@@ -108,11 +108,12 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: tomato;
     top: 6px;
     left: 15px;
-    width: 11px;
+    width: 12px;
     height: 12px;
+    background-image: url("../../img/user.svg");
+    opacity: 0.3;
 
     @media (min-width: $desktop-width) {
       width: 18px;

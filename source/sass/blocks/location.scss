@@ -75,6 +75,10 @@
     width: 45px;
     border-radius: 50%;
     background-color: $blue_dark;
+    background-image: url("../img/contacts-location.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 21px;
+    background-position: center center;
 
     @media (min-width: $tablet-width) {
       height: 68px;
@@ -103,6 +107,26 @@
   padding-left: 19px;
   width: 100%;
   border: 3px solid $bg_blue;
+
+  &::after {
+    display: none;
+  }
+
+  & svg {
+    fill: currentColor;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+  }
+
+  &:hover {
+    background-color: $bg_blue;
+    color: $basic_white;
+  }
+
+  &:active {
+    color: rgba($basic_white, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 64px;

@@ -85,6 +85,16 @@
   color: $basic_blue_light;
   padding-top: 2px;
 
+  &:hover {
+    border-color: $hover_border;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $basic_blue;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 18px;
@@ -143,6 +153,15 @@
       height: 36px;
     }
   }
+
+  &:hover::before {
+    border-color: $hover_border;
+  }
+
+  &:active::before {
+    background-color: $bg_filter;
+    border: none;
+  }
 }
 
 .form__list {
@@ -169,7 +188,7 @@
   }
 }
 
-.form__contry {
+.form__country {
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -193,12 +212,10 @@
     margin-left: -1px;
   }
 
-  &::after {
-    content: "";
+  & svg {
     position: absolute;
     top: -3px;
     right: 0;
-    background-color: tomato;
     border-radius: 3px;
     width: 35px;
     height: 24px;
@@ -228,9 +245,20 @@
   font-family: "Blogger-sans", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: $special_grey;
+  color: rgba($special_grey, 0.3);
   padding: 8px 12px;
   margin-bottom: 18px;
+
+  &:hover {
+    border-color: $hover_border;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $basic_blue_light;
+    color: $special_grey;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 94.3%;
