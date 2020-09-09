@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--close-menu page-header--nojs page-header--tablet-in-index">
+  <header class="page-header page-header--close-menu page-header--nojs">
     <div class="page-header__wrapper wrapper">
       <div class="page-header__box">
         <a class="page-header__logo" href="index.html">
@@ -241,7 +241,11 @@
                     <span>ищу попутчиков:</span>
                     <span class="form__units">чел.</span>
                   </label>
-                  <input class="form__numder" id="number-companions" type="text" value="2">
+                  <div class="form__numder">
+                    <button class="form__number-btn form__number-btn--minus" type="button" aria-label="минус"></button>
+                    <input id="number-companions" name="number-companions" type="text" value="2">
+                    <button class="form__number-btn form__number-btn--plus" type="button" aria-label="плюс"></button>
+                  </div>
                 </div>
 
                 <div class="form__block">
@@ -249,24 +253,35 @@
                     <span>длительность:</span>
                     <span class="form__units">дн.</span>
                   </label>
-                  <input class="form__numder" id="number-days" type="text" value="2">
+                  <div class="form__numder">
+                    <button class="form__number-btn form__number-btn--minus" type="button" aria-label="минус"></button>
+                    <input id="number-days" name="number-days" type="text" value="2">
+                    <button class="form__number-btn form__number-btn--plus" type="button" aria-label="плюс"></button>
+                  </div>
                 </div>
 
                 <div class="form__block">
                   <input class="form__checkbox visually-hidden" id="children" type="checkbox" checked>
-                  <label class="form__children" for="children">Можно с детьми</label>
+                  <label class="form__children" for="children">
+                    <div class="form__costum-checkbox">
+                      <svg width="8" height="8">
+                        <use xlink:href="img/tick.svg#Layer_1"></use>
+                      </svg>
+                    </div>
+                    Можно с детьми
+                  </label>
                 </div>
               </div>
 
               <div class="step__calendar calendar">
                 <div class="calendar__title">
-                  <button class="calendar__btn calendar__btn--back">
+                  <button type="button" class="calendar__btn calendar__btn--back">
                     <span class="visually-hidden">назад</span>
                   </button>
 
                   <h3 class="calendar__month">Март 2019</h3>
 
-                  <button class="calendar__btn calendar__btn--forward">
+                  <button type="button" class="calendar__btn calendar__btn--forward">
                     <span class="visually-hidden">вперёд</span>
                   </button>
                 </div>
@@ -334,7 +349,7 @@
                 </div>
               </div>
 
-              <button class="step__next-step-btn">Следующий шаг</button>
+              <button type="button" class="step__next-step-btn">Следующий шаг</button>
             </li>
 
             <li class="add-plan__step step">
@@ -428,7 +443,7 @@
                         <a href="#">Азербайджан</a>
                       </li>
                       <li class="step-filter__country-item">
-                        <a href="#">Албпния</a>
+                        <a href="#">Албания</a>
                       </li>
                       <li class="step-filter__country-item">
                         <a href="#">Алжир</a>
@@ -490,7 +505,7 @@
                       <use xlink:href="img/sprites/flag-sprites.svg#flag-bosnia"></use>
                     </svg>
                   </h4>
-                  <textarea class="form__plan" name="action-plan" placeholder="План действий"></textarea>
+                  <textarea class="form__plan" name="action-plan-bosnia" placeholder="План действий"></textarea>
                 </li>
 
                 <li class="form__item">
@@ -500,7 +515,7 @@
                       <use xlink:href="img/sprites/flag-sprites.svg#flag-czech"></use>
                     </svg>
                   </h4>
-                  <textarea class="form__plan" name="action-plan" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <textarea class="form__plan" name="action-plan-czech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
 
@@ -526,7 +541,7 @@
         </picture>
       </a>
 
-      <ul class=".page-footer__social-list social-list">
+      <ul class="page-footer__social-list social-list">
         <li class="social-list__item social-list__item--f">
           <a href="#">
             <span class="visually-hidden">фейсбук</span>

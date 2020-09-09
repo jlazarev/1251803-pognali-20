@@ -63,7 +63,7 @@
     opacity: 1;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 39px;
+    margin-top: 37px;
     margin-right: 4px;
   }
 
@@ -74,7 +74,8 @@
     left: 0;
     width: 15px;
     height: 10px;
-    background-color: tomato;
+    background-image: url("../img/filter.svg");
+    background-repeat: no-repeat;
 
     @media (min-width: $desktop-width) {
       width: 23px;
