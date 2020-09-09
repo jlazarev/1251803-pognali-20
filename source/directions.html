@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--close-menu page-header--nojs">
+  <header class="page-header page-header--close-menu page-header--nojs page-header--tablet-in-index">
     <div class="page-header__wrapper wrapper">
       <div class="page-header__box">
         <a class="page-header__logo" href="index.html">
@@ -50,28 +50,49 @@
 
           <div class="menu__contacts contacts">
             <a class="contacts__tel contacts__tel--in-menu" href="tel:88005558628">
+              <div class="contacts__mark">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/topmenu-phone.svg">
+                  <img src="img/contacts-phone.svg" width="16" height="15" alt="телефон">
+                </picture>
+              </div>
               <span>8 800 555-86-28</span>
             </a>
 
             <a class="contacts__email contacts__email--in-menu" href="mailto:mail@htmlacademy.ru">
+              <div class="contacts__mark">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/topmenu-mail.svg">
+                  <img src="img/contacts-mail.svg" width="19" height="13" alt="почта">
+                </picture>
+              </div>
               <span>mail@htmlacademy.ru</span>
             </a>
           </div>
 
           <ul class="menu__social-list social-list social-list--in-menu">
-            <li class="social-list__item">
+            <li class="social-list__item social-list__item--in-menu social-list__item--f">
               <a href="#">
                 <span class="visually-hidden">фейсбук</span>
+                <svg width="11" height="21">
+                  <use xlink:href="img/facebook.svg#Layer_1"></use>
+                </svg>
               </a>
             </li>
-            <li class="social-list__item">
+            <li class="social-list__item social-list__item--in-menu social-list__item--vk">
               <a href="#">
                 <span class="visually-hidden">вконтакте</span>
+                <svg width="23" height="12">
+                  <use xlink:href="img/vk.svg#Layer_1"></use>
+                </svg>
               </a>
             </li>
-            <li class="social-list__item">
+            <li class="social-list__item social-list__item--in-menu social-list__item--in">
               <a href="#">
                 <span class="visually-hidden">инстаграмм</span>
+                <svg width="18" height="18">
+                  <use xlink:href="img/instagram.svg#Layer_1"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -105,13 +126,13 @@
         </div>
 
         <div class="user-profile__bottom">
-          <a class="user-profile__change-photo-btn"><span>сменить</span> фото</a>
+          <a href="#" class="user-profile__change-photo-btn"><span>сменить</span> фото</a>
 
           <div class="user-profile__hashtag-box">
             <h3 class="user-profile__inner-title user-profile__inner-title--left">
               тэги
             </h3>
-            <textarea class="user-profile__hashtag-list">#бургер #бар #футбол #концерт #крафт</textarea>
+            <textarea class="user-profile__hashtag-list" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
 
           <div class="user-profile__transport-box">
@@ -120,16 +141,47 @@
             </h3>
             <ul class="user-profile__transport-list">
               <li class="user-profile__transport user-profile__transport--on user-profile__transport--plane">
-                <span class="visually-hidden">самолёт</span>
+                <input class="user-profile__checkbox visually-hidden" id="profile-plane" type="checkbox" name="plane" checked>
+
+                <label class="user-profile__label" for="profile-plane">
+                  <span class="visually-hidden">самолёт</span>
+                  <svg width="15" height="17">
+                    <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
+                  </svg>
+                </label>
               </li>
+
               <li class="user-profile__transport user-profile__transport--on user-profile__transport--bus">
-                <span class="visually-hidden">автобус</span>
+                <input class="user-profile__checkbox visually-hidden" id="profile-bus" type="checkbox" name="bus" checked>
+
+                <label class="user-profile__label" for="profile-bus">
+                  <span class="visually-hidden">автобус</span>
+                  <svg width="14" height="18">
+                    <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
+                  </svg>
+                </label>
               </li>
+
               <li class="user-profile__transport user-profile__transport--off user-profile__transport--bicycle">
-                <span class="visually-hidden">велосипед</span>
+                <input class="user-profile__checkbox visually-hidden" id="profile-bicycle" type="checkbox" name="bicycle">
+
+                <label class="user-profile__label" for="profile-bicycle">
+                  <span class="visually-hidden">велосипед</span>
+                  <svg width="20" height="17">
+                    <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
+                  </svg>
+                </label>
               </li>
+
               <li class="user-profile__transport user-profile__transport--on user-profile__transport--run">
-                <span class="visually-hidden">пешком</span>
+                <input class="user-profile__checkbox visually-hidden" id="profile-run" type="checkbox" name="run" checked>
+
+                <label class="user-profile__label" for="profile-run">
+                  <span class="visually-hidden">пешком</span>
+                  <svg width="15" height="16">
+                    <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
+                  </svg>
+                </label>
               </li>
             </ul>
           </div>
@@ -265,18 +317,18 @@
                       <div class="calendar__number">23</div>
                       <div class="calendar__number">24</div>
                       <div class="calendar__number">25</div>
-                      <div class="calendar__number">26</div>
-                      <div class="calendar__number">27</div>
-                      <div class="calendar__number">28</div>
-                      <div class="calendar__number">29</div>
+                      <div class="calendar__number calendar__number--close">26</div>
+                      <div class="calendar__number calendar__number--close">27</div>
+                      <div class="calendar__number calendar__number--close">28</div>
+                      <div class="calendar__number calendar__number--open">29</div>
 
-                      <div class="calendar__number">30</div>
-                      <div class="calendar__number">31</div>
-                      <div class="calendar__number">1</div>
-                      <div class="calendar__number">2</div>
-                      <div class="calendar__number">3</div>
-                      <div class="calendar__number">4</div>
-                      <div class="calendar__number">5</div>
+                      <div class="calendar__number calendar__number--open">30</div>
+                      <div class="calendar__number calendar__number--open">31</div>
+                      <div class="calendar__number calendar__number--open">1</div>
+                      <div class="calendar__number calendar__number--open">2</div>
+                      <div class="calendar__number calendar__number--open">3</div>
+                      <div class="calendar__number calendar__number--open">4</div>
+                      <div class="calendar__number calendar__number--open">5</div>
                     </div>
                   </div>
                 </div>
@@ -299,24 +351,33 @@
               </p>
 
               <ul class="step__add-countries-list">
-                <li class="step__contry-item">
+                <li class="step__country-item">
                   <div class="step__country-name">Босния и Герцеговина</div>
+                  <div class="step__country-flag">
+                    <svg width="35" height="24">
+                      <use xlink:href="img/sprites/flag-sprites.svg#flag-bosnia"></use>
+                    </svg>
+                  </div>
 
                   <button class="step__country-delete" type="button">
                     <span class="visually-hidden">удалить страну</span>
                   </button>
                 </li>
 
-                <li class="step__contry-item">
+                <li class="step__country-item">
                   <div class="step__country-name">Чехия</div>
-                  <div class="step__country-flag"></div>
+                  <div class="step__country-flag">
+                    <svg width="35" height="24">
+                      <use xlink:href="img/sprites/flag-sprites.svg#flag-czech"></use>
+                    </svg>
+                  </div>
 
                   <button class="step__country-delete" type="button">
                     <span class="visually-hidden">удалить страну</span>
                   </button>
                 </li>
 
-                <li class="step__contry-item step__contry-item--choose step__contry-item--close">
+                <li class="step__country-item step__country-item--choose step__country-item--close">
                   <div class="step__country-name step__country-name--choose">выберите страну</div>
 
                   <div class="step__choose-block">
@@ -357,17 +418,39 @@
                     </div>
 
                     <ul class="step-filter__country-list">
-                      <li class="step-filter__country-item">Австралия</li>
-                      <li class="step-filter__country-item">Австрия</li>
-                      <li class="step-filter__country-item">Азербайджан</li>
-                      <li class="step-filter__country-item">Албпния</li>
-                      <li class="step-filter__country-item">Алжир</li>
-                      <li class="step-filter__country-item">Ангола</li>
-                      <li class="step-filter__country-item">Андорра</li>
-                      <li class="step-filter__country-item">Антигуа и Барбуда</li>
-                      <li class="step-filter__country-item">Аргентина</li>
-                      <li class="step-filter__country-item">Армения</li>
-                      <li class="step-filter__country-item">Афганистан</li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Австралия</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Австрия</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Азербайджан</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Албпния</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Алжир</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Ангола</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Андорра</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Антигуа и Барбуда</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Аргентина</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Армения</a>
+                      </li>
+                      <li class="step-filter__country-item">
+                        <a href="#">Афганистан</a>
+                      </li>
                     </ul>
                   </div>
 
@@ -376,7 +459,7 @@
                   </button>
                 </li>
 
-                <li class="step__contry-item step__contry-item--add">
+                <li class="step__country-item step__country-item--add">
                   <div class="step__country-name step__country-name--add">добавить страну</div>
                 </li>
               </ul>
@@ -401,12 +484,22 @@
 
               <ul class="form__list">
                 <li class="form__item">
-                  <h4 class="form__contry">Босния и Герцеговина</h4>
+                  <h4 class="form__country">
+                    Босния и Герцеговина
+                    <svg width="35" height="24">
+                      <use xlink:href="img/sprites/flag-sprites.svg#flag-bosnia"></use>
+                    </svg>
+                  </h4>
                   <textarea class="form__plan" name="action-plan" placeholder="План действий"></textarea>
                 </li>
 
                 <li class="form__item">
-                  <h4 class="form__contry">Чехия</h4>
+                  <h4 class="form__country">
+                    Чехия
+                    <svg width="35" height="24">
+                      <use xlink:href="img/sprites/flag-sprites.svg#flag-czech"></use>
+                    </svg>
+                  </h4>
                   <textarea class="form__plan" name="action-plan" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
@@ -433,20 +526,29 @@
         </picture>
       </a>
 
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
+      <ul class=".page-footer__social-list social-list">
+        <li class="social-list__item social-list__item--f">
           <a href="#">
             <span class="visually-hidden">фейсбук</span>
+            <svg width="11" height="21">
+              <use xlink:href="img/facebook.svg#Layer_1"></use>
+            </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--vk">
           <a href="#">
             <span class="visually-hidden">вконтакте</span>
+            <svg width="23" height="12">
+              <use xlink:href="img/vk.svg#Layer_1"></use>
+            </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--in">
           <a href="#">
             <span class="visually-hidden">инстаграмм</span>
+            <svg width="18" height="18">
+              <use xlink:href="img/instagram.svg#Layer_1"></use>
+            </svg>
           </a>
         </li>
       </ul>

@@ -64,6 +64,14 @@
     padding-right: 0;
     margin-right: 34px;
   }
+
+  &:hover {
+    color: $basic_yellow;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .menu__login {
@@ -82,6 +90,7 @@
   color: $basic_blue;
   padding-top: 10px;
   padding-right: 2px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -92,6 +101,7 @@
     line-height: 20px;
     padding-top: 14px;
     padding-right: 0;
+    z-index: 7;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,6 +109,15 @@
     margin: 0;
     margin-top: 3px;
     align-self: flex-start;
+    z-index: auto;
+  }
+
+  &:hover {
+    background-color: $special_yellow_dark;
+  }
+
+  &:active {
+    color: rgba($basic_blue, 0.3);
   }
 }
 
@@ -110,6 +129,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    margin-right: -3px;
   }
 }
 

@@ -34,6 +34,7 @@
   list-style: none;
   padding: 0;
   margin-top: 31px;
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     margin-top: 51px;
@@ -93,6 +94,29 @@
 
     &::after {
       display: none;
+    }
+  }
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter) ".";
+    position: absolute;
+    top: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      top: 40px;
+      right: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 37px;
+      right: auto;
+      left: 45px;
     }
   }
 }
@@ -166,6 +190,14 @@
   border: none;
   padding: 0;
   margin-top: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: -6px;

@@ -86,6 +86,14 @@
   padding: 5px 0;
   margin-bottom: 1px;
 
+  &:hover {
+    background-color: $special_yellow_dark;
+  }
+
+  &:active {
+    color: rgba($basic_blue_light, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 28px 0;
     padding-right: 40px;
@@ -110,6 +118,14 @@
   display: block;
   margin-top: 15px;
   margin-bottom: -7px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -159,7 +175,7 @@
   }
 }
 
-.step__contry-item {
+.step__country-item {
   width: calc(100% - 53px);
   border: 1px solid $border_grey;
   border-radius: 4px;
@@ -174,6 +190,10 @@
   color: $basic_blue_light;
   padding-top: 11px;
   padding-left: 9px;
+
+  &:hover {
+    border: 1px solid $hover_border;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -218,8 +238,13 @@
 
   &--add {
     width: 100%;
-    border: none;
+    border: 1px solid $basic_grey_light;
     background-color: $basic_grey_light;
+
+    &:hover {
+      background-color: $special_blue_light;
+      border-color: $special_blue_light;
+    }
 
     @media (min-width: $tablet-width) {
       width: calc(100% - 163px);
@@ -256,31 +281,6 @@
 
     @media (min-width: $desktop-width) {
       right: -53px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -1px;
-    right: -53px;
-    width: 53px;
-    height: 42px;
-    border: 1px solid $border_grey;
-    border-radius: 4px;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-      border-radius: 6px;
-      width: 70px;
-      height: 47px;
-      top: 11px;
-      right: -123px;
-      background-color: tomato;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -156px;
     }
   }
 }
@@ -324,6 +324,37 @@
     @media (min-width: $desktop-width) {
       right: -53px;
     }
+  }
+}
+
+.step__country-flag {
+  position: absolute;
+  top: -1px;
+  right: -53px;
+  width: 53px;
+  height: 42px;
+  border: 1px solid $border_grey;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    border-radius: 6px;
+    width: 70px;
+    height: 47px;
+    top: 11px;
+    right: -123px;
+    padding-top: 0;
+
+    & svg {
+      width: 70px;
+      height: 47px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -156px;
   }
 }
 
@@ -452,6 +483,25 @@
   text-align: center;
   padding-top: 12px;
 
+  &:hover {
+    outline: 1px solid $hover_border;
+    outline-offset: -2px;
+
+    @media (min-width: $desktop-width) {
+      outline: none;
+      border-color: $hover_border;
+    }
+  }
+
+  &:active {
+    background-color: $basic_grey_light;
+
+    @media (min-width: $tablet-width) {
+      color: $basic_white;
+      background-color: $basic_blue_light;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 23px;
   }
@@ -500,21 +550,39 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
   }
+
+  & a {
+    color: $special_grey;
+    text-decoration: none;
+
+    &:hover {
+      color: $basic_blue_light;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 //choose-close
 
-.step__contry-item--close .step__choose-block {
+.step__country-item--close .step__choose-block {
   display: none;
 }
 
 //choose-open
 
-.step__contry-item--open {
+.step__country-item--open {
   background-color: $basic_blue_light;
   color: $basic_white;
   border-radius: 4px 4px 0 0;
   border: none;
+
+  &:hover {
+    border: none;
+  }
+
 
   &::before {
     right: -27px;
@@ -525,7 +593,7 @@
   }
 }
 
-.step__contry-item--open .step__country-name::before {
+.step__country-item--open .step__country-name::before {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -540,7 +608,7 @@
   }
 }
 
-.step__contry-item--open .step__choose-block {
+.step__country-item--open .step__choose-block {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -548,7 +616,7 @@
   }
 }
 
-.step__contry-item--open .step__country-delete {
+.step__country-item--open .step__country-delete {
   top: 10px;
   right: 10px;
 

@@ -8,13 +8,13 @@
   @media (min-width: $tablet-width) {
     border-radius: 0 0 60px 60px;
     padding-bottom: 81px;
-    background-image: url("../../img/flags-back@1x.png");
+    background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: calc(100% - 40px) 11px;
     background-size: auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/flags-back@2x.png");
+      background-image: url("../img/flags-back@2x.png");
       background-size: 289px auto;
     }
   }

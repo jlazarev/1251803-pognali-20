@@ -316,14 +316,12 @@
   }
 
 
-  &::before {
-    content: "";
+  & svg {
     position: absolute;
     top: 0;
     left: 4px;
     width: 26px;
     height: 18px;
-    background-color: tomato;
     border-radius: 3px;
 
     @media (min-width: $tablet-width) {
@@ -335,6 +333,23 @@
 
     @media (min-width: $desktop-width) {
       left: -2px;
+    }
+  }
+
+  & .user-card__flag-germany {
+    width: 37px;
+    height: 26px;
+    top: -4px;
+    left: -1px;
+
+    @media (min-width: $tablet-width) {
+      width: 50px;
+      height: 35px;
+      top: -6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -9px;
     }
   }
 }

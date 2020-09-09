@@ -95,6 +95,14 @@
   color: $basic_blue_light;
   background-color: $button;
 
+  &:hover {
+    background-color: $basic_grey_light;
+  }
+
+  &:active {
+    color: rgba($basic_blue_light, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
