@@ -59,6 +59,16 @@
   background-color: transparent;
   position: relative;
 
+  &:hover::after,
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::after,
+  &:active::before {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -154,14 +164,27 @@
     text-transform: uppercase;
     color: $basic_blue_light;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      background-color: $basic_yellow;
+    }
+
     &--active {
       background-color: $basic_yellow;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
 
 .users__pagination a {
   @media (min-width: $tablet-width) {
+    color: inherit;
     display: block;
     height: 100%;
     text-decoration: none;
@@ -192,18 +215,42 @@
   display: block;
   position: relative;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    width: 20px;
-    height: 13px;
-    background-color: tomato;
+    top: 15px;
+    left: calc(50% - 6px);
+    width: 13px;
+    height: 20px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 6px;
+    }
   }
 }
 
 .users__previous {
   border-right: 1px solid $basic_grey_light;
+
+  &::before {
+    transform: rotate(180deg);
+
+    @media (min-width: $tablet-width) {
+      top: 23px;
+      left: 10px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
