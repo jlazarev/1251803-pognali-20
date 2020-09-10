@@ -347,6 +347,10 @@
       border-color: $special_blue_light;
     }
 
+    &:active::after {
+      opacity: 0.1;
+    }
+
     @media (min-width: $tablet-width) {
       width: calc(100% - 163px);
       border-right: 1px solid transparent;
@@ -754,6 +758,10 @@
   right: 10px;
   background-color: transparent;
 
+  &::before {
+    background-image: url("../img/small-cross-white.svg");
+  }
+
   @media (min-width: $tablet-width) {
     top: 26px;
     right: 24px;
@@ -762,5 +770,9 @@
   @media (min-width: $desktop-width) {
     top: 24px;
     right: -265px;
+
+    &::before {
+      background-image: url("../img/small-cross.svg");
+    }
   }
 }

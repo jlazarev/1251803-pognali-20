@@ -4,6 +4,20 @@
   position: relative;
   padding-bottom: 7px;
 
+  &:hover {
+    box-shadow: 0 4px 9px rgba($basic_black, 0.16);
+  }
+
+  & img {
+    transform: scale(1);
+    transition-duration: 0.4s;
+  }
+
+  &:hover img {
+    transform: scale(1.3);
+    transition-duration: 0.4s;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 12px;
   }

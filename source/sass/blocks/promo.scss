@@ -157,6 +157,14 @@
   border-radius: 50%;
   position: relative;
 
+  &:hover {
+    background-color: $active;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -174,6 +182,14 @@
   background-color: $special_yellow_dark;
   border-radius: 50%;
   position: relative;
+
+  &:hover {
+    background-color: $special_orange;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
@@ -199,6 +215,14 @@
   color: $basic_blue;
   text-decoration: none;
   padding-top: 11px;
+
+  &:hover {
+    background-color: $special_yellow_dark;
+  }
+
+  &:active {
+    color: rgba($basic_blue, 0.3);
+  }
 }
 
 .promo__quote {
