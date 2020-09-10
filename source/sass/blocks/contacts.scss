@@ -184,3 +184,9 @@
 .contacts__email--in-menu .contacts__mark:hover {
   background-color: $special_orange;
 }
+
+.contacts__mark:active .contacts__img {
+  @media (min-width: $desktop-width) {
+    opacity: 0.3;
+  }
+}

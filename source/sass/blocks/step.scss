@@ -75,7 +75,7 @@
   border: none;
   background-color: $basic_yellow;
   border-radius: 20px;
-  font-family: "Blogger-sans", "Verdana", sans-serif;
+  font-family: inherit;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -85,6 +85,23 @@
   display: block;
   padding: 5px 0;
   margin-bottom: 1px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 34px;
+      right: 32px;
+      display: block;
+    }
+  }
 
   &:hover {
     background-color: $special_yellow_dark;
@@ -92,6 +109,10 @@
 
   &:active {
     color: rgba($basic_blue_light, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -118,13 +139,32 @@
   display: block;
   margin-top: 15px;
   margin-bottom: -7px;
+  position: relative;
 
   &:hover {
     opacity: 0.7;
   }
 
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 33px;
+      left: 3px;
+      width: 14px;
+      height: 13px;
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+
   &:active {
-    opacity: 0.3;
+    color: rgba($basic_blue_light, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -136,6 +176,7 @@
     padding: 0;
     width: auto;
     height: 81px;
+    padding-left: 40px;
   }
 }
 
@@ -191,6 +232,35 @@
   padding-top: 11px;
   padding-left: 9px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    right: -3px;
+    width: 5px;
+    height: 10px;
+    background-image: url("../../img/small-arrow.svg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    background-image: url("../img/dropdown-form.svg");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 16px;
+      top: 30px;
+      right: 26px;
+    }
+  }
+
   &:hover {
     border: 1px solid $hover_border;
   }
@@ -213,6 +283,7 @@
       width: 1px;
       height: 85px;
       background-color: $border_step;
+      background-image: none;
 
       @media (min-width: $desktop-width) {
         right: -46px;
@@ -226,6 +297,18 @@
 
   &--choose {
     width: 100%;
+
+    &::before {
+      right: 50px;
+
+      @media (min-width: $tablet-width) {
+        right: -28px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -46px;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       width: calc(100% - 163px);
@@ -241,9 +324,31 @@
     border: 1px solid $basic_grey_light;
     background-color: $basic_grey_light;
 
+    &::after {
+      top: 13px;
+      width: 14px;
+      height: 14px;
+      background-image: url("../img/show-more-plus.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 20px;
+        height: 20px;
+        top: 24px;
+        right: 25px;
+      }
+    }
+
+    &::before {
+      background-image: none;
+    }
+
     &:hover {
       background-color: $special_blue_light;
       border-color: $special_blue_light;
+    }
+
+    &:active::after {
+      opacity: 0.1;
     }
 
     @media (min-width: $tablet-width) {
@@ -368,8 +473,36 @@
   top: -11px;
   right: -63px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 7px;
+    height: 7px;
+    background-image: url("../img/small-cross.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      opacity: 0.1;
+    }
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
   @media (min-width: $tablet-width) {
-    background-color: tomato;
+    background-color: transparent;
     border-radius: 0;
     top: 23px;
     right: -167px;
@@ -591,6 +724,10 @@
       right: -45px;
     }
   }
+
+  &::after {
+    display: none;
+  }
 }
 
 .step__country-item--open .step__country-name::before {
@@ -619,6 +756,11 @@
 .step__country-item--open .step__country-delete {
   top: 10px;
   right: 10px;
+  background-color: transparent;
+
+  &::before {
+    background-image: url("../img/small-cross-white.svg");
+  }
 
   @media (min-width: $tablet-width) {
     top: 26px;
@@ -628,5 +770,9 @@
   @media (min-width: $desktop-width) {
     top: 24px;
     right: -265px;
+
+    &::before {
+      background-image: url("../img/small-cross.svg");
+    }
   }
 }

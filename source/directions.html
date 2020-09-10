@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--close-menu page-header--nojs page-header--tablet-in-index">
+  <header class="page-header page-header--close-menu page-header--nojs">
     <div class="page-header__wrapper wrapper">
       <div class="page-header__box">
         <a class="page-header__logo" href="index.html">
@@ -241,7 +241,11 @@
                     <span>ищу попутчиков:</span>
                     <span class="form__units">чел.</span>
                   </label>
-                  <input class="form__numder" id="number-companions" type="text" value="2">
+                  <div class="form__numder">
+                    <button class="form__number-btn form__number-btn--minus" type="button" aria-label="минус"></button>
+                    <input id="number-companions" name="number-companions" type="text" value="2">
+                    <button class="form__number-btn form__number-btn--plus" type="button" aria-label="плюс"></button>
+                  </div>
                 </div>
 
                 <div class="form__block">
@@ -249,24 +253,35 @@
                     <span>длительность:</span>
                     <span class="form__units">дн.</span>
                   </label>
-                  <input class="form__numder" id="number-days" type="text" value="2">
+                  <div class="form__numder">
+                    <button class="form__number-btn form__number-btn--minus" type="button" aria-label="минус"></button>
+                    <input id="number-days" name="number-days" type="text" value="2">
+                    <button class="form__number-btn form__number-btn--plus" type="button" aria-label="плюс"></button>
+                  </div>
                 </div>
 
                 <div class="form__block">
                   <input class="form__checkbox visually-hidden" id="children" type="checkbox" checked>
-                  <label class="form__children" for="children">Можно с детьми</label>
+                  <label class="form__children" for="children">
+                    <div class="form__costum-checkbox">
+                      <svg width="8" height="8">
+                        <use xlink:href="img/tick.svg#Layer_1"></use>
+                      </svg>
+                    </div>
+                    Можно с детьми
+                  </label>
                 </div>
               </div>
 
               <div class="step__calendar calendar">
                 <div class="calendar__title">
-                  <button class="calendar__btn calendar__btn--back">
+                  <button type="button" class="calendar__btn calendar__btn--back">
                     <span class="visually-hidden">назад</span>
                   </button>
 
                   <h3 class="calendar__month">Март 2019</h3>
 
-                  <button class="calendar__btn calendar__btn--forward">
+                  <button type="button" class="calendar__btn calendar__btn--forward">
                     <span class="visually-hidden">вперёд</span>
                   </button>
                 </div>
@@ -274,13 +289,13 @@
                 <div class="calendar__box">
                   <div class="calendar__proportion">
                     <div class="calendar__table">
-                      <div class="calendar__day-of-week">п</div>
-                      <div class="calendar__day-of-week">в</div>
-                      <div class="calendar__day-of-week">с</div>
-                      <div class="calendar__day-of-week">ч</div>
-                      <div class="calendar__day-of-week">п</div>
-                      <div class="calendar__day-of-week calendar__day-of-week--weekend">с</div>
-                      <div class="calendar__day-of-week calendar__day-of-week--weekend">в</div>
+                      <div class="calendar__day-of-week">п<span>н</span></div>
+                      <div class="calendar__day-of-week">в<span>т</span></div>
+                      <div class="calendar__day-of-week">с<span>р</span></div>
+                      <div class="calendar__day-of-week">ч<span>т</span></div>
+                      <div class="calendar__day-of-week">п<span>т</span></div>
+                      <div class="calendar__day-of-week calendar__day-of-week--weekend">с<span>б</span></div>
+                      <div class="calendar__day-of-week calendar__day-of-week--weekend">в<span>с</span></div>
 
                       <div class="calendar__number">23</div>
                       <div class="calendar__number">24</div>
@@ -288,7 +303,7 @@
                       <div class="calendar__number">26</div>
                       <div class="calendar__number">27</div>
                       <div class="calendar__number">28</div>
-                      <div class="calendar__number">1</div>
+                      <div class="calendar__number">1 <span>мар</span></div>
 
                       <div class="calendar__number">2</div>
                       <div class="calendar__number">3</div>
@@ -317,14 +332,14 @@
                       <div class="calendar__number">23</div>
                       <div class="calendar__number">24</div>
                       <div class="calendar__number">25</div>
-                      <div class="calendar__number calendar__number--close">26</div>
+                      <div class="calendar__number calendar__number--close">26<span class="calendar__residence">Заезд</span></div>
                       <div class="calendar__number calendar__number--close">27</div>
-                      <div class="calendar__number calendar__number--close">28</div>
+                      <div class="calendar__number calendar__number--close">28<span class="calendar__residence">Выезд</span></div>
                       <div class="calendar__number calendar__number--open">29</div>
 
                       <div class="calendar__number calendar__number--open">30</div>
                       <div class="calendar__number calendar__number--open">31</div>
-                      <div class="calendar__number calendar__number--open">1</div>
+                      <div class="calendar__number calendar__number--open">1 <span>апр</span></div>
                       <div class="calendar__number calendar__number--open">2</div>
                       <div class="calendar__number calendar__number--open">3</div>
                       <div class="calendar__number calendar__number--open">4</div>
@@ -334,7 +349,7 @@
                 </div>
               </div>
 
-              <button class="step__next-step-btn">Следующий шаг</button>
+              <button type="button" class="step__next-step-btn">Следующий шаг</button>
             </li>
 
             <li class="add-plan__step step">
@@ -428,7 +443,7 @@
                         <a href="#">Азербайджан</a>
                       </li>
                       <li class="step-filter__country-item">
-                        <a href="#">Албпния</a>
+                        <a href="#">Албания</a>
                       </li>
                       <li class="step-filter__country-item">
                         <a href="#">Алжир</a>
@@ -490,7 +505,7 @@
                       <use xlink:href="img/sprites/flag-sprites.svg#flag-bosnia"></use>
                     </svg>
                   </h4>
-                  <textarea class="form__plan" name="action-plan" placeholder="План действий"></textarea>
+                  <textarea class="form__plan" name="action-plan-bosnia" placeholder="План действий" required></textarea>
                 </li>
 
                 <li class="form__item">
@@ -500,7 +515,7 @@
                       <use xlink:href="img/sprites/flag-sprites.svg#flag-czech"></use>
                     </svg>
                   </h4>
-                  <textarea class="form__plan" name="action-plan" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <textarea class="form__plan" name="action-plan-czech" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
 
@@ -518,7 +533,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -526,7 +541,7 @@
         </picture>
       </a>
 
-      <ul class=".page-footer__social-list social-list">
+      <ul class="page-footer__social-list social-list">
         <li class="social-list__item social-list__item--f">
           <a href="#">
             <span class="visually-hidden">фейсбук</span>

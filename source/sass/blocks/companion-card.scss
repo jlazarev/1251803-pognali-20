@@ -3,10 +3,23 @@
   flex-direction: column;
   background-color: $basic_white;
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   margin: 0 auto;
   margin-bottom: 9px;
+
+  &:hover {
+    box-shadow: 0 4px 9px rgba($basic_black, 0.6);
+  }
+
+  & img {
+    transform: scale(1);
+    transition-duration: 0.4s;
+  }
+
+  &:hover img {
+    transform: scale(1.3);
+    transition-duration: 0.4s;
+  }
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
@@ -18,6 +31,11 @@
   }
 }
 
+.companion-card__top {
+  display: flex;
+  justify-content: center;
+}
+
 .companion-card__title {
   font-weight: bold;
   font-size: 21px;
@@ -26,6 +44,7 @@
   color: $basic_blue_light;
   margin-top: 1px;
   margin-bottom: 16px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -46,12 +65,41 @@
       opacity: 0.3;
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $off_red;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      left: -21px;
+    }
+  }
+
+  &--online::before {
+    background-color: $on_green;
+  }
 }
 
 .companion-card__photo {
+  width: 270px;
+  height: 270px;
   order: -1;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+
     & img {
       width: 285px;
       height: 285px;
@@ -71,7 +119,8 @@
   line-height: 14px;
   color: $basic_white;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 7px;
+  border: 4px solid $special_orange;
 
   @media (min-width: $tablet-width) {
     top: 20px;
@@ -146,7 +195,7 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 24px;
+    margin-top: 27px;
   }
 }
 
@@ -160,7 +209,7 @@
     fill: $basic_blue_light;
   }
 
-  &--off {
+  &--off svg {
     opacity: 0.15;
   }
 

@@ -50,28 +50,49 @@
 
           <div class="menu__contacts contacts">
             <a class="contacts__tel contacts__tel--in-menu" href="tel:88005558628">
+              <div class="contacts__mark">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/topmenu-phone.svg">
+                  <img src="img/contacts-phone.svg" width="16" height="15" alt="телефон">
+                </picture>
+              </div>
               <span>8 800 555-86-28</span>
             </a>
 
             <a class="contacts__email contacts__email--in-menu" href="mailto:mail@htmlacademy.ru">
+              <div class="contacts__mark">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/topmenu-mail.svg">
+                  <img src="img/contacts-mail.svg" width="19" height="13" alt="почта">
+                </picture>
+              </div>
               <span>mail@htmlacademy.ru</span>
             </a>
           </div>
 
           <ul class="menu__social-list social-list social-list--in-menu">
-            <li class="social-list__item">
+            <li class="social-list__item social-list__item--in-menu social-list__item--f">
               <a href="#">
                 <span class="visually-hidden">фейсбук</span>
+                <svg width="11" height="21">
+                  <use xlink:href="img/facebook.svg#Layer_1"></use>
+                </svg>
               </a>
             </li>
-            <li class="social-list__item">
+            <li class="social-list__item social-list__item--in-menu social-list__item--vk">
               <a href="#">
                 <span class="visually-hidden">вконтакте</span>
+                <svg width="23" height="12">
+                  <use xlink:href="img/vk.svg#Layer_1"></use>
+                </svg>
               </a>
             </li>
-            <li class="social-list__item">
+            <li class="social-list__item social-list__item--in-menu social-list__item--in">
               <a href="#">
                 <span class="visually-hidden">инстаграмм</span>
+                <svg width="18" height="18">
+                  <use xlink:href="img/instagram.svg#Layer_1"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -440,81 +461,84 @@
           </h2>
 
           <form class="user-filter__form" action="https://echo.htmlacademy.ru">
-            <div class="user-filter__fieldset user-filter__fieldset--close">
+            <div class="user-filter__fieldset user-filter__fieldset--open">
               <h3 class="user-filter__legend">хобби</h3>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Спортзал
-              </label>
+              <input class="visually-hidden" id="sport" type="checkbox" name="sport" checked>
+              <label class="user-filter__label" for="sport">Спортзал</label>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Кальян
-              </label>
+              <input class="visually-hidden" id="hookah" type="checkbox" name="hookah" checked>
+              <label class="user-filter__label" for="hookah">Кальян</label>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Диван
-              </label>
+              <input class="visually-hidden" id="sofa" type="checkbox" name="sofa">
+              <label class="user-filter__label" for="sofa">Диван</label>
             </div>
 
-            <div class="user-filter__fieldset">
+            <div class="user-filter__fieldset user-filter__fieldset--open">
               <h3 class="user-filter__legend">музыка</h3>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Тяжелый рок
-              </label>
+              <input class="visually-hidden" id="hard-rock" type="checkbox" name="hard-rock" checked>
+              <label class="user-filter__label" for="hard-rock">Тяжелый рок</label>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Русский рэп
-              </label>
+              <input class="visually-hidden" id="russian-rap" type="checkbox" name="russian-rap" checked>
+              <label class="user-filter__label" for="russian-rap">Русский рэп</label>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Евроденс
-              </label>
+              <input class="visually-hidden" id="eurodance" type="checkbox" name="eurodance">
+              <label class="user-filter__label" for="eurodance">Евроденс</label>
             </div>
 
             <div class="user-filter__fieldset user-filter__fieldset--close">
               <h3 class="user-filter__legend">еда</h3>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Мясоед
-              </label>
+              <input class="visually-hidden" id="meat-eater" type="checkbox" name="meat-eater" checked>
+              <label class="user-filter__label" for="meat-eater">Мясоед</label>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Сидит на ПП
-              </label>
+              <input class="visually-hidden" id="proper-nutrition" type="checkbox" name="proper-nutrition" checked>
+              <label class="user-filter__label" for="proper-nutrition">Сидит на ПП</label>
 
-              <label class="user-filter__label">
-                <input class="visually-hidden" type="checkbox"> Веган-сыроед
-              </label>
+              <input class="visually-hidden" id="vegan" type="checkbox" name="vegan">
+              <label class="user-filter__label" for="vegan">Веган-сыроед</label>
             </div>
 
-            <div class="user-filter__fieldset">
+            <div class="user-filter__fieldset user-filter__fieldset--open">
               <h3 class="user-filter__legend user-filter__legend--bottom">транспорт</h3>
 
               <div class="user-filter__transport-box">
-                <label class="user-filter__transport">
-                  <input class="visually-hidden" type="checkbox">
+                <input class="visually-hidden" type="checkbox" id="filter-plane" name="filter-plane" checked>
+                <label class="user-filter__transport" for="filter-plane">
                   <span class="visually-hidden">самолет</span>
+                  <svg width="15" height="17">
+                    <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
+                  </svg>
                 </label>
 
-                <label class="user-filter__transport">
-                  <input class="visually-hidden" type="checkbox">
+                <input class="visually-hidden" type="checkbox" id="filter-bus" name="filter-bus">
+                <label class="user-filter__transport" for="filter-bus">
                   <span class="visually-hidden">автобус</span>
+                  <svg width="14" height="18">
+                    <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
+                  </svg>
                 </label>
 
-                <label class="user-filter__transport">
-                  <input class="visually-hidden" type="checkbox">
+                <input class="visually-hidden" type="checkbox" id="filter-bicycle" name="filter-bicycle">
+                <label class="user-filter__transport" for="filter-bicycle">
                   <span class="visually-hidden">велосипед</span>
+                  <svg width="20" height="17">
+                    <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
+                  </svg>
                 </label>
 
-                <label class="user-filter__transport">
-                  <input class="visually-hidden" type="checkbox">
+                <input class="visually-hidden" type="checkbox" id="filter-run" name="filter-run">
+                <label class="user-filter__transport" for="filter-run">
                   <span class="visually-hidden">пешком</span>
+                  <svg width="15" height="16">
+                    <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
+                  </svg>
                 </label>
               </div>
             </div>
 
-            <div  class="user-filter__fieldset">
+            <div  class="user-filter__fieldset user-filter__fieldset--open">
               <h3  class="user-filter__legend user-filter__legend--bottom">левел</h3>
 
               <div class="user-filter__range-filter">
@@ -549,8 +573,10 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--offline">
-                Таня<br class="break-mobile">
-                Фирсова
+                <a href="#">
+                  Таня<br class="break-mobile">
+                  Фирсова
+                </a>
               </h3>
 
               <div class="user-card__photo-block">
@@ -562,7 +588,11 @@
               </div>
 
               <div class="user-card__like">
-                <button class="user-card__like-btn"></button>
+                <button class="user-card__like-btn user-card__like-btn--on">
+                  <svg width="15" height="11">
+                    <use xlink:href="img/heart-active.svg#heart"></use>
+                  </svg>
+                </button>
                 <span class="user-card__like-numder">1,5 M</span>
               </div>
 
@@ -602,17 +632,28 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane">
-                    <span class="visually-hidden">самолёт</span>
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                    <svg width="15" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bus">
-                    <span class="visually-hidden">автобус</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bus tooltip" aria-label="автобус">
+                    <svg width="14" height="18">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle">
-                    <span class="visually-hidden">велосипед</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" aria-label="велосипед">
+                    <svg width="20" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--run">
-                    <span class="visually-hidden">пешком</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" aria-label="пешком">
+                    <svg width="15" height="16">
+                      <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
@@ -632,8 +673,10 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--offline">
-                Петя<br class="break-mobile">
-                Демин
+                <a href="#">
+                  Петя<br class="break-mobile">
+                  Демин
+                </a>
               </h3>
 
               <div class="user-card__photo-block">
@@ -645,7 +688,11 @@
               </div>
 
               <div class="user-card__like">
-                <button class="user-card__like-btn"></button>
+                <button class="user-card__like-btn user-card__like-btn--off">
+                  <svg width="15" height="11">
+                    <use xlink:href="img/heart-active.svg#heart"></use>
+                  </svg>
+                </button>
                 <span class="user-card__like-numder">1500</span>
               </div>
 
@@ -678,24 +725,38 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane">
-                    <span class="visually-hidden">самолёт</span>
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                    <svg width="15" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--on user-card__transport--bus">
-                    <span class="visually-hidden">автобус</span>
+
+                  <li class="user-card__transport user-card__transport--on user-card__transport--bus tooltip" aria-label="автобус">
+                    <svg width="14" height="18">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle">
-                    <span class="visually-hidden">велосипед</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" aria-label="велосипед">
+                    <svg width="20" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--on user-card__transport--run">
-                    <span class="visually-hidden">пешком</span>
+
+                  <li class="user-card__transport user-card__transport--on user-card__transport--run tooltip" aria-label="пешком">
+                    <svg width="15" height="16">
+                      <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
 
               <div class="user-card__level">
                 <h4 class="user-card__inner-title">левел:</h4>
-                <span class="user-card__level-number">80</span>
+                <span class="user-card__level-number">
+                  80
+                  <span class="user-card__level-text">level</span>
+                </span>
               </div>
 
               <button class="user-card__call-btn">позвать!</button>
@@ -705,8 +766,10 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--offline">
-                Марк<br class="break-mobile">
-                Смолов
+                <a href="#">
+                  Марк<br class="break-mobile">
+                  Смолов
+                </a>
               </h3>
 
               <div class="user-card__photo-block">
@@ -718,7 +781,11 @@
               </div>
 
               <div class="user-card__like">
-                <button class="user-card__like-btn"></button>
+                <button class="user-card__like-btn user-card__like-btn--off">
+                  <svg width="15" height="11">
+                    <use xlink:href="img/heart-active.svg#heart"></use>
+                  </svg>
+                </button>
                 <span class="user-card__like-numder">170</span>
               </div>
 
@@ -757,24 +824,38 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane">
-                    <span class="visually-hidden">самолёт</span>
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                    <svg width="15" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bus">
-                    <span class="visually-hidden">автобус</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bus tooltip" aria-label="автобус">
+                    <svg width="14" height="18">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--on user-card__transport--bicycle">
-                    <span class="visually-hidden">велосипед</span>
+
+                  <li class="user-card__transport user-card__transport--on user-card__transport--bicycle tooltip" aria-label="велосипед">
+                    <svg width="20" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--run">
-                    <span class="visually-hidden">пешком</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" aria-label="пешком">
+                    <svg width="15" height="16">
+                      <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
 
               <div class="user-card__level">
                 <h4 class="user-card__inner-title">левел:</h4>
-                <span class="user-card__level-number">25</span>
+                <span class="user-card__level-number">
+                  25
+                  <span class="user-card__level-text">level</span>
+                </span>
               </div>
 
               <button class="user-card__call-btn">позвать!</button>
@@ -783,9 +864,11 @@
 
           <li class="users__item user-card">
             <div class="user-card__wrapper">
-              <h3 class="user-card__name user-card__name--offline">
-                Лариса<br class="break-mobile">
-                Роговая
+              <h3 class="user-card__name user-card__name--online">
+                <a href="#">
+                  Лариса<br class="break-mobile">
+                  Роговая
+                </a>
               </h3>
 
               <div class="user-card__photo-block">
@@ -797,7 +880,11 @@
               </div>
 
               <div class="user-card__like">
-                <button class="user-card__like-btn"></button>
+                <button class="user-card__like-btn user-card__like-btn--off">
+                  <svg width="15" height="11">
+                    <use xlink:href="img/heart-active.svg#heart"></use>
+                  </svg>
+                </button>
                 <span class="user-card__like-numder">1,5 M</span>
               </div>
 
@@ -829,24 +916,38 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane">
-                    <span class="visually-hidden">самолёт</span>
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                    <svg width="15" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--on user-card__transport--bus">
-                    <span class="visually-hidden">автобус</span>
+
+                  <li class="user-card__transport user-card__transport--on user-card__transport--bus tooltip" aria-label="автобус">
+                    <svg width="14" height="18">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle">
-                    <span class="visually-hidden">велосипед</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" aria-label="велосипед">
+                    <svg width="20" height="17">
+                      <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
+                    </svg>
                   </li>
-                  <li class="user-card__transport user-card__transport--off user-card__transport--run">
-                    <span class="visually-hidden">пешком</span>
+
+                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" aria-label="пешком">
+                    <svg width="15" height="16">
+                      <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
 
               <div class="user-card__level">
                 <h4 class="user-card__inner-title">левел:</h4>
-                <span class="user-card__level-number">50</span>
+                <span class="user-card__level-number">
+                  50
+                  <span class="user-card__level-text">level</span>
+                </span>
               </div>
 
               <button class="user-card__call-btn">позвать!</button>
@@ -858,7 +959,7 @@
 
         <div class="users__nav">
           <ol class="users__pagination-list">
-            <li class="users__pagination users__pagination--active"><a href="#">1</a></li>
+            <li class="users__pagination users__pagination--active"><a>1</a></li>
             <li class="users__pagination"><a href="#">2</a></li>
             <li class="users__pagination"><a href="#">3</a></li>
             <li class="users__pagination"><a href="#">4</a></li>
@@ -884,7 +985,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -893,19 +994,28 @@
       </a>
 
       <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--f">
           <a href="#">
             <span class="visually-hidden">фейсбук</span>
+            <svg width="11" height="21">
+              <use xlink:href="img/facebook.svg#Layer_1"></use>
+            </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--vk">
           <a href="#">
             <span class="visually-hidden">вконтакте</span>
+            <svg width="23" height="12">
+              <use xlink:href="img/vk.svg#Layer_1"></use>
+            </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--in">
           <a href="#">
             <span class="visually-hidden">инстаграмм</span>
+            <svg width="18" height="18">
+              <use xlink:href="img/instagram.svg#Layer_1"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -922,6 +1032,8 @@
 
   <script src="js/main-menu.js"></script>
   <script src="js/country-filter.js"></script>
+  <script src="js/user-filter.js"></script>
+  <script src="js/like-btn.js"></script>
 </body>
 
 </html>
