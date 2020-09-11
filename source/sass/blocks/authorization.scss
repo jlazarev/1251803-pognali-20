@@ -139,6 +139,14 @@
     height: 81px;
     width: calc(100% - 330px);
   }
+
+  &::placeholder {
+    color: rgba($special_grey, 0.3);
+  }
+
+  &--error::placeholder {
+    color: red;
+  }
 }
 
 .authorization__submit-btn {

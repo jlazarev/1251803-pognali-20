@@ -261,7 +261,7 @@
                 </div>
 
                 <div class="form__block">
-                  <input class="form__checkbox visually-hidden" id="children" type="checkbox" checked>
+                  <input class="form__checkbox visually-hidden" id="children" name="children" type="checkbox" checked>
                   <label class="form__children" for="children">
                     <span class="form__costum-checkbox">
                       <svg width="8" height="8">
@@ -395,7 +395,7 @@
                 <li class="step__country-item step__country-item--choose step__country-item--close">
                   <div class="step__country-name step__country-name--choose">выберите страну</div>
 
-                  <div class="step__choose-block">
+                  <div class="step__choose-block step-filter">
                     <div class="step__choose-box">
                       <div class="step__choose-proportion">
                         <ul class="step-filter__alphabet">
@@ -505,7 +505,7 @@
                       <use xlink:href="img/sprites/flag-sprites.svg#flag-bosnia"></use>
                     </svg>
                   </h4>
-                  <textarea class="form__plan" name="action-plan-bosnia" placeholder="План действий" required></textarea>
+                  <textarea class="form__plan" name="action-plan-bosnia" placeholder="План действий"></textarea>
                 </li>
 
                 <li class="form__item">
@@ -515,7 +515,7 @@
                       <use xlink:href="img/sprites/flag-sprites.svg#flag-czech"></use>
                     </svg>
                   </h4>
-                  <textarea class="form__plan" name="action-plan-czech" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <textarea class="form__plan" name="action-plan-czech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
 
@@ -580,6 +580,7 @@
 
   <script src="js/main-menu.js"></script>
   <script src="js/choose-country.js"></script>
+  <script src="js/plan-error.js"></script>
 </body>
 
 </html>
