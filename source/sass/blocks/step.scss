@@ -82,10 +82,12 @@
   text-transform: uppercase;
   color: $basic_blue_light;
   width: 100%;
-  display: block;
   padding: 5px 0;
   margin-bottom: 1px;
   position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 
   &::after {
     content: "";
@@ -136,10 +138,12 @@
   text-transform: uppercase;
   color: $basic_blue_light;
   width: 100%;
-  display: block;
   margin-top: 15px;
   margin-bottom: -7px;
   position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.7;
@@ -177,6 +181,7 @@
     width: auto;
     height: 81px;
     padding-left: 40px;
+    padding-top: 28px;
   }
 }
 

@@ -361,6 +361,32 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $basic_blue_light;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.country-filter__country-item a {
+  color: $special_grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $basic_blue_light;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .country-filter__close {
