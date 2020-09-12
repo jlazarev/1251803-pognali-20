@@ -74,7 +74,7 @@
 
 .nav-list__link[href] span {
   display: block;
-  transform: translateY(0px);
+  transform: translateY(0);
   transition: 0.5s;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .nav-list__link[href]:hover::after {
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 
 .menu__login {

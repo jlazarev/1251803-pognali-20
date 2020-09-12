@@ -81,9 +81,9 @@ const images = () => {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo(),
-      // imagemin.jpegtran({progressive: true})
+      // imagemin.mozjpeg,({progressive: true})
     ]))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
@@ -93,7 +93,7 @@ exports.images = images;
 const webpmin = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.webp = webpmin;
@@ -101,10 +101,10 @@ exports.webp = webpmin;
 // svgstore
 
 const sprite = () => {
-  return gulp.src("source/img/**/icon-for-sptite-*.svg")
+  return gulp.src("build/img/**/social-*.svg")
     .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(rename("social-sprite.svg"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -128,13 +128,11 @@ exports.html = html;
 
 //build
 
-const build = () => {
-  return  gulp.series(
-    "clean",
-    "copy",
-    "styles",
-    "html"
-  );
-}
+const build = () => gulp.series(
+  "clean",
+  "copy",
+  "styles",
+  "html"
+);
 
 exports.build = build;

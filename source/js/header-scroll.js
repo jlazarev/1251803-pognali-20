@@ -7,4 +7,3 @@ window.addEventListener('scroll', function () {
     header.classList.add('page-header--scroll');
   }
 });
-
