@@ -53,7 +53,7 @@
               <div class="contacts__mark">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/topmenu-phone.svg">
-                  <img src="img/contacts-phone.svg" width="16" height="15" alt="телефон">
+                  <img class="contacts__img" src="img/contacts-phone.svg" width="16" height="15" alt="телефон">
                 </picture>
               </div>
               <span>8 800 555-86-28</span>
@@ -63,7 +63,7 @@
               <div class="contacts__mark">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/topmenu-mail.svg">
-                  <img src="img/contacts-mail.svg" width="19" height="13" alt="почта">
+                  <img class="contacts__img" src="img/contacts-mail.svg" width="19" height="13" alt="почта">
                 </picture>
               </div>
               <span>mail@htmlacademy.ru</span>
@@ -138,17 +138,17 @@
                 <li class="country-filter__letter country-filter__letter--focus">
                   а
                   <ul>
-                    <li>Австралия</li>
-                    <li>Австрия</li>
-                    <li>Азербайджан</li>
-                    <li>Албания</li>
-                    <li>Алжир</li>
-                    <li>Ангола</li>
-                    <li>Андорра</li>
-                    <li>Антигуа и Барбуда</li>
-                    <li>Аргентина</li>
-                    <li>Армения</li>
-                    <li>Афганистан</li>
+                    <li class="country-filter__country-item"><a href="/australia">Австралия</a></li>
+                    <li class="country-filter__country-item"><a href="/europe/austria">Австрия</a></li>
+                    <li class="country-filter__country-item"><a href="/asia/azerbaijan">Азербайджан</a></li>
+                    <li class="country-filter__country-item"><a href="/europe/albania">Албания</a></li>
+                    <li class="country-filter__country-item"><a href="/africa/algeria">Алжир</a></li>
+                    <li class="country-filter__country-item"><a href="/asia/angola">Ангола</a></li>
+                    <li class="country-filter__country-item"><a href="/europe/andorra">Андорра</a></li>
+                    <li class="country-filter__country-item"><a href="/islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+                    <li class="country-filter__country-item"><a href="/america/argentina">Аргентина</a></li>
+                    <li class="country-filter__country-item"><a href="/asia/armenia">Армения</a></li>
+                    <li class="country-filter__country-item"><a href="/asia/afganistan">Афганистан</a></li>
                   </ul>
                 </li>
                 <li class="country-filter__letter">
@@ -432,17 +432,17 @@
           </div>
 
           <ul class="country-filter__country-list">
-            <li class="country-filter__country-item">Австралия</li>
-            <li class="country-filter__country-item">Австрия</li>
-            <li class="country-filter__country-item">Азербайджан</li>
-            <li class="country-filter__country-item">Албания</li>
-            <li class="country-filter__country-item">Алжир</li>
-            <li class="country-filter__country-item">Ангола</li>
-            <li class="country-filter__country-item">Андорра</li>
-            <li class="country-filter__country-item">Антигуа и Барбуда</li>
-            <li class="country-filter__country-item">Аргентина</li>
-            <li class="country-filter__country-item">Армения</li>
-            <li class="country-filter__country-item">Афганистан</li>
+            <li class="country-filter__country-item"><a href="/australia">Австралия</a></li>
+            <li class="country-filter__country-item"><a href="/europe/austria">Австрия</a></li>
+            <li class="country-filter__country-item"><a href="/asia/azerbaijan">Азербайджан</a></li>
+            <li class="country-filter__country-item"><a href="/europe/albania">Албания</a></li>
+            <li class="country-filter__country-item"><a href="/africa/algeria">Алжир</a></li>
+            <li class="country-filter__country-item"><a href="/asia/angola">Ангола</a></li>
+            <li class="country-filter__country-item"><a href="/europe/andorra">Андорра</a></li>
+            <li class="country-filter__country-item"><a href="/islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+            <li class="country-filter__country-item"><a href="/america/argentina">Аргентина</a></li>
+            <li class="country-filter__country-item"><a href="/asia/armenia">Армения</a></li>
+            <li class="country-filter__country-item"><a href="/asia/afganistan">Афганистан</a></li>
           </ul>
 
           <button class="country-filter__close" type="button">
@@ -461,7 +461,7 @@
           </h2>
 
           <form class="user-filter__form" action="https://echo.htmlacademy.ru">
-            <div class="user-filter__fieldset user-filter__fieldset--open">
+            <div class="user-filter__fieldset user-filter__fieldset--close">
               <h3 class="user-filter__legend">хобби</h3>
 
               <input class="visually-hidden" id="sport" type="checkbox" name="sport" checked>
@@ -474,7 +474,7 @@
               <label class="user-filter__label" for="sofa">Диван</label>
             </div>
 
-            <div class="user-filter__fieldset user-filter__fieldset--open">
+            <div class="user-filter__fieldset user-filter__fieldset--close">
               <h3 class="user-filter__legend">музыка</h3>
 
               <input class="visually-hidden" id="hard-rock" type="checkbox" name="hard-rock" checked>
@@ -500,7 +500,7 @@
               <label class="user-filter__label" for="vegan">Веган-сыроед</label>
             </div>
 
-            <div class="user-filter__fieldset user-filter__fieldset--open">
+            <div class="user-filter__fieldset user-filter__fieldset--close">
               <h3 class="user-filter__legend user-filter__legend--bottom">транспорт</h3>
 
               <div class="user-filter__transport-box">
@@ -538,7 +538,7 @@
               </div>
             </div>
 
-            <div  class="user-filter__fieldset user-filter__fieldset--open">
+            <div  class="user-filter__fieldset user-filter__fieldset--close">
               <h3  class="user-filter__legend user-filter__legend--bottom">левел</h3>
 
               <div class="user-filter__range-filter">
@@ -573,18 +573,20 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--offline">
-                <a href="#">
+                <a href="user/firsova.html">
                   Таня<br class="break-mobile">
                   Фирсова
                 </a>
               </h3>
 
               <div class="user-card__photo-block">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@1x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                  <img class="user-card__photo" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
-                </picture>
+                <a href="user/firsova.html">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <img class="user-card__photo" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
+                  </picture>
+                </a>
               </div>
 
               <div class="user-card__like">
@@ -632,25 +634,25 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" data-description="самолёт">
                     <svg width="15" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bus tooltip" aria-label="автобус">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bus tooltip" data-description="автобус">
                     <svg width="14" height="18">
                       <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" aria-label="велосипед">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" data-description="велосипед">
                     <svg width="20" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" aria-label="пешком">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" data-description="пешком">
                     <svg width="15" height="16">
                       <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
                     </svg>
@@ -673,18 +675,20 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--offline">
-                <a href="#">
+                <a href="user/demin.html">
                   Петя<br class="break-mobile">
                   Демин
                 </a>
               </h3>
 
               <div class="user-card__photo-block">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@1x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img class="user-card__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
-                </picture>
+                <a href="user/demin.html">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img class="user-card__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
+                  </picture>
+                </a>
               </div>
 
               <div class="user-card__like">
@@ -725,25 +729,25 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" data-description="самолёт">
                     <svg width="15" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--on user-card__transport--bus tooltip" aria-label="автобус">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--bus tooltip" data-description="автобус">
                     <svg width="14" height="18">
                       <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" aria-label="велосипед">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" data-description="велосипед">
                     <svg width="20" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--on user-card__transport--run tooltip" aria-label="пешком">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--run tooltip" data-description="пешком">
                     <svg width="15" height="16">
                       <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
                     </svg>
@@ -766,18 +770,20 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--offline">
-                <a href="#">
+                <a href="user/smolov.html">
                   Марк<br class="break-mobile">
                   Смолов
                 </a>
               </h3>
 
               <div class="user-card__photo-block">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@1x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                  <img class="user-card__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
-                </picture>
+                <a href="user/smolov.html">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <img class="user-card__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
+                  </picture>
+                </a>
               </div>
 
               <div class="user-card__like">
@@ -824,25 +830,25 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" data-description="самолёт">
                     <svg width="15" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bus tooltip" aria-label="автобус">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bus tooltip" data-description="автобус">
                     <svg width="14" height="18">
                       <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--on user-card__transport--bicycle tooltip" aria-label="велосипед">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--bicycle tooltip" data-description="велосипед">
                     <svg width="20" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" aria-label="пешком">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" data-description="пешком">
                     <svg width="15" height="16">
                       <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
                     </svg>
@@ -865,18 +871,20 @@
           <li class="users__item user-card">
             <div class="user-card__wrapper">
               <h3 class="user-card__name user-card__name--online">
-                <a href="#">
+                <a href="user/rogovaya.html">
                   Лариса<br class="break-mobile">
                   Роговая
                 </a>
               </h3>
 
               <div class="user-card__photo-block">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@1x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                  <img class="user-card__photo" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
-                </picture>
+                <a href="user/rogovaya.html">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <img class="user-card__photo" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
+                  </picture>
+                </a>
               </div>
 
               <div class="user-card__like">
@@ -916,25 +924,25 @@
               <div class="user-card__transport-block">
                 <h4 class="user-card__inner-title">транспорт:</h4>
                 <ul class="user-card__transport-list">
-                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" aria-label="самолёт">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--plane tooltip" data-description="самолёт">
                     <svg width="15" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--on user-card__transport--bus tooltip" aria-label="автобус">
+                  <li class="user-card__transport user-card__transport--on user-card__transport--bus tooltip" data-description="автобус">
                     <svg width="14" height="18">
                       <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" aria-label="велосипед">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--bicycle tooltip" data-description="велосипед">
                     <svg width="20" height="17">
                       <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
                     </svg>
                   </li>
 
-                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" aria-label="пешком">
+                  <li class="user-card__transport user-card__transport--off user-card__transport--run tooltip" data-description="пешком">
                     <svg width="15" height="16">
                       <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
                     </svg>
@@ -1023,7 +1031,7 @@
       <div class="page-footer__developed">
         <span class="page-footer__developed-span">Разработано</span>
 
-        <a href="#" class="page-footer__developed-link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developed-link">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>

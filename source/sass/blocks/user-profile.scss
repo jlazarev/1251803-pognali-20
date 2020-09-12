@@ -291,6 +291,10 @@
   padding-top: 24px;
   padding-bottom: 27px;
 
+  &::placeholder {
+    color: rgba($special_grey, 0.3);
+  }
+
   &:hover {
     border-color: $hover_border;
   }

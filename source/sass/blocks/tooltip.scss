@@ -3,7 +3,7 @@
 }
 
 .tooltip::after {
-  content: attr(aria-label);
+  content: attr(data-description);
   position: absolute;
   left: -50%;
   top: 0;

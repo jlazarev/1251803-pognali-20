@@ -19,6 +19,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     padding: 0;
+    min-width: 285px;
   }
 }
 
@@ -430,6 +431,7 @@
   height: 10px;
   border-radius: 50%;
   background-color: $basic_blue_light;
+  cursor: pointer;
 
   &:hover {
     width: 16px;

@@ -324,17 +324,17 @@
             </div>
 
             <ul class="companion-card__visit-list">
-              <li class="companion-card__visit tooltip" aria-label="Шри-Ланка">
+              <li class="companion-card__visit tooltip" data-description="Шри-Ланка">
                 <svg width="35" height="24">
                   <use xlink:href="img/sprites/flag-sprites.svg#flag-sri-lanka"></use>
                 </svg>
               </li>
-              <li class="companion-card__visit tooltip" aria-label="Тайланд">
+              <li class="companion-card__visit tooltip" data-description="Тайланд">
                 <svg width="35" height="24">
                   <use xlink:href="img/sprites/flag-sprites.svg#flag-thailand"></use>
                 </svg>
               </li>
-              <li class="companion-card__visit tooltip" aria-label="Сейшелы">
+              <li class="companion-card__visit tooltip" data-description="Сейшелы">
                 <svg width="35" height="24">
                   <use xlink:href="img/sprites/flag-sprites.svg#flag-seychelles"></use>
                 </svg>
@@ -351,22 +351,22 @@
             </ul>
 
             <ul class="companions-card__transport-list">
-              <li class="transport transport--on transport--plane tooltip" aria-label="самолёт">
+              <li class="transport transport--on transport--plane tooltip" data-description="самолёт">
                 <svg width="19" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
                 </svg>
               </li>
-              <li class="transport transport--off transport--bus tooltip" aria-label="автобус">
+              <li class="transport transport--off transport--bus tooltip" data-description="автобус">
                 <svg width="17" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
                 </svg>
               </li>
-              <li class="transport transport--off transport--bicycle tooltip" aria-label="велосипед">
+              <li class="transport transport--off transport--bicycle tooltip" data-description="велосипед">
                 <svg width="24" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
                 </svg>
               </li>
-              <li class="transport transport--off transport--run tooltip" aria-label="пешком">
+              <li class="transport transport--off transport--run tooltip" data-description="пешком">
                 <svg width="20" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
                 </svg>
@@ -393,12 +393,12 @@
             </div>
 
             <ul class="companion-card__visit-list">
-              <li class="companion-card__visit tooltip" aria-label="Бельгия">
+              <li class="companion-card__visit tooltip" data-description="Бельгия">
                 <svg width="35" height="24">
                   <use xlink:href="img/sprites/flag-sprites.svg#flag-belgium"></use>
                 </svg>
               </li>
-              <li class="companion-card__visit tooltip" aria-label="Чехия">
+              <li class="companion-card__visit tooltip" data-description="Чехия">
                 <svg width="35" height="24">
                   <use xlink:href="img/sprites/flag-sprites.svg#flag-czech"></use>
                 </svg>
@@ -414,22 +414,22 @@
             </ul>
 
             <ul class="companions-card__transport-list">
-              <li class="transport transport--on transport--plane tooltip" aria-label="самолёт">
+              <li class="transport transport--on transport--plane tooltip" data-description="самолёт">
                 <svg width="19" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#plane"></use>
                 </svg>
               </li>
-              <li class="transport transport--on transport--bus tooltip" aria-label="автобус">
+              <li class="transport transport--on transport--bus tooltip" data-description="автобус">
                 <svg width="17" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#bus"></use>
                 </svg>
               </li>
-              <li class="transport transport--off transport--bicycle tooltip" aria-label="велосипед">
+              <li class="transport transport--off transport--bicycle tooltip" data-description="велосипед">
                 <svg width="24" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#bike"></use>
                 </svg>
               </li>
-              <li class="transport transport--on transport--run tooltip" aria-label="пешком">
+              <li class="transport transport--on transport--run tooltip" data-description="пешком">
                 <svg width="20" height="21">
                   <use xlink:href="img/sprites/transport-sprite.svg#run"></use>
                 </svg>
@@ -438,7 +438,7 @@
           </li>
         </ul>
 
-        <a class="companions__button button" href="#">Показать всеx</a>
+        <a class="companions__button button" href="companions.html">Показать всеx</a>
       </div>
     </section>
 
@@ -477,7 +477,7 @@
           </div>
         </dl>
 
-        <a class="rates__button" href="#">Показать тарифы для бизнеса</a>
+        <a class="rates__button" href="rates.html">Показать тарифы для бизнеса</a>
       </div>
     </section>
 
@@ -489,11 +489,11 @@
           Зарегистрируйтесь,<br class="break-mobile">
           это быстро и бесплатно!<br>
           <span>Уже зарегистрированы? Тогда<br class="break-mobile">
-          скорее <a class="authorization__link" href="#">авторизуйтесь</a>.</span>
+          скорее <a class="authorization__link" href="authorization.html">авторизуйтесь</a>.</span>
         </p>
 
         <form class="authorization__form" action="https://echo.htmlacademy.ru">
-          <input class="authorization__email" type="email" name="email" placeholder="E-mail" required>
+          <input class="authorization__email" type="email" name="email" placeholder="E-mail">
 
           <button class="authorization__submit-btn button" type="submit">
             <span>Регистрация</span>
@@ -528,6 +528,7 @@
     </section>
 
     <section class="location">
+      <h2 class="visually-hidden">Наше местонахождения</h2>
       <div class="location__box">
         <div class="location__wrapper wrapper">
           <address class="location__address">
@@ -535,7 +536,7 @@
             Конюшенная, 19/8
           </address>
 
-          <a class="location__btn button" href="#">
+          <a class="location__btn button" href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">
             Проложить маршрут
 
             <svg width="14" height="13">
@@ -551,6 +552,7 @@
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, 19/8">
         </picture>
+        <iframe class="location__frame-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599843053509!5m2!1sru!2sru" width="1440" height="322" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -595,7 +597,7 @@
       <div class="page-footer__developed">
         <span class="page-footer__developed-span">Разработано</span>
 
-        <a href="#" class="page-footer__developed-link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developed-link">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
@@ -645,6 +647,7 @@
 
   <script src="js/main-menu.js"></script>
   <script src="js/rates-business.js"></script>
+  <script src="js/email-error.js"></script>
 </body>
 
 </html>
