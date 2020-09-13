@@ -53,11 +53,13 @@
   text-transform: uppercase;
   color: $basic_blue_light;
   display: block;
+  width: 200px;
   margin: 0 auto;
   padding-left: 38px;
   border: none;
   background-color: transparent;
   position: relative;
+  text-decoration: none;
 
   &:hover::after,
   &:hover::before {
@@ -80,7 +82,8 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
     margin-top: 56px;
-    padding-right: 72px;
+    width: 300px;
+    margin-left: 350px;
   }
 
   &::before {

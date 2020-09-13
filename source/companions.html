@@ -13,10 +13,23 @@
     <div class="page-header__wrapper wrapper">
       <div class="page-header__box">
         <a class="page-header__logo" href="index.html">
-          <picture>
+          <picture class="page-header__logo-white">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
             <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали">
+          </picture>
+          <picture class="page-header__logo-blue">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
           </picture>
         </a>
 
@@ -28,18 +41,18 @@
       <nav class="page-header__menu menu">
           <ul class="menu__main-nav-list nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link" href="index.html">
-                о сервисе
+              <a class="nav-list__link" href="index.html" data-hover="о сервисе">
+                <span>о сервисе</span>
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="directions.html">
-                направления
+              <a class="nav-list__link" href="directions.html" data-hover="направления">
+                <span>направления</span>
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link">
-                попутчики
+              <a class="nav-list__link" href="#" data-hover="попутчики">
+                <span>попутчики</span>
               </a>
             </li>
           </ul>
@@ -75,7 +88,7 @@
               <a href="#">
                 <span class="visually-hidden">фейсбук</span>
                 <svg width="11" height="21">
-                  <use xlink:href="img/facebook.svg#Layer_1"></use>
+                  <use xlink:href="img/social-facebook.svg#Layer_1"></use>
                 </svg>
               </a>
             </li>
@@ -83,7 +96,7 @@
               <a href="#">
                 <span class="visually-hidden">вконтакте</span>
                 <svg width="23" height="12">
-                  <use xlink:href="img/vk.svg#Layer_1"></use>
+                  <use xlink:href="img/social-vk.svg#Layer_1"></use>
                 </svg>
               </a>
             </li>
@@ -91,7 +104,7 @@
               <a href="#">
                 <span class="visually-hidden">инстаграмм</span>
                 <svg width="18" height="18">
-                  <use xlink:href="img/instagram.svg#Layer_1"></use>
+                  <use xlink:href="img/social-instagram.svg#Layer_1"></use>
                 </svg>
               </a>
             </li>
@@ -582,6 +595,10 @@
               <div class="user-card__photo-block">
                 <a href="user/firsova.html">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@1x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                     <img class="user-card__photo" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
@@ -668,7 +685,7 @@
                 </span>
               </div>
 
-              <button class="user-card__call-btn">позвать!</button>
+              <a href="response.html" class="user-card__call-btn">позвать!</a>
             </div>
           </li>
 
@@ -684,6 +701,10 @@
               <div class="user-card__photo-block">
                 <a href="user/demin.html">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@1x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                     <img class="user-card__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
@@ -763,7 +784,7 @@
                 </span>
               </div>
 
-              <button class="user-card__call-btn">позвать!</button>
+              <a href="response.html" class="user-card__call-btn">позвать!</a>
             </div>
           </li>
 
@@ -779,6 +800,10 @@
               <div class="user-card__photo-block">
                 <a href="user/smolov.html">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@1x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                     <img class="user-card__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
@@ -864,7 +889,7 @@
                 </span>
               </div>
 
-              <button class="user-card__call-btn">позвать!</button>
+              <a href="response.html" class="user-card__call-btn">позвать!</a>
             </div>
           </li>
 
@@ -880,6 +905,10 @@
               <div class="user-card__photo-block">
                 <a href="user/rogovaya.html">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x,img/rogovaya-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@1x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
                     <img class="user-card__photo" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
@@ -958,29 +987,29 @@
                 </span>
               </div>
 
-              <button class="user-card__call-btn">позвать!</button>
+              <a href="response.html" class="user-card__call-btn">позвать!</a>
             </div>
           </li>
         </ul>
 
-        <button class="users__show-more">показать еще</button>
+        <a class="users__show-more" href="new-companions.html">показать еще</a>
 
         <div class="users__nav">
           <ol class="users__pagination-list">
             <li class="users__pagination users__pagination--active"><a>1</a></li>
-            <li class="users__pagination"><a href="#">2</a></li>
-            <li class="users__pagination"><a href="#">3</a></li>
-            <li class="users__pagination"><a href="#">4</a></li>
+            <li class="users__pagination"><a href="page-2.html">2</a></li>
+            <li class="users__pagination"><a href="page-3.html">3</a></li>
+            <li class="users__pagination"><a href="page-4.html">4</a></li>
           </ol>
 
           <ul class="users__pager">
             <li>
-              <a class="users__previous" href="#">
+              <a class="users__previous" href="previous-page.html">
                 <span class="visually-hidden">назад</span>
               </a>
             </li>
             <li>
-              <a class="users__next" href="#">
+              <a class="users__next" href="next-page.html">
                 <span class="visually-hidden">вперед</span>
               </a>
             </li>
@@ -995,6 +1024,10 @@
     <div class="page-footer__wrapper wrapper">
       <a class="page-footer__logo" href="index.html">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
@@ -1006,7 +1039,7 @@
           <a href="#">
             <span class="visually-hidden">фейсбук</span>
             <svg width="11" height="21">
-              <use xlink:href="img/facebook.svg#Layer_1"></use>
+              <use xlink:href="img/social-facebook.svg#Layer_1"></use>
             </svg>
           </a>
         </li>
@@ -1014,7 +1047,7 @@
           <a href="#">
             <span class="visually-hidden">вконтакте</span>
             <svg width="23" height="12">
-              <use xlink:href="img/vk.svg#Layer_1"></use>
+              <use xlink:href="img/social-vk.svg#Layer_1"></use>
             </svg>
           </a>
         </li>
@@ -1022,7 +1055,7 @@
           <a href="#">
             <span class="visually-hidden">инстаграмм</span>
             <svg width="18" height="18">
-              <use xlink:href="img/instagram.svg#Layer_1"></use>
+              <use xlink:href="img/social-instagram.svg#Layer_1"></use>
             </svg>
           </a>
         </li>
@@ -1042,6 +1075,7 @@
   <script src="js/country-filter.js"></script>
   <script src="js/user-filter.js"></script>
   <script src="js/like-btn.js"></script>
+  <script src="js/header-scroll.js"></script>
 </body>
 
 </html>
