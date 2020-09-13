@@ -189,4 +189,6 @@ const start = (done) => gulp.series(
   "build",
   "server",)(done);
 
-exports.start = start;
+exports.start = gulp.series(
+  start, watcher
+);
